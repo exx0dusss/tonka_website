@@ -1,0 +1,1490 @@
+:root {
+  --main-padding: 0 400px;
+}
+
+@font-face {
+  font-family: Readex-Pro;
+  src: url("../fonts/Readex-Pro.ttf");
+}
+@font-face {
+  font-family: Roboto-Slab;
+  src: url("../fonts/Roboto-Slab.ttf");
+}
+.no-outline {
+  border: none;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+body {
+  font-family: Readex-Pro;
+}
+
+header,
+footer {
+  z-index: 101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+}
+header .header,
+footer .header {
+  height: 100%;
+  width: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+}
+header .header .nav-bar,
+footer .header .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header .nav-bar .nav-el,
+footer .header .nav-bar .nav-el {
+  margin-left: 29px;
+}
+header .header .nav-bar .nav-text-wrapper,
+footer .header .nav-bar .nav-text-wrapper {
+  font-size: 18px;
+  font-weight: 320;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+header .header .nav-bar .nav-text-wrapper path,
+header .header .nav-bar .nav-text-wrapper .border,
+footer .header .nav-bar .nav-text-wrapper path,
+footer .header .nav-bar .nav-text-wrapper .border {
+  stroke: #516ae4;
+}
+header .header .nav-bar .nav-text-wrapper .dot,
+footer .header .nav-bar .nav-text-wrapper .dot {
+  fill: #516ae4;
+}
+header .header .nav-bar .nav-text-wrapper:hover,
+footer .header .nav-bar .nav-text-wrapper:hover {
+  color: #516ae4;
+}
+header .header .nav-bar .nav-text-wrapper .nav-ico,
+footer .header .nav-bar .nav-text-wrapper .nav-ico {
+  margin-left: 8px;
+}
+header .header .nav-bar .log-btn,
+footer .header .nav-bar .log-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  width: 102px;
+  height: 43px;
+  background-color: #f1f3fe;
+  color: #516ae4;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: Roboto-Slab;
+}
+header .header .nav-bar .log-btn:hover,
+footer .header .nav-bar .log-btn:hover {
+  background-color: #516ae4;
+  color: #f1f3fe;
+}
+
+#main-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #9a82db));
+  background: linear-gradient(#fff, #9a82db 60%);
+  background-position: center;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#main-page .description-banner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .description-banner-wrapper .main-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+#main-page .description-banner-wrapper .main-banner .banner-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .description-banner-wrapper .main-banner .banner-img-wrapper .banner-img-bg {
+  content: url("../files/crate-left-bckg.svg");
+  width: 400px;
+  position: absolute;
+}
+#main-page .description-banner-wrapper .main-banner .banner-text-wrapper {
+  padding: 80px 0;
+  color: black;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main-page .description-banner-wrapper .main-banner .banner-text-wrapper .main-text {
+  line-height: 64px;
+  font-size: 64px;
+  font-weight: 400;
+  width: 30vw;
+}
+#main-page .description-banner-wrapper .main-banner .banner-text-wrapper .secondary-text {
+  font-size: 24px;
+  font-weight: 200;
+  width: 21vw;
+}
+#main-page .exchange-banner-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .exchange-banner-wrapper .exchange-banner {
+  width: 1000px;
+  height: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: rgba(154, 130, 219, 0.6);
+  background-color: rgba(244, 244, 244, 0.2);
+  padding: 30px;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 79px;
+  padding-bottom: 30px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgba(154, 130, 219, 0.6);
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-left {
+  width: 470px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-left .enum-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49px;
+  height: 49px;
+  border-radius: 15px;
+  background-color: #516ae4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-left .left-text {
+  margin-left: 14px;
+  font-size: 16px;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-right .header-nav {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 0.05s;
+          transition-duration: 0.05s;
+  border: solid;
+  border-width: 1px;
+  margin-left: 15px;
+  border-radius: 20px;
+  color: #c3c3c3;
+  background-color: white;
+  border-color: #dadada;
+  cursor: pointer;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-right .header-nav:hover {
+  background-color: #516ae4;
+  color: white;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-right #all {
+  background-color: #516ae4;
+  color: white;
+  border: none;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-subheader {
+  padding: 33px 0;
+  font-size: 33px;
+  font-weight: 500;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .left-side,
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 447px;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin-top: 16px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-field .left-text-wrapper {
+  color: rgba(0, 0, 0, 0.5);
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-submit-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 447px;
+  height: 75px;
+  margin-top: 16px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-submit-field .exchange-btn {
+  width: 202px;
+  height: 51px;
+  border: none;
+  background-color: #516ae4;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 0.05s;
+          transition-duration: 0.05s;
+  border: solid;
+  border-color: #516ae4;
+  border-width: 1px;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-submit-field .exchange-btn:hover {
+  color: #516ae4;
+  font-weight: 500;
+  background-color: white;
+  border-color: #dadada;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-submit-field .exchange-btn:active {
+  -webkit-transition: none;
+  transition: none;
+  border-color: #516ae4;
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-submit-field .exchange-policy {
+  width: 202px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-submit-field .exchange-policy .exchange-rules {
+  text-decoration: underline;
+}
+#main-page .advantages-banner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .advantages-banner-wrapper .advantages-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .banner-img-wrapper {
+  height: 400px;
+  width: 370px;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .banner-img-wrapper #donut {
+  opacity: 0.5;
+  margin: 30px 0 0 150px;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .banner-img-wrapper #box {
+  margin: 0 100px 0 0;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .banner-img-wrapper #sphere {
+  opacity: 0.5;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .banner-img-wrapper #ellipse {
+  margin-left: auto;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-header {
+  font-size: 48px;
+  height: 61px;
+  padding-bottom: 100px;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 720px;
+  height: 370px;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item .item-ico {
+  width: 68px;
+  height: 65px;
+  background-color: #516ae4;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item .item-text-wrapper {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item .item-text-wrapper .main-text {
+  font-weight: 600;
+}
+#main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item .item-text-wrapper .secondary-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  width: 150px;
+  text-align: center;
+}
+#main-page .reviews-banner-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 900px;
+  padding-bottom: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9a82db), to(#fff));
+  background: linear-gradient(#9a82db, #fff);
+}
+#main-page .reviews-banner-wrapper .reviews-banner {
+  width: 1440px;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  padding: 68px 135px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(244, 244, 244, 0.2);
+  border: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: rgba(154, 130, 219, 0.6);
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper {
+  width: 100%;
+  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card {
+  width: 357px;
+  height: 207px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card .card-header #comment1 {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  border: solid;
+  border-color: #d1d1d1;
+  border-width: 1.77px;
+  content: url("../icons/comment1.jpg");
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card .card-header .header-text {
+  margin-left: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-load-more {
+  height: 60px;
+  width: 100%;
+  background-color: #516ae4;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  border-width: 1px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 0.05s;
+          transition-duration: 0.05s;
+  border: solid;
+  border-color: #516ae4;
+  border-width: 1px;
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-load-more:hover {
+  color: #516ae4;
+  font-weight: 500;
+  background-color: white;
+  border-color: #dadada;
+}
+#main-page .reviews-banner-wrapper .reviews-banner .reviews-load-more:active {
+  -webkit-transition: none;
+  transition: none;
+  border-color: #516ae4;
+}
+
+#rules-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #9a82db));
+  background: linear-gradient(#fff, #9a82db 60%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+}
+#rules-page .page-wrapper {
+  width: 100%;
+  height: 1259px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 96px;
+  background: rgba(255, 255, 255, 0.8);
+}
+#rules-page .page-wrapper .rules-wrapper {
+  width: 727px;
+  height: 1090px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#rules-page .page-wrapper .rules-wrapper .header-text {
+  font-size: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#rules-page .page-wrapper .rules-wrapper .subheader-text {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#rules-page .page-wrapper .rules-wrapper .main-text-wrapper {
+  font-size: 25px;
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 900px;
+}
+#rules-page .page-wrapper .reviews-wrapper {
+  width: 456px;
+  height: 984px;
+  margin-left: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  border: solid;
+  border-width: 1px;
+  border-color: #b7b7b7;
+}
+#rules-page .page-wrapper .reviews-wrapper .reviews-header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 28px;
+}
+#rules-page .page-wrapper .reviews-wrapper .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 780px;
+}
+#rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card {
+  width: 357px;
+  height: 207px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  background-color: #f4f5fa;
+  border-radius: 20px;
+  font-size: 14px;
+}
+#rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card .card-header #comment1 {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  border: solid;
+  border-color: #d1d1d1;
+  border-width: 1.77px;
+  content: url("../icons/comment1.jpg");
+}
+#rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card .card-header .header-text {
+  margin-left: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+#rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#application-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #9a82db));
+  background: linear-gradient(#fff, #9a82db 60%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 300;
+  height: calc(100vh - 100px);
+}
+#application-page .page-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 135px 154px 0px 154px;
+}
+#application-page .page-wrapper .application-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper,
+#application-page .page-wrapper .application-wrapper .submit-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper {
+  width: 585px;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper .application-number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper .pair-to-change {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 55px;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 270px;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .crypto,
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .details {
+  width: 514px;
+  height: 71px;
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .crypto .space-box,
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .details .space-box {
+  width: 64px;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .crypto .input-wrapper,
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .details .input-wrapper {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .crypto .input-wrapper .upper-text,
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .details .input-wrapper .upper-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+#application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .details .switch-arrows {
+  width: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#application-page .page-wrapper .application-wrapper .submit-wrapper {
+  width: 507px;
+  background: red;
+}
+
+#partners-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #9a82db));
+  background: linear-gradient(#fff, #9a82db 60%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 300;
+  height: calc(100vh - 100px);
+}
+#partners-page .page-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100vh - 100px);
+  padding-top: 60px;
+}
+#partners-page .page-wrapper .section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1170px;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper {
+  width: 542px;
+  height: 670px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-header-text {
+  font-size: 60px;
+  font-weight: 400;
+  height: 80px;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-referral-link-wrapper {
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-referral-link-wrapper .referall-header-text {
+  font-size: 45px;
+  font-weight: 400;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-referral-link-wrapper .referall-main-text {
+  font-size: 24px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-discount-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 278px;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-discount-wrapper .list-wrapper {
+  height: 76px;
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-discount-wrapper .list-wrapper .enum {
+  width: 66px;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f1f3fe;
+  color: #516ae4;
+  border-radius: 20px;
+  font-size: 34px;
+  font-weight: 300;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-discount-wrapper .list-wrapper .discount-wrapper {
+  margin-left: 14px;
+  font-size: 24px;
+  font-weight: 300;
+}
+#partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-discount-wrapper .list-wrapper .discount-wrapper .lower-text {
+  opacity: 0.5;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper {
+  width: 542px;
+  height: 670px;
+  background-color: #fff;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 37px;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-header-wrapper {
+  width: 100%;
+  height: 48px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  color: black;
+  font-weight: 300;
+  font-size: 24px;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-header-wrapper .referral-button {
+  background: none;
+  border: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-header-wrapper .referral-button:hover {
+  color: #516ae4;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-header-wrapper #Recent {
+  margin-left: 22px;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-log-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-log-wrapper .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 124px;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-log-wrapper .button-wrapper .log-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  width: 419px;
+  height: 52px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: Roboto-Slab;
+  background-color: #f1f3fe;
+  color: #516ae4;
+}
+#partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-log-wrapper .button-wrapper .log-btn:hover {
+  background-color: #516ae4;
+  color: #f1f3fe;
+}
+
+#login-page,
+#registration-page {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(154, 130, 219, 0.5), rgba(255, 255, 255, 0.5));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  height: calc(100vh - 100px);
+  color: black;
+}
+#login-page .authorization-wrapper,
+#registration-page .authorization-wrapper {
+  width: 1001px;
+  height: 731px;
+  padding: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: #f4f5fa;
+}
+#login-page .authorization-wrapper .authorization-header,
+#registration-page .authorization-wrapper .authorization-header {
+  width: 100%;
+  height: 56px;
+  border-bottom: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+#login-page .authorization-wrapper .authorization-header .link-wrapper,
+#registration-page .authorization-wrapper .authorization-header .link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+#login-page .authorization-wrapper .authorization-header .link-wrapper #registration-button,
+#registration-page .authorization-wrapper .authorization-header .link-wrapper #registration-button {
+  margin-left: 28px;
+  opacity: 0.5;
+}
+#login-page .authorization-wrapper .authorization-header .link-wrapper #registration-button:hover,
+#registration-page .authorization-wrapper .authorization-header .link-wrapper #registration-button:hover {
+  opacity: 1;
+}
+#login-page .authorization-wrapper .authorization-body,
+#registration-page .authorization-wrapper .authorization-body {
+  margin-top: 55px;
+  width: 456px;
+  height: 372px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#login-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper,
+#registration-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+#login-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper .authorization-header-text,
+#registration-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper .authorization-header-text {
+  font-size: 40px;
+  font-weight: 400;
+}
+#login-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper .authorization-subheader-text,
+#registration-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper .authorization-subheader-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+#login-page .authorization-wrapper .authorization-body .authorization-field-wrapper,
+#registration-page .authorization-wrapper .authorization-body .authorization-field-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 149px;
+}
+#login-page .authorization-wrapper .authorization-body .authorization-field-wrapper .input-field,
+#registration-page .authorization-wrapper .authorization-body .authorization-field-wrapper .input-field {
+  width: 456px;
+  height: 64px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+#login-page .authorization-wrapper .authorization-body .authorization-login-button,
+#registration-page .authorization-wrapper .authorization-body .authorization-login-button {
+  width: 456px;
+  height: 46px;
+  border: none;
+  background-color: #516ae4;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 0.05s;
+          transition-duration: 0.05s;
+  border: solid;
+  border-color: #516ae4;
+  border-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Roboto-Slab;
+}
+#login-page .authorization-wrapper .authorization-body .authorization-login-button:hover,
+#registration-page .authorization-wrapper .authorization-body .authorization-login-button:hover {
+  color: #516ae4;
+  font-weight: 500;
+  background-color: white;
+  border-color: #dadada;
+}
+#login-page .authorization-wrapper .authorization-body .authorization-login-button:active,
+#registration-page .authorization-wrapper .authorization-body .authorization-login-button:active {
+  -webkit-transition: none;
+  transition: none;
+  border-color: #516ae4;
+}
+
+#registration-page .authorization-wrapper {
+  height: 800px;
+}
+#registration-page .authorization-wrapper .authorization-header .link-wrapper #authorization-button {
+  opacity: 0.5;
+}
+#registration-page .authorization-wrapper .authorization-header .link-wrapper #authorization-button:hover {
+  opacity: 1;
+}
+#registration-page .authorization-wrapper .authorization-header .link-wrapper #registration-button {
+  opacity: 1;
+}
+#registration-page .authorization-wrapper .authorization-body {
+  height: 550px;
+}
+#registration-page .authorization-wrapper .authorization-body .authorization-field-wrapper {
+  height: 330px;
+}
