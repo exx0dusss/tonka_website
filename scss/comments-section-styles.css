@@ -1,0 +1,85 @@
+.comments-section-container {
+  display: flex;
+  width: 100%;
+  min-height: 693px;
+  background-color: #F4F5FA;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 0;
+}
+.comments-section-container .comments-section-wrapper {
+  width: 1169px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.comments-section-container .comments-section-wrapper .comments-container {
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  transition: min-height 0.2s ease-out;
+}
+.comments-section-container .comments-section-wrapper .comments-container.expand {
+  min-height: 1274px;
+}
+.comments-section-container .comments-section-wrapper .comments-container .comments-wrapper {
+  height: 207px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.comments-section-container .comments-section-wrapper .comments-container .comments-wrapper .comments-item {
+  border-radius: 20px;
+  width: 357px;
+  height: 207px;
+  background-color: white;
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+}
+.comments-section-container .comments-section-wrapper .comments-container .comments-wrapper .comments-item .item-header {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.comments-section-container .comments-section-wrapper .comments-container .comments-wrapper .comments-item .item-header .item-pfp {
+  content: url("../files/profile-icon.svg");
+  height: 56px !important;
+  width: 56px !important;
+}
+.comments-section-container .comments-section-wrapper .comments-container .comments-wrapper .comments-item .item-header .item-data {
+  width: 100%;
+  height: 40px;
+  margin-left: 11px;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.comments-section-container .comments-section-wrapper .comments-container .comments-wrapper .comments-item .item-header .item-data .data-name {
+  font-weight: 400;
+}
+.comments-section-container .comments-section-wrapper .comments-container .comments-wrapper .comments-item .item-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.comments-section-container .comments-section-wrapper .all-reviews-button {
+  width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=comments-section-styles.css.map */

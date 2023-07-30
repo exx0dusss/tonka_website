@@ -1,0 +1,375 @@
+.exchange-banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 513px;
+  min-height: 513px;
+
+  .exchange-banner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 1000px;
+    max-width: 1000px;
+    //background-color: rgba(244, 244, 244, 0.2);
+    background-color: #F4F4F4;
+    border: 1px solid rgba(205, 205, 205, .6);
+    border-radius: 20px;
+    padding: 30px;
+
+    .banner-header {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .info-wrapper {
+        display: flex;
+        height: 49px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .info {
+          width: 449px;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &.info-left {
+            .number-wrapper {
+              width: 49px;
+              height: 49px;
+              font-family: Arial, serif;
+              font-size: 23px;
+              font-weight: bold;
+
+            }
+
+            .text-wrapper {
+              font-size: 16px;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
+
+        }
+
+        .info-right {
+          max-width: 282px;
+          font-size: 14px;
+
+          .select-button {
+            height: 35px;
+            cursor: pointer;
+            box-sizing: border-box;
+          }
+
+          #All {
+            min-width: 56px;
+          }
+
+          #Banks {
+            min-width: 64px;
+          }
+
+          #Cryptocurrency {
+            min-width: 130px;
+          }
+
+
+          input[type="radio"]:not(:checked) + .select-button {
+            transition: ease-in-out;
+            transition-duration: 0.02s;
+            border: 1px solid #DADADA;
+            color: #C3C3C3;
+            background-color: #ffffff;
+
+            &:hover {
+              border-color: white;
+            }
+          }
+
+
+        }
+      }
+
+      .line-wrapper {
+        display: flex;
+        width: 100%;
+        height: 15px;
+        border-bottom: 1px solid rgba(205, 205, 205, .6);
+      }
+    }
+
+    .banner-body {
+      width: 100%;
+      height: 388px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .exchange-header {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        .text-wrapper {
+          font-size: 33px;
+          font-weight: 500;
+        }
+      }
+
+      .exchange-body {
+        width: 100%;
+        display: flex;
+        min-height: 250px;
+        justify-content: space-between;
+        align-items: center;
+
+        .body {
+          height: 100%;
+          width: 447px;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0;
+
+          .body-item {
+            display: flex;
+            height: 71px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 1);
+
+            &.currency-container {
+              align-items: normal;
+              justify-content: flex-start;
+              width: 100%;
+              transition: ease-in-out;
+              transition-duration: 0.02s;
+              cursor: pointer;
+              font-weight: 600;
+              font-size: 20px;
+              background: none;
+
+              .currency-wrapper {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+                background: white;
+                transition: border-radius 0.02s ease-in-out;
+
+                &:hover {
+                  color: white;
+                  background-color: #4b5bce;
+
+                }
+
+                #from-basis, #to-basis {
+                  height: 100%;
+                  align-items: center;
+                  display: flex;
+                  justify-content: flex-start;
+                  width: 100%;
+                }
+
+              }
+
+              .currency-list-wrapper {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-height: 0;
+                position: absolute;
+                margin: 71px 0 0 0;
+                width: 447px;
+                background-color: white;
+                cursor: pointer;
+                border-radius: 0 0 15px 15px;
+                transition: 0.04s ease-in-out;
+
+                .currency-list {
+                  overflow: hidden;
+                  overflow-y: auto;
+                  width: 100%;
+                  margin-bottom: 10px;
+                  background-color: white;
+
+                  &::-webkit-scrollbar {
+                    width: 2px;
+                  }
+
+                  &::-webkit-scrollbar-track {
+                    background-color: white;
+                  }
+
+                  &::-webkit-scrollbar-thumb {
+                    background: #516ae4;
+
+                  }
+
+                  &::-webkit-scrollbar-thumb:hover {
+                    background: #4b5bce;
+                  }
+
+                  &::-webkit-scrollbar-corner,
+                  &::-webkit-scrollbar-thumb:horizontal {
+                    margin: 10px 0;
+                  }
+
+
+                  .currency-item {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding: 0 8px 0 7px;
+                    min-height: 71px;
+                    height: 71px;
+
+
+                    &:hover {
+                      border-left: 2px solid black;
+                      background-color: #516ae4;
+                      color: white;
+                      padding: 0 8px;
+
+                    }
+
+
+                    .currency-name {
+                      width: 100%;
+                      display: flex;
+                      justify-content: left;
+                      align-items: center;
+                      height: 100%;
+
+                    }
+
+
+                  }
+
+                }
+              }
+
+            }
+
+
+          }
+
+          .input-container {
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 0 10px;
+
+            .input-wrapper {
+              width: 100%;
+              height: 100%;
+              display: flex;
+
+            }
+
+            .item-input {
+              height: 100%;
+              width: 100%;
+              align-items: center;
+              display: flex;
+              justify-content: flex-start;
+            }
+
+            #to-quantity-text {
+              color: rgba(0, 0, 0, .5);
+
+            }
+
+
+            .to-wrapper {
+              display: flex;
+              align-items: center;
+              height: 100%;
+
+              #to-quantity {
+                margin-right: 8px;
+                margin-bottom: 3px;
+                font-size: 16px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0;
+
+              }
+
+              #right-basis {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0;
+              }
+
+            }
+
+            .basis {
+              font-size: 15px;
+            }
+
+            &#payment-wrapper {
+              padding: 0;
+
+              #payment-button {
+                width: 202px;
+                height: 51px;
+                font-size: 16px;
+                transition: ease-in-out;
+                transition-duration: 0.02s;
+
+                &:hover {
+                  cursor: pointer;
+                  border: 1px solid rgba(205, 205, 205, .6);
+                }
+
+                &:active {
+                  border: 1px solid #DADADA;
+                  color: #C3C3C3;
+                  background-color: #ffffff;
+                }
+              }
+
+              .rules-info {
+                font-size: 12px;
+                color: rgba(0, 0, 0, .4);
+                text-align: left;
+                width: 224px;
+              }
+            }
+
+
+          }
+
+          #payment-wrapper {
+            background: none;
+          }
+        }
+
+      }
+    }
+
+  }
+}

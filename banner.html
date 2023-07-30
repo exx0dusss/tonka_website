@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+    <meta name="format-detection" content="telephone=no"/>
+    <title>Tonka Coin - the best choice of safety</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="icon" href="./favicon.png"/>
+    <link rel="stylesheet" href="scss/default.css"/>
+    <link rel="stylesheet" href="scss/objects.css"/>
+    <link rel="stylesheet" href="scss/scroll.css"/>
+    <link rel="stylesheet" href="scss/exchange-banner-styles.css"/>
+
+</head>
+
+<body>
+
+<section class="exchange-banner-container">
+    <div class="exchange-banner-wrapper">
+        <div class="banner-header prevent-select">
+            <div class="info-wrapper">
+                <div class="info info-left">
+                    <div class="number-wrapper blue rect">1</div>
+                    <div class="text-wrapper">Choose an exchange direction from the lists below</div>
+                </div>
+                <div class="info info-right">
+                    <input type="radio" id="all-input" name="source-button-group" checked hidden>
+                    <label for="all-input" class="blue rect select-button" id="All">All</label>
+
+                    <input type="radio" id="banks-input" name="source-button-group" hidden>
+                    <label for="banks-input" class="blue rect select-button" id="Banks">Banks</label>
+
+                    <input type="radio" id="cryptocurrency-input" name="source-button-group" hidden>
+                    <label for="cryptocurrency-input" class="blue rect select-button"
+                           id="Cryptocurrency">Cryptocurrency</label>
+
+                </div>
+            </div>
+            <div class="line-wrapper"></div>
+
+        </div>
+        <div class="banner-body">
+            <div class="exchange-header prevent-select">
+                <span class="text-wrapper">
+                    <span>Sell</span>
+                    <span id="header-from-basis"></span>
+                    <span>for</span>
+                    <span id="header-to-basis"></span>
+                </span>
+            </div>
+            <div class="exchange-body">
+                <ul class="body body-left">
+                    <li class="rect body-item currency-container prevent-select " id="from-currency-container">
+                        <div class="rect currency-wrapper" id="from-currency-wrapper">
+                            <span id="from-basis">BTC</span>
+                            <span id="from-coin"></span>
+                        </div>
+                        <div class="currency-list-wrapper" id="from-menu">
+                            <ul class=" currency-list">
+                                <li class="crypto currency-item">
+                                    <span class="from-currency currency-name">Bitcoin</span>
+                                    <span class="currency-logo Bitcoin"></span>
+                                </li>
+                                <li class="crypto currency-item ">
+                                    <span class="from-currency currency-name">Ethereum</span>
+                                    <span class="currency-logo Ethereum"></span>
+                                </li>
+
+                                <li class="crypto currency-item ">
+                                    <span class="from-currency currency-name">Cardano</span>
+                                    <span class="currency-logo Cardano"></span>
+                                </li>
+
+                                <li class="crypto currency-item ">
+                                    <span class="from-currency currency-name">Binance Coin</span>
+                                    <span class="currency-logo Binance"></span>
+                                </li>
+
+                                <li class="crypto currency-item ">
+                                    <span class="from-currency currency-name">Dash</span>
+                                    <span class="currency-logo Dash"></span>
+                                </li>
+
+                                <li class="crypto currency-item ">
+                                    <span class="from-currency currency-name">Dogecoin</span>
+                                    <span class="currency-logo Dogecoin"></span>
+                                </li>
+                                <li class="fiat currency-item ">
+                                    <span class="from-currency currency-name">Dollar</span>
+                                    <span class="currency-logo Dollar"></span>
+                                </li>
+
+                                <li class="fiat currency-item ">
+                                    <span class="from-currency currency-name">Euro</span>
+                                    <span class="currency-logo Euro"></span>
+                                </li>
+
+                                <li class="fiat currency-item ">
+                                    <span class="from-currency currency-name">Krona</span>
+                                    <span class="currency-logo Krona"></span>
+                                </li>
+                                <li class="fiat currency-item ">
+                                    <span class="from-currency currency-name">Ruble</span>
+                                    <span class="currency-logo Ruble"></span>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+
+                    </li>
+                    <li class="rect body-item input-container" id="from-container">
+                        <div class="input-wrapper">
+                            <input id="from-quantity-input" class="item-input no-outline"
+                                   placeholder="How much do you give:">
+                            <label for="from-quantity-input" id="from-quantity"></label>
+                        </div>
+                        <div class="from-basis basis" id="left-basis">Name of crypto</div>
+                    </li>
+                    <li class="rect body-item input-container" id="payment-wrapper">
+                        <button class="blue rect no-outline" id="payment-button">Proceed the payment</button>
+                        <div class="rules-info">
+                            <span>By clicking the button, you agree to the </span>
+                            <span>Rules</span>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="body body-right">
+                    <li class="rect body-item currency-container  prevent-select" id="to-currency-container">
+                        <div class="rect currency-wrapper" id="to-currency-wrapper">
+                            <span id="to-basis">ETH</span>
+                            <span id="to-coin"></span>
+                        </div>
+                        <div class="currency-list-wrapper" id="to-menu">
+                            <ul class=" currency-list">
+                                <li class="crypto currency-item ">
+                                    <span class="to-currency currency-name">Bitcoin</span>
+                                    <span class="currency-logo Bitcoin"></span>
+                                </li>
+                                <li class="crypto currency-item ">
+                                    <span class="to-currency currency-name">Ethereum</span>
+                                    <span class="currency-logo Ethereum"></span>
+                                </li>
+
+                                <li class="crypto currency-item ">
+                                    <span class="to-currency currency-name">Cardano</span>
+                                    <span class="currency-logo Cardano"></span>
+                                </li>
+
+                                <li class="crypto currency-item ">
+                                    <span class="to-currency currency-name">Binance Coin</span>
+                                    <span class="currency-logo Binance"></span>
+                                </li>
+
+                                <li class="crypto currency-item ">
+                                    <span class="to-currency currency-name">Dash</span>
+                                    <span class="currency-logo Dash"></span>
+                                </li>
+
+                                <li class="crypto currency-item ">
+                                    <span class="to-currency currency-name">Dogecoin</span>
+                                    <span class="currency-logo Dogecoin"></span>
+                                </li>
+
+                                <li class="fiat currency-item ">
+                                    <span class="to-currency currency-name">Dollar</span>
+                                    <span class="currency-logo Dollar"></span>
+                                </li>
+
+                                <li class="fiat currency-item ">
+                                    <span class="to-currency currency-name">Euro</span>
+                                    <span class="currency-logo Euro"></span>
+                                </li>
+
+                                <li class="fiat currency-item ">
+                                    <span class="to-currency currency-name">Krona</span>
+                                    <span class="currency-logo Krona"></span>
+                                </li>
+                                <li class="fiat currency-item ">
+                                    <span class="to-currency currency-name">Ruble</span>
+                                    <span class="currency-logo Ruble"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="rect body-item input-container" id="to-container">
+                        <div class="item-input no-outline " id="to-quantity-text">How much do you get:</div>
+                        <div class="to-wrapper">
+                            <div id="to-quantity"></div>
+                            <div class="to-basis basis" id="right-basis">Name of crypto</div>
+                        </div>
+                    </li>
+                    <li class="rect body-item input-container" id="address-container">
+                        <div class="input-wrapper" id="address-wrapper">
+                            <input id="address-input" class="item-input no-outline"
+                                   placeholder="Your crypto address:">
+                            <label for="address-input" id="address"></label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js "
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js "
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+        crossorigin="anonymous"
+></script>
+<script src="js/exchange-banner-fetch-script.js "></script>
+<script src="js/exchange-banner-nav-script.js "></script>
+
+</body>
+</html>
