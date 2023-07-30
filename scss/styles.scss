@@ -15,9 +15,11 @@
 .no-outline {
   border: none;
 }
+
 .no-outline:focus {
   outline: none;
 }
+
 body {
   font-family: Readex-Pro;
 }
@@ -28,6 +30,7 @@ footer {
   display: flex;
   justify-content: center;
   height: 100px;
+
   .header {
     height: 100%;
     width: 1500px;
@@ -35,29 +38,36 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
+
     .nav-bar {
       display: flex;
       flex-direction: row;
       align-items: center;
+
       .nav-el {
         margin-left: 29px;
       }
+
       .nav-text-wrapper {
         font-size: 18px;
         font-weight: 320;
         display: flex;
         transition: ease-in-out;
         transition-duration: 0.1s;
+
         path,
         .border {
           stroke: #516ae4;
         }
+
         .dot {
           fill: #516ae4;
         }
+
         &:hover {
           color: #516ae4;
         }
+
         .nav-ico {
           margin-left: 8px;
         }
@@ -94,6 +104,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   .description-banner-wrapper {
     display: flex;
     width: 100%;
@@ -132,6 +143,7 @@ footer {
           font-weight: 400;
           width: 30vw;
         }
+
         .secondary-text {
           font-size: 24px;
           font-weight: 200;
@@ -140,11 +152,13 @@ footer {
       }
     }
   }
+
   .exchange-banner-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
     .exchange-banner {
       width: 1000px;
       height: 560px;
@@ -156,6 +170,7 @@ footer {
       border-color: rgba(154, 130, 219, 0.6);
       background-color: rgba(244, 244, 244, 0.2);
       padding: 30px;
+
       .exchange-banner-header {
         width: 100%;
         display: flex;
@@ -167,11 +182,13 @@ footer {
         border-bottom: solid;
         border-width: 1px;
         border-color: rgba(154, 130, 219, 0.6);
+
         .header-left {
           width: 470px;
           height: 100%;
           display: flex;
           align-items: center;
+
           .enum-one {
             display: flex;
             width: 49px;
@@ -185,13 +202,16 @@ footer {
             font-family: Arial, Helvetica, sans-serif;
             color: white;
           }
+
           .left-text {
             margin-left: 14px;
             font-size: 16px;
           }
         }
+
         .header-right {
           display: flex;
+
           .header-nav {
             padding: 10px 20px;
             display: flex;
@@ -207,11 +227,13 @@ footer {
             background-color: white;
             border-color: #dadada;
             cursor: pointer;
+
             &:hover {
               background-color: #516ae4;
               color: white;
             }
           }
+
           #all {
             background-color: #516ae4;
             color: white;
@@ -225,10 +247,12 @@ footer {
         font-size: 33px;
         font-weight: 500;
       }
+
       .exchange-banner-body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .left-side,
         .right-side {
           display: flex;
@@ -236,6 +260,7 @@ footer {
           align-items: center;
           justify-content: space-between;
         }
+
         .exchange-field {
           display: flex;
           justify-content: space-between;
@@ -248,10 +273,12 @@ footer {
           padding: 0 20px;
           font-size: 14px;
           font-weight: 600;
+
           .left-text-wrapper {
             color: rgba(0, 0, 0, 0.5);
           }
         }
+
         .exchange-submit-field {
           display: flex;
           justify-content: space-between;
@@ -279,21 +306,25 @@ footer {
             border: solid;
             border-color: #516ae4;
             border-width: 1px;
+
             &:hover {
               color: #516ae4;
               font-weight: 500;
               background-color: white;
               border-color: #dadada;
             }
+
             &:active {
               transition: none;
               border-color: #516ae4;
             }
           }
+
           .exchange-policy {
             width: 202px;
             font-size: 12px;
             color: rgba(0, 0, 0, 0.5);
+
             .exchange-rules {
               text-decoration: underline;
             }
@@ -302,58 +333,71 @@ footer {
       }
     }
   }
+
   .advantages-banner-wrapper {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+
     .advantages-banner {
       display: flex;
       justify-content: center;
       align-items: center;
+
       .banner-img-wrapper {
         height: 400px;
         width: 370px;
+
         #donut {
           opacity: 0.5;
           margin: 30px 0 0 150px;
         }
+
         #box {
           margin: 0 100px 0 0;
         }
+
         #sphere {
           opacity: 0.5;
         }
+
         #ellipse {
           margin-left: auto;
         }
       }
+
       .advantages-wrapper {
         padding: 100px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .advantages-header {
           font-size: 48px;
           height: 61px;
           padding-bottom: 100px;
         }
+
         .advantages-body {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           width: 720px;
           height: 370px;
+
           .advantages-item-wrapper {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             font-size: 20px;
+
             .advantages-item {
               width: 230px;
               display: flex;
               align-items: center;
               flex-direction: column;
+
               .item-ico {
                 width: 68px;
                 height: 65px;
@@ -363,6 +407,7 @@ footer {
                 align-items: center;
                 justify-content: center;
               }
+
               .item-text-wrapper {
                 text-align: center;
                 display: flex;
@@ -372,6 +417,7 @@ footer {
                 .main-text {
                   font-weight: 600;
                 }
+
                 .secondary-text {
                   font-size: 18px;
                   font-weight: 300;
@@ -386,6 +432,7 @@ footer {
       }
     }
   }
+
   .reviews-banner-wrapper {
     width: 100%;
     display: flex;
@@ -394,6 +441,7 @@ footer {
     height: 900px;
     padding-bottom: 40px;
     background: linear-gradient(#9a82db, #fff);
+
     .reviews-banner {
       width: 1440px;
       height: 700px;
@@ -408,17 +456,20 @@ footer {
       border-width: 1px;
       border-radius: 20px;
       border-color: rgba(154, 130, 219, 0.6);
+
       .reviews-wrapper {
         width: 100%;
         height: 460px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         .reviews {
           display: flex;
           justify-content: space-between;
           align-items: center;
           width: 100%;
+
           .reviews-card {
             width: 357px;
             height: 207px;
@@ -427,10 +478,12 @@ footer {
             padding: 30px;
             background-color: rgba(255, 255, 255, 1);
             border-radius: 20px;
+
             .card-header {
               display: flex;
               flex-direction: row;
               align-items: center;
+
               #comment1 {
                 width: 56px;
                 height: 56px;
@@ -440,6 +493,7 @@ footer {
                 border-width: 1.77px;
                 content: url("../icons/comment1.jpg");
               }
+
               .header-text {
                 margin-left: 11px;
                 display: flex;
@@ -447,6 +501,7 @@ footer {
                 align-items: start;
               }
             }
+
             .card-body {
               display: flex;
               justify-content: center;
@@ -475,12 +530,14 @@ footer {
         border: solid;
         border-color: #516ae4;
         border-width: 1px;
+
         &:hover {
           color: #516ae4;
           font-weight: 500;
           background-color: white;
           border-color: #dadada;
         }
+
         &:active {
           transition: none;
           border-color: #516ae4;
@@ -499,6 +556,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-weight: 300;
+
   .page-wrapper {
     width: 100%;
     height: 1259px;
@@ -506,6 +564,7 @@ footer {
     justify-content: center;
     padding-top: 96px;
     background: rgba(255, 255, 255, 0.8);
+
     .rules-wrapper {
       width: 727px;
       height: 1090px;
@@ -513,14 +572,17 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       .header-text {
         font-size: 65px;
         display: flex;
       }
+
       .subheader-text {
         font-size: 40px;
         display: flex;
       }
+
       .main-text-wrapper {
         font-size: 25px;
         opacity: 0.5;
@@ -530,6 +592,7 @@ footer {
         height: 900px;
       }
     }
+
     .reviews-wrapper {
       width: 456px;
       height: 984px;
@@ -543,12 +606,14 @@ footer {
       border: solid;
       border-width: 1px;
       border-color: #b7b7b7;
+
       .reviews-header-text {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 28px;
       }
+
       .reviews {
         display: flex;
         flex-direction: column;
@@ -571,6 +636,7 @@ footer {
             display: flex;
             flex-direction: row;
             align-items: center;
+
             #comment1 {
               width: 56px;
               height: 56px;
@@ -580,6 +646,7 @@ footer {
               border-width: 1.77px;
               content: url("../icons/comment1.jpg");
             }
+
             .header-text {
               margin-left: 11px;
               display: flex;
@@ -587,6 +654,7 @@ footer {
               align-items: start;
             }
           }
+
           .card-body {
             display: flex;
             justify-content: center;
@@ -609,17 +677,20 @@ footer {
   justify-content: center;
   font-weight: 300;
   height: calc(100vh - 100px);
+
   .page-wrapper {
     background: rgba(255, 255, 255, 0.8);
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 135px 154px 0px 154px;
+
     .application-wrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 1200px;
+
       .pair-wrapper,
       .submit-wrapper {
         display: flex;
@@ -628,6 +699,7 @@ footer {
 
         // height: 1050px;
       }
+
       .pair-wrapper {
         width: 585px;
         // background: green;
@@ -650,6 +722,7 @@ footer {
           flex-direction: column;
           justify-content: space-between;
           height: 270px;
+
           .crypto,
           .details {
             width: 514px;
@@ -662,6 +735,7 @@ footer {
             display: flex;
             align-items: center;
             flex-direction: row;
+
             .space-box {
               width: 64px;
             }
@@ -670,11 +744,13 @@ footer {
               font-size: 18px;
               font-weight: 400;
               line-height: 22px;
+
               .upper-text {
                 color: rgba(0, 0, 0, 0.5);
               }
             }
           }
+
           .details {
             .switch-arrows {
               width: 64px;
@@ -704,6 +780,7 @@ footer {
   justify-content: center;
   font-weight: 300;
   height: calc(100vh - 100px);
+
   .page-wrapper {
     background: rgba(255, 255, 255, 0.8);
     width: 100%;
@@ -711,21 +788,25 @@ footer {
     justify-content: center;
     height: calc(100vh - 100px);
     padding-top: 60px;
+
     .section-wrapper {
       display: flex;
       justify-content: space-between;
       width: 1170px;
+
       .partners-wrapper {
         width: 542px;
         height: 670px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         .partners-header-text {
           font-size: 60px;
           font-weight: 400;
           height: 80px;
         }
+
         .partners-referral-link-wrapper {
           height: 230px;
           display: flex;
@@ -736,12 +817,14 @@ footer {
             font-size: 45px;
             font-weight: 400;
           }
+
           .referall-main-text {
             font-size: 24px;
             font-weight: 300;
             opacity: 0.6;
           }
         }
+
         .partners-discount-wrapper {
           display: flex;
           flex-direction: column;
@@ -753,6 +836,7 @@ footer {
             width: 230px;
             display: flex;
             align-items: center;
+
             .enum {
               width: 66px;
               height: 66px;
@@ -765,10 +849,12 @@ footer {
               font-size: 34px;
               font-weight: 300;
             }
+
             .discount-wrapper {
               margin-left: 14px;
               font-size: 24px;
               font-weight: 300;
+
               .lower-text {
                 opacity: 0.5;
               }
@@ -776,6 +862,7 @@ footer {
           }
         }
       }
+
       .referalls-wrapper {
         width: 542px;
         height: 670px;
@@ -785,6 +872,7 @@ footer {
         border-color: rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         padding: 37px;
+
         .referrals-header-wrapper {
           width: 100%;
           height: 48px;
@@ -796,20 +884,24 @@ footer {
           font-size: 24px;
           transition: ease-in-out;
           transition-duration: 0.1s;
+
           .referral-button {
             background: none;
             border: none;
             height: fit-content;
             width: fit-content;
             cursor: pointer;
+
             &:hover {
               color: #516ae4;
             }
           }
+
           #Recent {
             margin-left: 22px;
           }
         }
+
         .referrals-log-wrapper {
           height: 100%;
           width: 100%;
@@ -817,12 +909,14 @@ footer {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
           .button-wrapper {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             height: 124px;
+
             .log-btn {
               padding: 10px;
               border-radius: 10px;
@@ -838,6 +932,7 @@ footer {
               font-family: Roboto-Slab;
               background-color: #f1f3fe;
               color: #516ae4;
+
               &:hover {
                 background-color: #516ae4;
                 color: #f1f3fe;
@@ -853,10 +948,10 @@ footer {
 #login-page,
 #registration-page {
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.5),
-    rgba(154, 130, 219, 0.5),
-    rgba(255, 255, 255, 0.5)
+                  135deg,
+                  rgba(255, 255, 255, 0.5),
+                  rgba(154, 130, 219, 0.5),
+                  rgba(255, 255, 255, 0.5)
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -868,6 +963,7 @@ footer {
   font-weight: 300;
   height: calc(100vh - 100px);
   color: black;
+
   .authorization-wrapper {
     width: 1001px;
     height: 731px;
@@ -879,26 +975,31 @@ footer {
     border: solid 1px;
     border-color: rgba(0, 0, 0, 0.2);
     background-color: #f4f5fa;
+
     .authorization-header {
       width: 100%;
       height: 56px;
       border-bottom: solid 1px;
       border-color: rgba(0, 0, 0, 0.2);
+
       .link-wrapper {
         display: flex;
         font-size: 20px;
         font-weight: 400;
         transition: ease-in-out;
         transition-duration: 0.1s;
+
         #registration-button {
           margin-left: 28px;
           opacity: 0.5;
+
           &:hover {
             opacity: 1;
           }
         }
       }
     }
+
     .authorization-body {
       margin-top: 55px;
       width: 456px;
@@ -907,16 +1008,19 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+
       .authorization-header-text-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         height: 100px;
+
         .authorization-header-text {
           font-size: 40px;
           font-weight: 400;
         }
+
         .authorization-subheader-text {
           font-size: 20px;
           font-weight: 300;
@@ -929,6 +1033,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         height: 149px;
+
         .input-field {
           width: 456px;
           height: 64px;
@@ -960,12 +1065,14 @@ footer {
         justify-content: center;
         align-items: center;
         font-family: Roboto-Slab;
+
         &:hover {
           color: #516ae4;
           font-weight: 500;
           background-color: white;
           border-color: #dadada;
         }
+
         &:active {
           transition: none;
           border-color: #516ae4;
@@ -978,21 +1085,26 @@ footer {
 #registration-page {
   .authorization-wrapper {
     height: 800px;
+
     .authorization-header {
       .link-wrapper {
         #authorization-button {
           opacity: 0.5;
+
           &:hover {
             opacity: 1;
           }
         }
+
         #registration-button {
           opacity: 1;
         }
       }
     }
+
     .authorization-body {
       height: 550px;
+
       .authorization-field-wrapper {
         height: 330px;
       }

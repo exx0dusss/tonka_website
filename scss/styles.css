@@ -25,41 +25,24 @@ body {
 header,
 footer {
   z-index: 101;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100px;
 }
 header .header,
 footer .header {
   height: 100%;
   width: 1500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   background-color: #ffffff;
 }
 header .header .nav-bar,
 footer .header .nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 header .header .nav-bar .nav-el,
 footer .header .nav-bar .nav-el {
@@ -69,13 +52,9 @@ header .header .nav-bar .nav-text-wrapper,
 footer .header .nav-bar .nav-text-wrapper {
   font-size: 18px;
   font-weight: 320;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }
 header .header .nav-bar .nav-text-wrapper path,
 header .header .nav-bar .nav-text-wrapper .border,
@@ -105,15 +84,9 @@ footer .header .nav-bar .log-btn {
   background-color: #f1f3fe;
   color: #516ae4;
   font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-family: Roboto-Slab;
 }
@@ -124,52 +97,28 @@ footer .header .nav-bar .log-btn:hover {
 }
 
 #main-page {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #9a82db));
   background: linear-gradient(#fff, #9a82db 60%);
   background-position: center;
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 #main-page .description-banner-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #main-page .description-banner-wrapper .main-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: 100%;
 }
 #main-page .description-banner-wrapper .main-banner .banner-img-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #main-page .description-banner-wrapper .main-banner .banner-img-wrapper .banner-img-bg {
   content: url("../files/crate-left-bckg.svg");
@@ -180,19 +129,10 @@ footer .header .nav-bar .log-btn:hover {
   padding: 80px 0;
   color: black;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 #main-page .description-banner-wrapper .main-banner .banner-text-wrapper .main-text {
   line-height: 64px;
@@ -207,26 +147,15 @@ footer .header .nav-bar .log-btn:hover {
 }
 #main-page .exchange-banner-wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #main-page .exchange-banner-wrapper .exchange-banner {
   width: 1000px;
   height: 560px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: solid;
   border-width: 1px;
   border-radius: 20px;
@@ -236,19 +165,10 @@ footer .header .nav-bar .log-btn:hover {
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   height: 79px;
   padding-bottom: 30px;
   border-bottom: solid;
@@ -258,27 +178,17 @@ footer .header .nav-bar .log-btn:hover {
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-left {
   width: 470px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-left .enum-one {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 49px;
   height: 49px;
   border-radius: 15px;
   background-color: #516ae4;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 23px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -289,25 +199,15 @@ footer .header .nav-bar .log-btn:hover {
   font-size: 16px;
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-header .header-right .header-nav {
   padding: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: ease-in-out;
+  justify-content: center;
+  align-items: center;
   transition: ease-in-out;
-  -webkit-transition-duration: 0.05s;
-          transition-duration: 0.05s;
+  transition-duration: 0.05s;
   border: solid;
   border-width: 1px;
   margin-left: 15px;
@@ -332,42 +232,21 @@ footer .header .nav-bar .log-btn:hover {
   font-weight: 500;
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .left-side,
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .right-side {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 447px;
   height: 75px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -381,15 +260,9 @@ footer .header .nav-bar .log-btn:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-submit-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 447px;
   height: 75px;
   margin-top: 16px;
@@ -408,10 +281,8 @@ footer .header .nav-bar .log-btn:hover {
   font-weight: 400;
   outline: none;
   cursor: pointer;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
-  -webkit-transition-duration: 0.05s;
-          transition-duration: 0.05s;
+  transition-duration: 0.05s;
   border: solid;
   border-color: #516ae4;
   border-width: 1px;
@@ -423,7 +294,6 @@ footer .header .nav-bar .log-btn:hover {
   border-color: #dadada;
 }
 #main-page .exchange-banner-wrapper .exchange-banner .exchange-banner-body .exchange-submit-field .exchange-btn:active {
-  -webkit-transition: none;
   transition: none;
   border-color: #516ae4;
 }
@@ -436,27 +306,15 @@ footer .header .nav-bar .log-btn:hover {
   text-decoration: underline;
 }
 #main-page .advantages-banner-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #main-page .advantages-banner-wrapper .advantages-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #main-page .advantages-banner-wrapper .advantages-banner .banner-img-wrapper {
   height: 400px;
@@ -477,16 +335,9 @@ footer .header .nav-bar .log-btn:hover {
 }
 #main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper {
   padding: 100px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 #main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-header {
   font-size: 48px;
@@ -494,71 +345,38 @@ footer .header .nav-bar .log-btn:hover {
   padding-bottom: 100px;
 }
 #main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
   width: 720px;
   height: 370px;
 }
 #main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 20px;
 }
 #main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item {
   width: 230px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
 #main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item .item-ico {
   width: 68px;
   height: 65px;
   background-color: #516ae4;
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 #main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item .item-text-wrapper {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 #main-page .advantages-banner-wrapper .advantages-banner .advantages-wrapper .advantages-body .advantages-item-wrapper .advantages-item .item-text-wrapper .main-text {
   font-weight: 600;
@@ -572,38 +390,22 @@ footer .header .nav-bar .log-btn:hover {
 }
 #main-page .reviews-banner-wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 900px;
   padding-bottom: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9a82db), to(#fff));
   background: linear-gradient(#9a82db, #fff);
 }
 #main-page .reviews-banner-wrapper .reviews-banner {
   width: 1440px;
   height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-weight: 300;
   padding: 68px 135px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(244, 244, 244, 0.2);
   border: solid;
   border-width: 1px;
@@ -613,54 +415,29 @@ footer .header .nav-bar .log-btn:hover {
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper {
   width: 100%;
   height: 460px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card {
   width: 357px;
   height: 207px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 30px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
 }
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card .card-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card .card-header #comment1 {
   width: 56px;
@@ -673,27 +450,14 @@ footer .header .nav-bar .log-btn:hover {
 }
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card .card-header .header-text {
   margin-left: 11px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: column;
+  align-items: start;
 }
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-wrapper .reviews .reviews-card .card-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-load-more {
@@ -701,24 +465,16 @@ footer .header .nav-bar .log-btn:hover {
   width: 100%;
   background-color: #516ae4;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 19px;
   font-weight: 500;
   border-width: 1px;
   cursor: pointer;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
-  -webkit-transition-duration: 0.05s;
-          transition-duration: 0.05s;
+  transition-duration: 0.05s;
   border: solid;
   border-color: #516ae4;
   border-width: 1px;
@@ -730,95 +486,58 @@ footer .header .nav-bar .log-btn:hover {
   border-color: #dadada;
 }
 #main-page .reviews-banner-wrapper .reviews-banner .reviews-load-more:active {
-  -webkit-transition: none;
   transition: none;
   border-color: #516ae4;
 }
 
 #rules-page {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #9a82db));
   background: linear-gradient(#fff, #9a82db 60%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 300;
 }
 #rules-page .page-wrapper {
   width: 100%;
   height: 1259px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 96px;
   background: rgba(255, 255, 255, 0.8);
 }
 #rules-page .page-wrapper .rules-wrapper {
   width: 727px;
   height: 1090px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #rules-page .page-wrapper .rules-wrapper .header-text {
   font-size: 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #rules-page .page-wrapper .rules-wrapper .subheader-text {
   font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #rules-page .page-wrapper .rules-wrapper .main-text-wrapper {
   font-size: 25px;
   opacity: 0.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 900px;
 }
 #rules-page .page-wrapper .reviews-wrapper {
   width: 456px;
   height: 984px;
   margin-left: 36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 50px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
@@ -827,60 +546,33 @@ footer .header .nav-bar .log-btn:hover {
   border-color: #b7b7b7;
 }
 #rules-page .page-wrapper .reviews-wrapper .reviews-header-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 28px;
 }
 #rules-page .page-wrapper .reviews-wrapper .reviews {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 780px;
 }
 #rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card {
   width: 357px;
   height: 207px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 30px;
   background-color: #f4f5fa;
   border-radius: 20px;
   font-size: 14px;
 }
 #rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card .card-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 #rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card .card-header #comment1 {
   width: 56px;
@@ -893,85 +585,46 @@ footer .header .nav-bar .log-btn:hover {
 }
 #rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card .card-header .header-text {
   margin-left: 11px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: column;
+  align-items: start;
 }
 #rules-page .page-wrapper .reviews-wrapper .reviews .reviews-card .card-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
 #application-page {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #9a82db));
   background: linear-gradient(#fff, #9a82db 60%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   font-weight: 300;
   height: calc(100vh - 100px);
 }
 #application-page .page-wrapper {
   background: rgba(255, 255, 255, 0.8);
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 135px 154px 0px 154px;
 }
 #application-page .page-wrapper .application-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   width: 1200px;
 }
 #application-page .page-wrapper .application-wrapper .pair-wrapper,
 #application-page .page-wrapper .application-wrapper .submit-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 #application-page .page-wrapper .application-wrapper .pair-wrapper {
   width: 585px;
@@ -989,16 +642,9 @@ footer .header .nav-bar .log-btn:hover {
   line-height: 55px;
 }
 #application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 270px;
 }
 #application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .crypto,
@@ -1010,16 +656,9 @@ footer .header .nav-bar .log-btn:hover {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  flex-direction: row;
 }
 #application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .crypto .space-box,
 #application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .details .space-box {
@@ -1037,15 +676,9 @@ footer .header .nav-bar .log-btn:hover {
 }
 #application-page .page-wrapper .application-wrapper .pair-wrapper .crypto-wrapper .details .switch-arrows {
   width: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #application-page .page-wrapper .application-wrapper .submit-wrapper {
   width: 507px;
@@ -1053,58 +686,35 @@ footer .header .nav-bar .log-btn:hover {
 }
 
 #partners-page {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #9a82db));
   background: linear-gradient(#fff, #9a82db 60%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   font-weight: 300;
   height: calc(100vh - 100px);
 }
 #partners-page .page-wrapper {
   background: rgba(255, 255, 255, 0.8);
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: calc(100vh - 100px);
   padding-top: 60px;
 }
 #partners-page .page-wrapper .section-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 1170px;
 }
 #partners-page .page-wrapper .section-wrapper .partners-wrapper {
   width: 542px;
   height: 670px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-header-text {
   font-size: 60px;
@@ -1113,16 +723,9 @@ footer .header .nav-bar .log-btn:hover {
 }
 #partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-referral-link-wrapper {
   height: 230px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-referral-link-wrapper .referall-header-text {
   font-size: 45px;
@@ -1134,40 +737,23 @@ footer .header .nav-bar .log-btn:hover {
   opacity: 0.6;
 }
 #partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-discount-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 278px;
 }
 #partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-discount-wrapper .list-wrapper {
   height: 76px;
   width: 230px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #partners-page .page-wrapper .section-wrapper .partners-wrapper .partners-discount-wrapper .list-wrapper .enum {
   width: 66px;
   height: 66px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #f1f3fe;
   color: #516ae4;
   border-radius: 20px;
@@ -1201,19 +787,13 @@ footer .header .nav-bar .log-btn:hover {
   color: black;
   font-weight: 300;
   font-size: 24px;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }
 #partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-header-wrapper .referral-button {
   background: none;
   border: none;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
 }
@@ -1226,34 +806,16 @@ footer .header .nav-bar .log-btn:hover {
 #partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-log-wrapper {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-log-wrapper .button-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height: 124px;
 }
 #partners-page .page-wrapper .section-wrapper .referalls-wrapper .referrals-log-wrapper .button-wrapper .log-btn {
@@ -1263,15 +825,9 @@ footer .header .nav-bar .log-btn:hover {
   width: 419px;
   height: 52px;
   font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-family: Roboto-Slab;
   background-color: #f1f3fe;
@@ -1288,19 +844,10 @@ footer .header .nav-bar .log-btn:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-weight: 300;
   height: calc(100vh - 100px);
   color: black;
@@ -1310,16 +857,9 @@ footer .header .nav-bar .log-btn:hover {
   width: 1001px;
   height: 731px;
   padding: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   border-radius: 20px;
   border: solid 1px;
   border-color: rgba(0, 0, 0, 0.2);
@@ -1334,15 +874,11 @@ footer .header .nav-bar .log-btn:hover {
 }
 #login-page .authorization-wrapper .authorization-header .link-wrapper,
 #registration-page .authorization-wrapper .authorization-header .link-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 20px;
   font-weight: 400;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }
 #login-page .authorization-wrapper .authorization-header .link-wrapper #registration-button,
 #registration-page .authorization-wrapper .authorization-header .link-wrapper #registration-button {
@@ -1358,35 +894,17 @@ footer .header .nav-bar .log-btn:hover {
   margin-top: 55px;
   width: 456px;
   height: 372px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 #login-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper,
 #registration-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
 }
 #login-page .authorization-wrapper .authorization-body .authorization-header-text-wrapper .authorization-header-text,
@@ -1401,19 +919,10 @@ footer .header .nav-bar .log-btn:hover {
 }
 #login-page .authorization-wrapper .authorization-body .authorization-field-wrapper,
 #registration-page .authorization-wrapper .authorization-body .authorization-field-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height: 149px;
 }
 #login-page .authorization-wrapper .authorization-body .authorization-field-wrapper .input-field,
@@ -1438,22 +947,14 @@ footer .header .nav-bar .log-btn:hover {
   font-weight: 400;
   outline: none;
   cursor: pointer;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
-  -webkit-transition-duration: 0.05s;
-          transition-duration: 0.05s;
+  transition-duration: 0.05s;
   border: solid;
   border-color: #516ae4;
   border-width: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-family: Roboto-Slab;
 }
 #login-page .authorization-wrapper .authorization-body .authorization-login-button:hover,
@@ -1465,7 +966,6 @@ footer .header .nav-bar .log-btn:hover {
 }
 #login-page .authorization-wrapper .authorization-body .authorization-login-button:active,
 #registration-page .authorization-wrapper .authorization-body .authorization-login-button:active {
-  -webkit-transition: none;
   transition: none;
   border-color: #516ae4;
 }
@@ -1488,3 +988,5 @@ footer .header .nav-bar .log-btn:hover {
 #registration-page .authorization-wrapper .authorization-body .authorization-field-wrapper {
   height: 330px;
 }
+
+/*# sourceMappingURL=styles.css.map */

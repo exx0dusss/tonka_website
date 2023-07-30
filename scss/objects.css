@@ -1,0 +1,23 @@
+#crate {
+    content: url("crate-left.svg");
+}
+
+#chain {
+    content: url("chain-right.svg");
+}
+
+#donut {
+    content: url("donut-left.svg");
+}
+
+#box {
+    content: url("box-right.svg");
+}
+
+#sphere {
+    content: url("sphere-left.svg");
+}
+
+#ellipse {
+    content: url("ellipse-right.svg");
+}
