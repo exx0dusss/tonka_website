@@ -274,14 +274,8 @@
   transition: ease-in-out;
   transition-duration: 0.02s;
 }
-.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#payment-wrapper #payment-button:hover {
-  cursor: pointer;
-  border: 1px solid rgba(205, 205, 205, 0.6);
-}
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#payment-wrapper #payment-button:active {
-  border: 1px solid #DADADA;
-  color: #C3C3C3;
-  background-color: #ffffff;
+  color: #516AE4;
 }
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#payment-wrapper .rules-info {
   font-size: 12px;

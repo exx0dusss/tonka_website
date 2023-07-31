@@ -8,16 +8,16 @@
   padding: 0 106px;
 
   .header-wrapper {
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     .header-logo {
       width: 245px;
       height: 61px;
       content: url("../files/tonka-logo.svg");
+
 
       &:hover {
         content: url("../files/tonka-logo-hover.svg");

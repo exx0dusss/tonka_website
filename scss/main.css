@@ -1,12 +1,129 @@
 #main-container {
-  height: 100vh;
-  width: 100%;
+  height: 2400px;
+  max-width: 100%;
   display: block;
 }
-#main-container #main-banner-container {
+#main-container #banner-container {
   width: 100%;
   height: 500px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-container #banner-container .icon-container {
+  position: absolute;
+  width: 100%;
+  height: 309px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 200px 0 0 0;
+}
+#main-container #banner-container .icon-container .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+#main-container #banner-container .icon-container .icon-wrapper #chest {
+  content: url("../files/crate-left.svg");
+}
+#main-container #banner-container .icon-container .icon-wrapper #chains {
+  content: url("../files/chain-right.svg");
+}
+#main-container #banner-container .icon-container .icon-wrapper .shadow {
+  content: url("../files/bg-ellipse.svg");
+  position: absolute;
+  width: auto;
+  max-height: 500px;
+}
+#main-container #banner-container .icon-container #right-chains-wrapper .shadow {
+  transform: rotate(180deg);
+}
+#main-container #banner-container #text-wrapper {
+  display: flex;
+  height: 309px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#main-container #banner-container #text-wrapper .text {
+  font-style: normal;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex-shrink: 0;
+  text-align: center;
+}
+#main-container #banner-container #text-wrapper #main-text {
+  width: 750px;
+  height: 236px;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+}
+#main-container #banner-container #text-wrapper #sub-text {
+  width: 502px;
+  height: 106px;
+  font-size: 23px;
+  font-weight: 200;
+  line-height: 32px;
+}
+#main-container .exchange-banner-container {
+  margin: 100px 0;
+}
+#main-container #advantages-container {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-container #advantages-container .icon-container {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+#main-container #advantages-container .icon-container .icon-wrapper {
+  display: flex;
+  height: 500px;
+  position: absolute;
+}
+#main-container #advantages-container .icon-container .icon-wrapper#left-donut-wrapper {
+  left: 120px;
+  width: 210px;
+  height: 210px;
+}
+#main-container #advantages-container .icon-container .icon-wrapper#left-donut-wrapper #donut {
+  content: url("../files/donut-left.svg");
+}
+#main-container #advantages-container .icon-container .icon-wrapper#left-sphere-wrapper {
+  left: 0;
+  bottom: 0;
+  width: 305px;
+  height: 305px;
+}
+#main-container #advantages-container .icon-container .icon-wrapper#left-sphere-wrapper #sphere {
+  content: url("../files/sphere-left.svg");
+}
+#main-container #advantages-container .icon-container .icon-wrapper#right-box-wrapper {
+  width: 210px;
+  height: 210px;
+  right: 130px;
+}
+#main-container #advantages-container .icon-container .icon-wrapper#right-box-wrapper #box {
+  content: url("../files/box-right.svg");
+}
+#main-container #advantages-container .icon-container .icon-wrapper#right-ellipse-wrapper {
+  right: 0;
+  bottom: 0;
+  width: 305px;
+  height: 305px;
+}
+#main-container #advantages-container .icon-container .icon-wrapper#right-ellipse-wrapper #ellipse {
+  content: url("../files/ellipse-right.svg");
 }
 
 /*# sourceMappingURL=main.css.map */

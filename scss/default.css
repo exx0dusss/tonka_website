@@ -119,6 +119,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 ul, li {
@@ -176,7 +178,7 @@ svg {
 }
 .button:active {
   border: 1px solid #DADADA;
-  color: #C3C3C3;
+  color: #516AE4;
   background-color: #ffffff;
 }
 

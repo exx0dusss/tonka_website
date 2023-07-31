@@ -340,15 +340,9 @@
                 transition: ease-in-out;
                 transition-duration: 0.02s;
 
-                &:hover {
-                  cursor: pointer;
-                  border: 1px solid rgba(205, 205, 205, .6);
-                }
-
                 &:active {
-                  border: 1px solid #DADADA;
-                  color: #C3C3C3;
-                  background-color: #ffffff;
+                  color: #516AE4;
+
                 }
               }
 
