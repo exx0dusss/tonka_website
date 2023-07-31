@@ -118,11 +118,19 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 ul, li {
   padding: 0;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .rect {
