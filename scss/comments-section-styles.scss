@@ -7,7 +7,6 @@
   align-items: center;
   padding: 56px 0;
 
-
   .comments-section-wrapper {
     width: 1169px;
     display: flex;
@@ -88,11 +87,14 @@
     }
 
     .all-reviews-button {
+      position: relative;
       width: 100%;
       height: 60px;
       border-radius: 20px;
       font-size: 19px;
       font-weight: 400;
+      overflow: hidden;
+      z-index: 101;
 
     }
   }

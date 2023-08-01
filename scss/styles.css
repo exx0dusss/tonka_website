@@ -97,9 +97,7 @@ footer .header .nav-bar .log-btn:hover {
 }
 
 #rules-page {
-  background: linear-gradient(#fff, #9a82db 60%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(#fff, #9a82db 60%) no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: center;

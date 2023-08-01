@@ -75,11 +75,14 @@
   height: 100%;
 }
 .comments-section-container .comments-section-wrapper .all-reviews-button {
+  position: relative;
   width: 100%;
   height: 60px;
   border-radius: 20px;
   font-size: 19px;
   font-weight: 400;
+  overflow: hidden;
+  z-index: 101;
 }
 
 /*# sourceMappingURL=comments-section-styles.css.map */

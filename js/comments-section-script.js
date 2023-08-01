@@ -12,7 +12,8 @@ reviewsButton.addEventListener("click", async function () {
 
     }
     toggleHiddenClass()
-    reviewsButton.scrollIntoView();
+    reviewsButton.scrollIntoView(true);
+
 
 });
 
@@ -20,5 +21,6 @@ function toggleHiddenClass() {
     expandComments.forEach(block => {
         block.classList.toggle('hidden');
     });
+
 }
 

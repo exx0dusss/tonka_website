@@ -1,0 +1,548 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .main-text {
+      font-weight: 600;
+
+    }
+
+    .sub-text {
+      font-weight: 400;
+    }
+  }
+
+  .application-container {
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .application-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1200px;
+      height: 1100px;
+      padding: 42px;
+
+      .data-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        width: 609px;
+        height: 100%;
+
+        .data-header-text {
+          font-size: 58px;
+          font-weight: 600;
+        }
+
+        .data-pair-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: start;
+          width: 510px;
+          height: 360px;
+
+          .pair-header-text {
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          .pair-data-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 514px;
+            height: 281px;
+            padding-left: 13px;
+
+            .data-item-wrapper {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              background-color: white;
+              padding: 0 14px;
+              width: 100%;
+              height: 71px;
+              border: 2px solid rgba(0, 0, 0, 0.10);
+
+              .icon-wrapper .icon {
+                width: 59px;
+                height: 59px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &#switch {
+                  content: url("../files/advantages/arrows.svg");
+                }
+              }
+
+              .text-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                width: 95px;
+
+                .main-text {
+                  color: rgba(0, 0, 0, 0.50);
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+
+                .sub-text {
+                  color: #000;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  flex-shrink: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .data-course-wrapper {
+          width: 100%;
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: start;
+
+          .button-wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: 48px;
+
+            .select-button {
+              margin-left: 13px;
+              width: 90px;
+              height: 100%;
+              border-radius: 30px;
+              color: #FFF;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+
+          .text-wrapper {
+            width: 500px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            font-weight: 400;
+
+            .main-text {
+              font-size: 27px;
+            }
+
+            .sub-text {
+              color: rgba(0, 0, 0, 0.50);
+              font-size: 16px;
+            }
+          }
+
+          .step-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            width: 100%;
+            height: 230px;
+
+            .step-wrapper {
+              width: 450px;
+              height: 89px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .number {
+                height: 70px;
+                width: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: #F1F3FE;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                #step-two {
+                  color: rgba(81, 106, 228, 0.60) !important;
+                }
+              }
+
+              .text-wrapper {
+                height: 100%;
+                width: 333px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                font-weight: 400;
+
+                .main-text {
+                  font-size: 22px;
+                }
+
+                .sub-text {
+                  color: rgba(0, 0, 0, 0.50);
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+      .submission-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1040px;
+        width: 507px;
+
+        .form-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 914px;
+          background-color: white;
+          border-radius: 20px;
+          padding: 21px 42px;
+
+          .header-text-wrapper {
+            width: 100%;
+            height: 71px;
+            font-size: 41px;
+            font-weight: 500;
+
+            .line {
+              width: 100%;
+              height: 2px;
+              display: flex;
+              background-color: rgba(0, 0, 0, 0.20);
+            }
+          }
+
+          .payment-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 750px;
+
+            .crypto-wrapper {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 153px;
+              background-color: #f4f5fa;
+              border-radius: 15px;
+
+              .data-wrapper {
+                width: 235px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                padding-top: 20px;
+
+                .main-text {
+                  color: rgba(0, 0, 0, 0.50);
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 300;
+                  line-height: normal;
+                }
+
+                .text {
+                  color: #000;
+                  font-size: 22px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+
+              }
+
+              .address-wrapper {
+                top: 40px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 22px;
+                width: 335px;
+                height: 55px;
+                border-radius: 15px;
+                border: 1px solid rgba(0, 0, 0, 0.20);
+                background: #FFF;
+
+                .text-wrapper {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: start;
+                  font-weight: 400;
+                  font-size: 13px;
+                  line-height: normal;
+
+                  .main-text {
+                    color: rgba(0, 0, 0, 0.30);
+                  }
+
+                  .sub-text {
+                    color: rgba(0, 0, 0, 0.80);
+                  }
+                }
+
+                .icon-wrapper {
+                  width: 34px;
+                  height: 37px;
+                  padding: 5px;
+                  border-radius: 5px;
+
+                  .icon {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &#copy {
+                      content: url("../files/advantages/copy.svg");
+                    }
+                  }
+
+
+                }
+              }
+            }
+
+            .qr-wrapper {
+              width: 100%;
+              height: 258px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #f4f5fa;
+              border-radius: 15px;
+
+              .icon-wrapper {
+                width: 206px;
+                height: 206px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+
+                .icon {
+                  width: 150px;
+                  height: 150px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  &#qr {
+                    content: url("../files/advantages/qr.svg");
+                  }
+                }
+
+              }
+
+              .text-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 115px;
+                height: 131px;
+                font-style: normal;
+                line-height: normal;
+                margin-left: 20px;
+
+                .main-text {
+                  color: #000;
+                  font-size: 18px;
+                  font-weight: 600;
+                }
+
+                .sub-text {
+                  color: rgba(0, 0, 0, 0.50);
+                  font-size: 12px;
+                  font-weight: 400;
+                }
+              }
+            }
+
+            .help-wrapper {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: start;
+              width: 100%;
+              height: 200px;
+
+              .text-wrapper {
+                height: 190px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                font-style: normal;
+                line-height: normal;
+                text-align: start;
+
+                .main-text {
+                  color: #000;
+                  font-size: 24px;
+                  font-weight: 600;
+                }
+
+                .sub-text {
+                  color: rgba(0, 0, 0, 0.50);
+                  font-size: 15px;
+                  font-weight: 400;
+                }
+              }
+
+              .button-wrapper {
+                height: 48px;
+                width: 100%;
+
+                .button {
+                  height: 100%;
+                  width: 120px;
+                  text-align: center;
+                  font-size: 17px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                }
+              }
+            }
+
+
+          }
+
+        }
+
+        .date-wrapper {
+          width: 507px;
+          height: 91px;
+          padding: 0 42px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          border-radius: 15px;
+          background: #FFF;
+
+          .icon-wrapper {
+            width: 54px;
+            height: 51px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #calendar {
+              width: 28px;
+              height: 30px;
+              content: url("../files/advantages/calendar.svg");
+            }
+          }
+
+          .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            margin-left: 18px;
+            height: 40px;
+            font-style: normal;
+            line-height: normal;
+            font-weight: 400;
+            font-size: 16px;
+
+            .main-text {
+              color: rgba(0, 0, 0, 0.50);
+            }
+
+            .sub-text {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .attention-container {
+    width: 100%;
+    height: 406px;
+    background: #F4F5FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text-wrapper {
+      width: 1159px;
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      flex-direction: column;
+      font-style: normal;
+      line-height: normal;
+
+      .main-text {
+        color: #000;
+        font-size: 64px;
+        font-weight: 600;
+      }
+
+      .sub-text {
+        color: rgba(0, 0, 0, 0.60);
+        font-size: 19px;
+        font-weight: 400;
+      }
+    }
+
+  }
+}
