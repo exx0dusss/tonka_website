@@ -72,8 +72,8 @@
                                 <div class="rect icon"></div>
                             </div>
                             <div class="text-wrapper">
-                                <div class="main-text"><span>Crypto</span></div>
-                                <div class="sub-text"><span>Amount</span></div>
+                                <div class="main-text"><span id="from-basis">Crypto</span></div>
+                                <div class="sub-text"><span id="from-quantity-input">Amount</span></div>
                             </div>
 
                         </li>
@@ -82,8 +82,8 @@
                                 <div class="icon"></div>
                             </div>
                             <div class="text-wrapper">
-                                <div class="main-text"><span>Crypto</span></div>
-                                <div class="sub-text"><span>Amount</span></div>
+                                <div class="main-text"><span id="to-basis">Crypto</span></div>
+                                <div class="sub-text"><span id="to-quantity-text">Amount</span></div>
                             </div>
                         </li>
                         <li class="rect data-item-wrapper">
@@ -93,18 +93,18 @@
                             </div>
                             <div class="text-wrapper">
                                 <div class="main-text"><span>End details</span></div>
-                                <div class="sub-text"><span>user code</span></div>
+                                <div class="sub-text"><span id="address-input">user code</span></div>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="data-course-wrapper">
                     <div class="button-wrapper">
-                        <input type="radio" id="fixed-input" name="course-button-group" checked hidden>
-                        <label for="fixed-input" class="blue rect select-button" id="Fixed">Fixed</label>
+                        <input checked hidden id="fixed-input" name="course-button-group" type="radio">
+                        <label class="blue rect select-button" for="fixed-input" id="Fixed">Fixed</label>
 
-                        <input type="radio" id="timer-input" name="course-button-group" hidden>
-                        <label for="timer-input" class="blue rect select-button" id="Timer">Timer</label>
+                        <input hidden id="timer-input" name="course-button-group" type="radio">
+                        <label class="blue rect select-button" for="timer-input" id="Timer">Timer</label>
 
 
                     </div>
@@ -273,6 +273,8 @@
         </div>
     </div>
 </header>
+
+<script src="./js/application-page-receive.js"></script>
 
 <script
         crossorigin="anonymous"

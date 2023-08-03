@@ -62,25 +62,37 @@
 </header>
 
 <main id="main-container">
-    <section class="login-container">
-        <div class="login-wrapper">
+    <section class="profile-container">
+        <div class="profile-wrapper">
             <div class="header-wrapper">
                 <div class="button-wrapper">
                     <input checked hidden id="authorization-input" name="profile-button-group" type="radio">
                     <label class="profile-button" for="authorization-input" id="Authorization">Authorization</label>
 
-                    <input hidden id="registration-input" name="profile-button-group" type="radio">
+                    <input hidden id="registration-input" name="profile-button-group"
+                           onclick="window.location.href='signup.html'; return false;"
+                           type="radio">
                     <label class="profile-button" for="registration-input" id="Registration">Registration</label>
                 </div>
                 <div class="line"></div>
             </div>
             <div class="body-wrapper">
                 <div class="text-wrapper">
-                    <div class="main-text"></div>
-                    <div class="sub-text"></div>
+                    <div class="main-text"><span>Authorization</span></div>
+                    <div class="sub-text"><span>Welcome to Tonka coin!</span></div>
                 </div>
-                <div class="input-wrapper"></div>
-                <div class="authorization-button"></div>
+                <form action="error.html" class="input-wrapper">
+                    <input class="item-input no-outline" id="login-input" placeholder="Enter the login:" required>
+                    <label for="login-input" id="login"></label>
+
+                    <input class="item-input no-outline" id="password-input" placeholder="Enter the password:"
+                           required type="password">
+                    <label for="password-input" id="password"></label>
+
+                    <input class="blue rect button profile-button no-outline" type="submit"
+                           value="Log in">
+                </form>
+
             </div>
         </div>
     </section>

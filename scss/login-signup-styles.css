@@ -1,11 +1,11 @@
-.login-container {
+.profile-container {
   width: 100%;
   height: 842px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login-container .login-wrapper {
+.profile-container .profile-wrapper {
   width: 1001px;
   height: 731px;
   display: flex;
@@ -17,7 +17,7 @@
   background: #F4F5FA;
   padding: 31px 52px;
 }
-.login-container .login-wrapper .header-wrapper {
+.profile-container .profile-wrapper .header-wrapper {
   width: 100%;
   height: 50px;
   display: flex;
@@ -25,17 +25,102 @@
   justify-content: space-between;
   align-items: start;
 }
-.login-container .login-wrapper .header-wrapper .button-wrapper {
-  width: 271px;
+.profile-container .profile-wrapper .header-wrapper .button-wrapper {
   height: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.login-container .login-wrapper .header-wrapper .line {
+.profile-container .profile-wrapper .header-wrapper .button-wrapper .profile-button {
+  cursor: pointer;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+  text-underline-offset: 30px;
+  text-decoration-color: #516AE4;
+  text-decoration-thickness: 3px;
+}
+.profile-container .profile-wrapper .header-wrapper .button-wrapper .profile-button#Registration {
+  margin-left: 28px;
+}
+.profile-container .profile-wrapper .header-wrapper .button-wrapper input[type=radio]:not(:checked) + .profile-button {
+  transition: ease-in-out;
+  transition-duration: 0.02s;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.profile-container .profile-wrapper .header-wrapper .button-wrapper input[type=radio]:not(:checked) + .profile-button:hover {
+  color: rgba(0, 0, 0, 0.25);
+}
+.profile-container .profile-wrapper .header-wrapper .line {
   width: 100%;
   height: 1px;
   background: rgba(0, 0, 0, 0.2);
+}
+.profile-container .profile-wrapper .body-wrapper {
+  height: 370px;
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+}
+.profile-container .profile-wrapper .body-wrapper#signup-wrapper {
+  height: 538px;
+}
+.profile-container .profile-wrapper .body-wrapper .text-wrapper {
+  height: 95px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  line-height: normal;
+  color: #000;
+}
+.profile-container .profile-wrapper .body-wrapper .text-wrapper .main-text {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+.profile-container .profile-wrapper .body-wrapper .text-wrapper .sub-text {
+  font-size: 20px;
+  font-weight: 200;
+}
+.profile-container .profile-wrapper .body-wrapper .input-wrapper {
+  height: 240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-container .profile-wrapper .body-wrapper .input-wrapper#registration-form {
+  height: 405px;
+}
+.profile-container .profile-wrapper .body-wrapper .input-wrapper .item-input {
+  padding: 16px 19px;
+  height: 64px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #FFF;
+  color: black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 228.571% */
+}
+.profile-container .profile-wrapper .body-wrapper .profile-button {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=login-signup-styles.css.map */

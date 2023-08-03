@@ -1,11 +1,11 @@
-.login-container {
+.profile-container {
   width: 100%;
   height: 842px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .login-wrapper {
+  .profile-wrapper {
     width: 1001px;
     height: 731px;
     display: flex;
@@ -26,20 +26,120 @@
       align-items: start;
 
       .button-wrapper {
-        width: 271px;
         height: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .profile-button {
 
+        .profile-button {
+          cursor: pointer;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-decoration: underline;
+          text-underline-offset: 30px;
+          text-decoration-color: #516AE4;
+          text-decoration-thickness: 3px;
+
+          &#Registration {
+            margin-left: 28px;
+          }
         }
+
+
+        input[type="radio"]:not(:checked) + .profile-button {
+          transition: ease-in-out;
+          transition-duration: 0.02s;
+          color: rgba(0, 0, 0, 0.50);
+
+          &:hover {
+            color: rgba(0, 0, 0, 0.250);
+          }
+
+          text-decoration: none;
+        }
+
       }
 
       .line {
         width: 100%;
         height: 1px;
         background: rgba(0, 0, 0, 0.20);
+      }
+    }
+
+    .body-wrapper {
+      height: 370px;
+      width: 456px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 55px;
+
+      &#signup-wrapper {
+        height: 538px;
+      }
+
+      .text-wrapper {
+        height: 95px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-style: normal;
+        line-height: normal;
+        color: #000;
+
+        .main-text {
+          text-align: center;
+          font-size: 40px;
+          font-weight: 400;
+        }
+
+        .sub-text {
+          font-size: 20px;
+          font-weight: 200;
+        }
+
+      }
+
+
+      .input-wrapper {
+        height: 240px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &#registration-form {
+          height: 405px;
+        }
+
+        .item-input {
+          padding: 16px 19px;
+          height: 64px;
+          width: 100%;
+          border-radius: 15px;
+          border: 1px solid rgba(0, 0, 0, 0.20);
+          background: #FFF;
+          color: black;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 32px; /* 228.571% */
+        }
+      }
+
+      .profile-button {
+        width: 100%;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
