@@ -72,16 +72,6 @@
 .exchange-banner-container .exchange-banner-wrapper .banner-header .info-wrapper .info-right #Cryptocurrency {
   min-width: 130px;
 }
-.exchange-banner-container .exchange-banner-wrapper .banner-header .info-wrapper .info-right input[type=radio]:not(:checked) + .select-button {
-  transition: ease-in-out;
-  transition-duration: 0.02s;
-  border: 1px solid #DADADA;
-  color: #C3C3C3;
-  background-color: #ffffff;
-}
-.exchange-banner-container .exchange-banner-wrapper .banner-header .info-wrapper .info-right input[type=radio]:not(:checked) + .select-button:hover {
-  border-color: white;
-}
 .exchange-banner-container .exchange-banner-wrapper .banner-header .line-wrapper {
   display: flex;
   width: 100%;

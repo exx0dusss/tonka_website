@@ -139,11 +139,24 @@
               width: 90px;
               height: 100%;
               border-radius: 30px;
-              color: #FFF;
               font-size: 18px;
               font-style: normal;
               font-weight: 400;
               line-height: normal;
+              color: white;
+
+            }
+
+            input[type="radio"]:not(:checked) + .select-button {
+              transition: ease-in-out;
+              transition-duration: 0.02s;
+              border: 1px solid #DADADA;
+              color: #516ae4;
+              background-color: #ffffff;
+
+              &:hover {
+                border-color: white;
+              }
             }
           }
 

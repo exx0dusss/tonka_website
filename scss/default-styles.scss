@@ -116,7 +116,7 @@ a:visited {
 body {
   font-family: Readex-Pro, serif;
   //background: linear-gradient(#fff, #9a82db 60%) center;
-  background: linear-gradient(#e3daf9, #e6e9fb 60%) center;
+  background: linear-gradient(#ded8fa, #e6e9fb 60%) center;
 
   color: black;
   display: flex;
@@ -188,6 +188,22 @@ svg {
     border: 1px solid #DADADA;
     color: #516AE4;
     background-color: #ffffff;
+  }
+}
+
+.select-button {
+  cursor: pointer;
+}
+
+input[type="radio"]:not(:checked) + .select-button {
+  transition: ease-in-out;
+  transition-duration: 0.02s;
+  border: 1px solid #DADADA;
+  color: #C3C3C3;
+  background-color: #ffffff;
+
+  &:hover {
+    border-color: white;
   }
 }
 
