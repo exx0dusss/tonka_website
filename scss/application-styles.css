@@ -73,14 +73,18 @@
   height: 71px;
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
-.main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .icon-wrapper .icon {
+.main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .icon-wrapper {
   width: 59px;
   height: 59px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .icon-wrapper .icon#switch {
+.main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .icon-wrapper .icon {
+  width: 40px;
+  height: 40px;
+}
+.main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .icon-wrapper #switch {
   content: url("../files/advantages/arrows.svg");
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .text-wrapper {
@@ -89,6 +93,7 @@
   justify-content: center;
   align-items: start;
   width: 95px;
+  margin-left: 13px;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .text-wrapper .main-text {
   color: rgba(0, 0, 0, 0.5);

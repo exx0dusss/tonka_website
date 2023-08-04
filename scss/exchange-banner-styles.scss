@@ -280,7 +280,18 @@
               align-items: center;
               display: flex;
               justify-content: flex-start;
+
+
             }
+
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            input:-webkit-autofill:active {
+              -webkit-box-shadow: 0 0 0 1000px white inset;
+              color: black;
+            }
+
 
             #to-quantity-text {
               color: rgba(0, 0, 0, .5);

@@ -228,6 +228,13 @@
   display: flex;
   justify-content: flex-start;
 }
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container input:-webkit-autofill,
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container input:-webkit-autofill:hover,
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container input:-webkit-autofill:focus,
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  color: black;
+}
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container #to-quantity-text {
   color: rgba(0, 0, 0, 0.5);
 }

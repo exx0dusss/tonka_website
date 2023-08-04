@@ -79,14 +79,19 @@
               height: 71px;
               border: 2px solid rgba(0, 0, 0, 0.10);
 
-              .icon-wrapper .icon {
+              .icon-wrapper {
                 width: 59px;
                 height: 59px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                &#switch {
+                .icon {
+                  width: 40px;
+                  height: 40px;
+                }
+
+                #switch {
                   content: url("../files/advantages/arrows.svg");
                 }
               }
@@ -97,6 +102,7 @@
                 justify-content: center;
                 align-items: start;
                 width: 95px;
+                margin-left: 13px;
 
                 .main-text {
                   color: rgba(0, 0, 0, 0.50);
@@ -493,6 +499,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
 
             #calendar {
               width: 28px;

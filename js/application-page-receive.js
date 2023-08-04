@@ -5,10 +5,11 @@ const toBasis = urlParams.get("toBasis");
 const toQuantityText = urlParams.get("toQuantity");
 const address = urlParams.get("address");
 
+document.getElementById("from-coin").classList.add(fromBasis)
 document.getElementById("from-basis").textContent = fromBasis
 document.getElementById("crypto-name").textContent = fromBasis
 
-
+document.getElementById("to-coin").classList.add(toBasis)
 document.getElementById("to-basis").textContent = toBasis
 document.getElementById("from-quantity-input").textContent = fromQuantity
 document.getElementById("to-quantity-text").textContent = toQuantityText
