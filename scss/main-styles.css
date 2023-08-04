@@ -11,12 +11,13 @@
 }
 #main-container #banner-container .icon-container {
   position: absolute;
-  width: 100%;
+  width: 150%;
   height: 309px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 200px 0 0 0;
+  transition: width 1s ease-in-out;
 }
 #main-container #banner-container .icon-container .icon-wrapper {
   display: flex;
