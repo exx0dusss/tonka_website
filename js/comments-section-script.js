@@ -11,7 +11,7 @@ commentsButton.addEventListener('click', () => {
         commentsButton.textContent = "Hide";
     } else {
         commentsSection.classList.remove('expanded');
-        commentsButton.textContent = "Show more comments";
+        commentsButton.textContent = "Show more reviews";
     }
 
     // Delay the scrolling to ensure the expansion animation has enough time to complete
@@ -21,5 +21,5 @@ commentsButton.addEventListener('click', () => {
         } else {
             container.scrollIntoView({behavior: 'smooth', block: 'start'});
         }
-    }, 600); // Adjust the delay as needed
+    }, 400);
 });
