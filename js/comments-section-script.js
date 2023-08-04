@@ -1,26 +1,25 @@
-const reviewsButton = document.getElementById('reviews-button')
-const commentsContainer = document.getElementById('comments-container')
-const expandComments = document.querySelectorAll('.expand-comments')
-reviewsButton.addEventListener("click", async function () {
-    if (commentsContainer.classList.contains("expand")) {
-        commentsContainer.classList.remove("expand");
-        reviewsButton.textContent = 'Read all latest reviews'
+const container = document.getElementById('comments-container');
+const commentsSection = document.getElementById('comments-section');
+const commentsButton = document.getElementById('comments-button');
 
+let isExpanded = false;
+
+commentsButton.addEventListener('click', () => {
+    isExpanded = !isExpanded;
+    if (isExpanded) {
+        commentsSection.classList.add('expanded');
+        commentsButton.textContent = "Hide";
     } else {
-        commentsContainer.classList.add("expand");
-        reviewsButton.textContent = 'Hide';
-
+        commentsSection.classList.remove('expanded');
+        commentsButton.textContent = "Show more comments";
     }
-    toggleHiddenClass()
-    reviewsButton.scrollIntoView(true);
 
-
+    // Delay the scrolling to ensure the expansion animation has enough time to complete
+    setTimeout(() => {
+        if (isExpanded) {
+            commentsButton.scrollIntoView({behavior: 'smooth', block: 'end'});
+        } else {
+            container.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+    }, 600); // Adjust the delay as needed
 });
-
-function toggleHiddenClass() {
-    expandComments.forEach(block => {
-        block.classList.toggle('hidden');
-    });
-
-}
-
