@@ -30,33 +30,43 @@
         <div class="header-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
-                    <a href="main.html">
+                    <a href="error.html">
                         <span class="navbar-text">Support</span>
                         <span class="navbar-item support"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="main.html">
+                    <a href="rules.html">
                         <span class="navbar-text">Rules</span>
                         <span class="navbar-item rules"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="main.html">
+                    <a href="partners.html">
                         <span class="navbar-text">Partners</span>
                         <span class="navbar-item partners"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="main.html">
+                    <a href="#comments-section">
                         <span class="navbar-text">Reviews</span>
                         <span class="navbar-item reviews"></span>
                     </a>
                 </li>
             </ul>
             <div class="profile-wrapper">
-                <button class="blue rect button profile-button no-outline">Log in</button>
-                <button class="blue rect button profile-button no-outline">Sign up</button>
+                <input checked hidden id="authorization-input-header" name="profile-button-group" type="radio"
+                       onclick="window.location.href='login.html'; return false;">
+                <label class="blue rect button profile-button no-outline" for="authorization-input-header"
+                       id="Authorization-header">Log
+                    in</label>
+
+                <input hidden id="registration-input-header" name="profile-button-group"
+                       onclick="window.location.href='signup.html'; return false;"
+                       type="radio">
+                <label class="blue rect button profile-button no-outline" for="registration-input-header"
+                       id="Registration-header">Sign
+                    up</label>
 
             </div>
         </div>
@@ -367,7 +377,7 @@
             </div>
         </div>
     </section>
-    <section class="comments-section-container ">
+    <section class="comments-section-container" id="comments-section">
         <div class="comments-section-wrapper ">
             <div class="comments-container" id="comments-container">
                 <ul class="comments-wrapper">
@@ -576,33 +586,43 @@
         <div class="header-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
-                    <a href="main.html">
+                    <a href="error.html">
                         <span class="navbar-text">Support</span>
                         <span class="navbar-item support"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="main.html">
+                    <a href="rules.html">
                         <span class="navbar-text">Rules</span>
                         <span class="navbar-item rules"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="main.html">
+                    <a href="partners.html">
                         <span class="navbar-text">Partners</span>
                         <span class="navbar-item partners"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="main.html">
+                    <a href="#comments-section">
                         <span class="navbar-text">Reviews</span>
                         <span class="navbar-item reviews"></span>
                     </a>
                 </li>
             </ul>
             <div class="profile-wrapper">
-                <button class="blue rect button profile-button no-outline">Log in</button>
-                <button class="blue rect button profile-button no-outline">Sign up</button>
+                <input checked hidden id="authorization-input-footer" name="profile-button-group" type="radio"
+                       onclick="window.location.href='login.html'; return false;">
+                <label class="blue rect button profile-button no-outline" for="authorization-input-footer"
+                       id="Authorization-footer">Log
+                    in</label>
+
+                <input hidden id="registration-input-footer" name="profile-button-group"
+                       onclick="window.location.href='signup.html'; return false;"
+                       type="radio">
+                <label class="blue rect button profile-button no-outline" for="registration-input-footer"
+                       id="Registration-footer">Sign
+                    up</label>
 
             </div>
         </div>
