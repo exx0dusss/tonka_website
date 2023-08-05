@@ -39,8 +39,13 @@
           position: absolute;
           width: auto;
           max-height: 500px;
+
+          &#left-chest-shadow {
+            top: 65px;
+          }
         }
       }
+
 
       #right-chains-wrapper {
         .shadow {

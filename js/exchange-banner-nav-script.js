@@ -50,3 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.querySelectorAll('.fiat').forEach(element => {
+    element.classList.add('hidden');
+    fromCurrency = "BTC";
+    toCurrency = "ETH";
+});

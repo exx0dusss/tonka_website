@@ -37,6 +37,9 @@
   width: auto;
   max-height: 500px;
 }
+#main-container #banner-container .icon-container .icon-wrapper .shadow#left-chest-shadow {
+  top: 65px;
+}
 #main-container #banner-container .icon-container #right-chains-wrapper .shadow {
   transform: rotate(180deg);
 }

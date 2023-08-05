@@ -147,7 +147,7 @@ svg {
 
 .blue {
   background: #516AE4;
-  color: white;
+  color: white !important;
 }
 
 .bottom-border-radius-flat {
@@ -186,7 +186,7 @@ svg {
 
   &:active {
     border: 1px solid #DADADA;
-    color: #516AE4;
+    color: #516AE4 !important;
     background-color: #ffffff;
   }
 }
@@ -199,7 +199,7 @@ input[type="radio"]:not(:checked) + .select-button {
   transition: ease-in-out;
   transition-duration: 0.02s;
   border: 1px solid #DADADA;
-  color: #C3C3C3;
+  color: #C3C3C3 !important;
   background-color: #ffffff;
 
   &:hover {

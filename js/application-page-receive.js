@@ -45,3 +45,8 @@ copyButton.addEventListener("click", async function () {
     }, 2000);
 });
 
+const paymentButton = document.getElementById('payment-button')
+paymentButton.addEventListener("click", async function () {
+    document.getElementById('step-one-wrapper').classList.remove('blue')
+    document.getElementById('step-two-wrapper').classList.add('blue')
+});

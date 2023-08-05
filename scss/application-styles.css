@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1400px;
+  width: 1250px;
   height: 1100px;
   padding: 42px;
 }
@@ -33,7 +33,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  width: 900px;
   height: 100%;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-header-text {
@@ -142,13 +141,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: white;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-course-wrapper .button-wrapper input[type=radio]:not(:checked) + .select-button {
   transition: ease-in-out;
   transition-duration: 0.02s;
   border: 1px solid #DADADA;
-  color: #516ae4;
+  color: rgba(0, 0, 0, 0.3) !important;
   background-color: #ffffff;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-course-wrapper .button-wrapper input[type=radio]:not(:checked) + .select-button:hover {
@@ -192,14 +190,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #F1F3FE;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: rgba(81, 106, 228, 0.6);
 }
-.main-container .application-container .application-wrapper .data-wrapper .data-course-wrapper .step-container .step-wrapper .number #step-two {
-  color: rgba(81, 106, 228, 0.6) !important;
+.main-container .application-container .application-wrapper .data-wrapper .data-course-wrapper .step-container .step-wrapper .number.blue {
+  color: #F1F3FE;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-course-wrapper .step-container .step-wrapper .text-wrapper {
   height: 100%;
