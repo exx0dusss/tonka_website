@@ -9,8 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="modern-css-reset" level="application" />
-    <orderEntry type="library" name="modern-css-reset" level="application" />
-    <orderEntry type="library" name="popper.js" level="application" />
     <orderEntry type="library" name="popper.js" level="application" />
   </component>
 </module>

@@ -12,17 +12,16 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"
     />
-    <link rel="icon" href="./favicon.png"/>
-    <link rel="stylesheet" href="scss/default.css"/>
-    <link rel="stylesheet" href="scss/objects.css"/>
-    <link rel="stylesheet" href="scss/scroll.css"/>
-    <link rel="stylesheet" href="scss/exchange-banner-styles.css"/>
+    <link rel="icon" href="../favicon.png"/>
+    <link rel="stylesheet" href="../scss/default-styles.css"/>
+    <link rel="stylesheet" href="../scss/scroll-styles.css"/>
+    <link rel="stylesheet" href="../scss/exchange-banner-styles.css"/>
 
 </head>
 
 <body>
 
-<section class="exchange-banner-container">
+<section id="exchange-banner-container" class="exchange-banner-container">
     <div class="exchange-banner-wrapper">
         <div class="banner-header prevent-select">
             <div class="info-wrapper">
@@ -31,14 +30,14 @@
                     <div class="text-wrapper">Choose an exchange direction from the lists below</div>
                 </div>
                 <div class="info info-right">
-                    <input type="radio" id="all-input" name="source-button-group" checked hidden>
-                    <label for="all-input" class="blue rect select-button" id="All">All</label>
+                    <input checked hidden id="all-input" name="source-button-group" type="radio">
+                    <label class="blue rect select-button" for="all-input" id="All">All</label>
 
-                    <input type="radio" id="banks-input" name="source-button-group" hidden>
-                    <label for="banks-input" class="blue rect select-button" id="Banks">Banks</label>
+                    <input hidden id="banks-input" name="source-button-group" type="radio">
+                    <label class="blue rect select-button" for="banks-input" id="Banks">Banks</label>
 
-                    <input type="radio" id="cryptocurrency-input" name="source-button-group" hidden>
-                    <label for="cryptocurrency-input" class="blue rect select-button"
+                    <input hidden id="cryptocurrency-input" name="source-button-group" type="radio">
+                    <label class="blue rect  select-button" for="cryptocurrency-input"
                            id="Cryptocurrency">Cryptocurrency</label>
 
                 </div>
@@ -55,7 +54,7 @@
                     <span id="header-to-basis"></span>
                 </span>
             </div>
-            <div class="exchange-body">
+            <form action="../application.html" class="exchange-body" method="GET" id="exchange-form">
                 <ul class="body body-left">
                     <li class="rect body-item currency-container prevent-select " id="from-currency-container">
                         <div class="rect currency-wrapper" id="from-currency-wrapper">
@@ -119,14 +118,19 @@
                     </li>
                     <li class="rect body-item input-container" id="from-container">
                         <div class="input-wrapper">
-                            <input id="from-quantity-input" class="item-input no-outline"
-                                   placeholder="How much do you give:">
+                            <input class="item-input no-outline" id="from-quantity-input"
+                                   placeholder="How much do you give:" required
+                                   oninvalid="this.setCustomValidity('Please Enter the amount to change')"
+                                   oninput="setCustomValidity('')">
                             <label for="from-quantity-input" id="from-quantity"></label>
                         </div>
                         <div class="from-basis basis" id="left-basis">Name of crypto</div>
                     </li>
                     <li class="rect body-item input-container" id="payment-wrapper">
-                        <button class="blue rect no-outline" id="payment-button">Proceed the payment</button>
+                        <input class="blue rect button no-outline" id="payment-button"
+                               name="Submit"
+                               type="submit"
+                               value="Proceed the payment">
                         <div class="rules-info">
                             <span>By clicking the button, you agree to the </span>
                             <span>Rules</span>
@@ -201,13 +205,15 @@
                     </li>
                     <li class="rect body-item input-container" id="address-container">
                         <div class="input-wrapper" id="address-wrapper">
-                            <input id="address-input" class="item-input no-outline"
-                                   placeholder="Your crypto address:">
+                            <input class="item-input no-outline" id="address-input"
+                                   placeholder="Your crypto address:" required
+                                   oninvalid="this.setCustomValidity('Please Enter a correct Address!')"
+                                   oninput="setCustomValidity('')">
                             <label for="address-input" id="address"></label>
                         </div>
                     </li>
                 </ul>
-            </div>
+            </form>
         </div>
 
     </div>
@@ -224,8 +230,10 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
         crossorigin="anonymous"
 ></script>
-<script src="js/exchange-banner-fetch-script.js "></script>
-<script src="js/exchange-banner-nav-script.js "></script>
+<script src="../node_modules/multicoin-address-validator/dist/wallet-address-validator.min.js"></script>
+<script src="../js/exchange-banner-fetch-script.js "></script>
+<script src="../js/exchange-banner-nav-script.js "></script>
+<script src="../js/exchange-banner-validity-script.js "></script>
 
 </body>
 </html>
