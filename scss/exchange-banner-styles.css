@@ -216,12 +216,18 @@
   align-items: center;
   padding: 0 10px;
 }
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#address-container.invalid {
+  border: solid 1px red;
+}
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#address-container.valid {
+  border: solid 1px green;
+}
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container .input-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
 }
-.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container .item-input {
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container .input-wrapper .item-input {
   height: 100%;
   width: 100%;
   align-items: center;
@@ -279,6 +285,20 @@
   color: rgba(0, 0, 0, 0.4);
   text-align: left;
   width: 224px;
+}
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#payment-wrapper .rules-info a {
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#payment-wrapper .rules-info a:hover {
+  text-decoration-color: black;
+}
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#payment-wrapper .rules-info a:active {
+  color: black;
+}
+.exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .input-container#payment-wrapper .rules-info a:visited {
+  color: rgba(0, 0, 0, 0.4);
 }
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #payment-wrapper {
   background: none;

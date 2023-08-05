@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 1400px;
   height: 1100px;
   padding: 42px;
 }
@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  width: 609px;
+  width: 900px;
   height: 100%;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-header-text {
@@ -45,8 +45,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  width: 510px;
+  width: 500px;
   height: 360px;
+  overflow: hidden;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-header-text {
   font-size: 44px;
@@ -59,7 +60,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 514px;
+  width: 100%;
   height: 281px;
   padding-left: 13px;
 }
@@ -92,8 +93,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 95px;
   margin-left: 13px;
+  overflow: hidden;
+  text-align: start;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .text-wrapper .main-text {
   color: rgba(0, 0, 0, 0.5);
@@ -101,6 +103,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 200px;
+  text-align: start;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-pair-wrapper .pair-data-wrapper .data-item-wrapper .text-wrapper .sub-text {
   color: #000;
@@ -109,6 +113,10 @@
   font-weight: 400;
   line-height: normal;
   flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 350px;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-course-wrapper {
   width: 100%;
@@ -281,6 +289,13 @@
   font-weight: 400;
   line-height: normal;
 }
+.main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .data-wrapper .icon-wrapper {
+  position: absolute;
+}
+.main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .data-wrapper .icon-wrapper .icon {
+  position: relative;
+  right: 48px;
+}
 .main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .address-wrapper {
   top: 40px;
   position: relative;
@@ -302,12 +317,24 @@
   font-weight: 400;
   font-size: 13px;
   line-height: normal;
+  overflow: hidden;
 }
 .main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .address-wrapper .text-wrapper .main-text {
   color: rgba(0, 0, 0, 0.3);
 }
 .main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .address-wrapper .text-wrapper .sub-text {
   color: rgba(0, 0, 0, 0.8);
+  width: 230px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .address-wrapper .text-wrapper #copy-message {
+  color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 60px;
+  right: 0;
 }
 .main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .address-wrapper .icon-wrapper {
   width: 34px;
@@ -321,9 +348,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .address-wrapper .icon-wrapper .icon#copy {
   content: url("../files/advantages/copy.svg");
+}
+.main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .address-wrapper .icon-wrapper:active .icon#copy {
+  content: url("../files/advantages/copy-blue.svg") !important;
 }
 .main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .qr-wrapper {
   width: 100%;

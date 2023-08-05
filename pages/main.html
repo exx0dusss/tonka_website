@@ -12,13 +12,13 @@
             href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"
             rel="stylesheet"
     />
-    <link href="./favicon.png" rel="icon"/>
-    <link href="scss/default-styles.css" rel="stylesheet"/>
-    <link href="scss/scroll-styles.css" rel="stylesheet"/>
-    <link href="scss/header-styles.css" rel="stylesheet"/>
-    <link href="scss/exchange-banner-styles.css" rel="stylesheet"/>
-    <link href="scss/main-styles.css" rel="stylesheet"/>
-    <link href="scss/comments-section-styles.css" rel="stylesheet"/>
+    <link href="../favicon.png" rel="icon"/>
+    <link href="../scss/default-styles.css" rel="stylesheet"/>
+    <link href="../scss/scroll-styles.css" rel="stylesheet"/>
+    <link href="../scss/header-styles.css" rel="stylesheet"/>
+    <link href="../scss/exchange-banner-styles.css" rel="stylesheet"/>
+    <link href="../scss/main-styles.css" rel="stylesheet"/>
+    <link href="../scss/comments-section-styles.css" rel="stylesheet"/>
 
 
 </head>
@@ -132,7 +132,8 @@
                     <span id="header-to-basis"></span>
                 </span>
                 </div>
-                <form action="application.html" class="exchange-body" method="GET">
+                <form class="exchange-body" method="GET" id="exchange-form"
+                      autocomplete="off">
                     <ul class="body body-left">
                         <li class="rect body-item currency-container prevent-select " id="from-currency-container">
                             <div class="rect currency-wrapper" id="from-currency-wrapper">
@@ -169,6 +170,22 @@
                                         <span class="from-currency currency-name">Dogecoin</span>
                                         <span class="currency-logo Dogecoin"></span>
                                     </li>
+
+                                    <li class="crypto currency-item ">
+                                        <span class="from-currency currency-name">Litecoin</span>
+                                        <span class="currency-logo Litecoin"></span>
+                                    </li>
+
+
+                                    <li class="crypto currency-item ">
+                                        <span class="from-currency currency-name">Tron</span>
+                                        <span class="currency-logo Tron"></span>
+                                    </li>
+
+                                    <li class="crypto currency-item ">
+                                        <span class="from-currency currency-name">Tether</span>
+                                        <span class="currency-logo Tether"></span>
+                                    </li>
                                     <li class="fiat currency-item ">
                                         <span class="from-currency currency-name">Dollar</span>
                                         <span class="currency-logo Dollar"></span>
@@ -197,7 +214,9 @@
                         <li class="rect body-item input-container" id="from-container">
                             <div class="input-wrapper">
                                 <input class="item-input no-outline" id="from-quantity-input"
-                                       placeholder="How much do you give:" required>
+                                       placeholder="How much do you give:" required
+                                       oninvalid="this.setCustomValidity('Please Enter the amount to change')"
+                                       oninput="setCustomValidity('')">
                                 <label for="from-quantity-input" id="from-quantity"></label>
                             </div>
                             <div class="from-basis basis" id="left-basis">Name of crypto</div>
@@ -209,7 +228,7 @@
                                    value="Proceed the payment">
                             <div class="rules-info">
                                 <span>By clicking the button, you agree to the </span>
-                                <span>Rules</span>
+                                <span><a href="rules.html">Rules</a></span>
                             </div>
                         </li>
 
@@ -251,6 +270,22 @@
                                         <span class="currency-logo Dogecoin"></span>
                                     </li>
 
+                                    <li class="crypto currency-item ">
+                                        <span class="to-currency currency-name">Litecoin</span>
+                                        <span class="currency-logo Litecoin"></span>
+                                    </li>
+
+
+                                    <li class="crypto currency-item ">
+                                        <span class="to-currency currency-name">Tron</span>
+                                        <span class="currency-logo Tron"></span>
+                                    </li>
+
+                                    <li class="crypto currency-item ">
+                                        <span class="to-currency currency-name">Tether</span>
+                                        <span class="currency-logo Tether"></span>
+                                    </li>
+
                                     <li class="fiat currency-item ">
                                         <span class="to-currency currency-name">Dollar</span>
                                         <span class="currency-logo Dollar"></span>
@@ -282,7 +317,9 @@
                         <li class="rect body-item input-container" id="address-container">
                             <div class="input-wrapper" id="address-wrapper">
                                 <input class="item-input no-outline" id="address-input"
-                                       placeholder="Your crypto address:" required>
+                                       placeholder="Your crypto address:" required
+                                       oninvalid="this.setCustomValidity('Please Enter a correct Address!')"
+                                       oninput="setCustomValidity('')">
                                 <label for="address-input" id="address"></label>
                             </div>
                         </li>
@@ -292,6 +329,7 @@
 
         </div>
     </section>
+
     <section id="advantages-section-container">
         <div id="advantages-section-wrapper">
             <div class="icon-container">
@@ -664,12 +702,12 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
         src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js "
 ></script>
-<script src="./js/exchange-banner-fetch-script.js"></script>
-<script src="./js/exchange-banner-nav-script.js"></script>
-<script src="./js/main-page-send.js"></script>
-<script src="./js/main-animation-scripts.js"></script>
-
-<script src="./js/comments-section-script.js"></script>
+<script src="../node_modules/multicoin-address-validator/dist/wallet-address-validator.min.js"></script>
+<script src="../js/exchange-banner-fetch-script.js"></script>
+<script src="../js/exchange-banner-nav-script.js"></script>
+<script src="../js/exchange-banner-validity-script.js "></script>
+<script src="../js/main-animation-scripts.js"></script>
+<script src="../js/comments-section-script.js"></script>
 
 </body>
 </html>

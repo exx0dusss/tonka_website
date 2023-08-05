@@ -12,11 +12,11 @@
             href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"
             rel="stylesheet"
     />
-    <link href="./favicon.png" rel="icon"/>
-    <link href="./scss/default-styles.css" rel="stylesheet"/>
-    <link href="./scss/scroll-styles.css" rel="stylesheet"/>
-    <link href="./scss/header-styles.css" rel="stylesheet"/>
-    <link href="scss/application-styles.css" rel="stylesheet"/>
+    <link href="../favicon.png" rel="icon"/>
+    <link href="../scss/default-styles.css" rel="stylesheet"/>
+    <link href="../scss/scroll-styles.css" rel="stylesheet"/>
+    <link href="../scss/header-styles.css" rel="stylesheet"/>
+    <link href="../scss/application-styles.css" rel="stylesheet"/>
 
 </head>
 
@@ -79,7 +79,7 @@
                     <ul class="pair-data-wrapper">
                         <li class="rect data-item-wrapper">
                             <div class="icon-wrapper">
-                                <div class="icon" id="from-coin"></div>
+                                <div class="icon from-coin" id="from-coin"></div>
                             </div>
                             <div class="text-wrapper">
                                 <div class="main-text"><span id="from-basis">Crypto</span></div>
@@ -165,18 +165,25 @@
                     </div>
                     <div class="payment-wrapper">
                         <div class="rect crypto-wrapper">
+
                             <div class="data-wrapper">
                                 <div class="main-text"><span>You`re sending</span></div>
                                 <sub class="text"><span id="crypto-name">Crypto</span></sub>
+                                <div class="icon-wrapper">
+                                    <div class="icon from-coin"></div>
+                                </div>
                             </div>
                             <div class="address-wrapper">
                                 <div class="text-wrapper">
                                     <div class="main-text"><span>To our details</span></div>
-                                    <div class="sub-text"><span>Code</span></div>
+                                    <div class="sub-text" id="Code"><span>Code</span></div>
+                                    <span class="hidden" id="copy-message">Text copied!</span>
+
                                 </div>
-                                <div class="blue rect icon-wrapper">
-                                    <div class=" icon" id="copy"></div>
-                                </div>
+                                <button class="blue rect button icon-wrapper no-outline" id="copy-button">
+                                    <span class=" icon" id="copy"></span>
+                                </button>
+
                             </div>
                         </div>
                         <div class="qr-wrapper">
@@ -294,7 +301,7 @@
     </div>
 </footer>
 
-<script src="./js/application-page-receive.js"></script>
+<script src="../js/application-page-receive.js"></script>
 
 <script
         crossorigin="anonymous"

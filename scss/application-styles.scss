@@ -28,7 +28,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1200px;
+      width: 1400px;
       height: 1100px;
       padding: 42px;
 
@@ -37,7 +37,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
-        width: 609px;
+        width: 900px;
         height: 100%;
 
         .data-header-text {
@@ -50,8 +50,9 @@
           flex-direction: column;
           justify-content: space-between;
           align-items: start;
-          width: 510px;
+          width: 500px;
           height: 360px;
+          overflow: hidden;
 
           .pair-header-text {
             font-size: 44px;
@@ -65,7 +66,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            width: 514px;
+            width: 100%;
             height: 281px;
             padding-left: 13px;
 
@@ -101,8 +102,9 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: start;
-                width: 95px;
                 margin-left: 13px;
+                overflow: hidden;
+                text-align: start;
 
                 .main-text {
                   color: rgba(0, 0, 0, 0.50);
@@ -110,6 +112,8 @@
                   font-style: normal;
                   font-weight: 400;
                   line-height: normal;
+                  width: 200px;
+                  text-align: start;
                 }
 
                 .sub-text {
@@ -119,8 +123,15 @@
                   font-weight: 400;
                   line-height: normal;
                   flex-shrink: 0;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  width: 350px;
+
                 }
               }
+
+
             }
           }
         }
@@ -293,6 +304,7 @@
               background-color: #f4f5fa;
               border-radius: 15px;
 
+
               .data-wrapper {
                 width: 235px;
                 height: 40px;
@@ -301,6 +313,7 @@
                 align-items: start;
                 flex-direction: column;
                 padding-top: 20px;
+
 
                 .main-text {
                   color: rgba(0, 0, 0, 0.50);
@@ -316,6 +329,15 @@
                   font-style: normal;
                   font-weight: 400;
                   line-height: normal;
+                }
+
+                .icon-wrapper {
+                  position: absolute;
+
+                  .icon {
+                    position: relative;
+                    right: 48px;
+                  }
                 }
 
               }
@@ -341,6 +363,8 @@
                   font-weight: 400;
                   font-size: 13px;
                   line-height: normal;
+                  overflow: hidden;
+
 
                   .main-text {
                     color: rgba(0, 0, 0, 0.30);
@@ -348,7 +372,24 @@
 
                   .sub-text {
                     color: rgba(0, 0, 0, 0.80);
+                    width: 230px;
+                    position: relative;
+                    overflow: hidden;
+
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
                   }
+
+                  #copy-message {
+                    color: rgba(0, 0, 0, 0.40);
+
+                    position: absolute;
+                    bottom: 60px;
+                    right: 0;
+                  }
+
+
                 }
 
                 .icon-wrapper {
@@ -357,20 +398,34 @@
                   padding: 5px;
                   border-radius: 5px;
 
+
                   .icon {
                     height: 100%;
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
+
 
                     &#copy {
                       content: url("../files/advantages/copy.svg");
                     }
                   }
 
+                  &:active {
+                    .icon {
+                      &#copy {
+                        content: url("../files/advantages/copy-blue.svg") !important;
+
+                      }
+                    }
+                  }
+
 
                 }
+
+
               }
             }
 
