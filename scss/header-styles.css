@@ -93,9 +93,12 @@
   color: #516AE4;
 }
 
-@media screen and (min-device-width: 480px) and (orientation: portrait) {
+@media screen and (min-device-width: 350px) and (orientation: portrait) {
   * {
     overflow: hidden;
+  }
+  #hamburger-button {
+    display: block !important;
   }
   .header-nav-container {
     position: absolute;
@@ -110,7 +113,8 @@
     transition: transform 0.1s ease-in-out;
   }
   .header-nav-container.open {
-    transform: translateX(-20px) !important;
+    transform: translateX(0) !important;
+    left: 0;
   }
   .header-nav-container .navbar-wrapper {
     flex-direction: column;
@@ -177,6 +181,7 @@
   transform: rotate(0deg);
   transition: transform 0.1s ease-in-out;
   cursor: pointer;
+  display: none;
 }
 
 #hamburger-button span {
