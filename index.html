@@ -12,13 +12,13 @@
             href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"
             rel="stylesheet"
     />
-    <link href="../favicon.png" rel="icon"/>
-    <link href="../scss/default-styles.css" rel="stylesheet"/>
-    <link href="../scss/scroll-styles.css" rel="stylesheet"/>
-    <link href="../scss/header-styles.css" rel="stylesheet"/>
-    <link href="../scss/exchange-banner-styles.css" rel="stylesheet"/>
-    <link href="../scss/main-styles.css" rel="stylesheet"/>
-    <link href="../scss/comments-section-styles.css" rel="stylesheet"/>
+    <link href="favicon.png" rel="icon"/>
+    <link href="scss/default-styles.css" rel="stylesheet"/>
+    <link href="scss/scroll-styles.css" rel="stylesheet"/>
+    <link href="scss/header-styles.css" rel="stylesheet"/>
+    <link href="scss/exchange-banner-styles.css" rel="stylesheet"/>
+    <link href="scss/main-styles.css" rel="stylesheet"/>
+    <link href="scss/comments-section-styles.css" rel="stylesheet"/>
 
 
 </head>
@@ -30,19 +30,19 @@
         <div class="header-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
-                    <a href="error.html">
+                    <a href="pages/error.html">
                         <span class="navbar-text">Support</span>
                         <span class="navbar-item support"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="rules.html">
+                    <a href="pages/rules.html">
                         <span class="navbar-text">Rules</span>
                         <span class="navbar-item rules"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="partners.html">
+                    <a href="pages/partners.html">
                         <span class="navbar-text">Partners</span>
                         <span class="navbar-item partners"></span>
                     </a>
@@ -55,7 +55,8 @@
                 </li>
             </ul>
             <div class="profile-wrapper">
-                <input checked hidden id="authorization-input-header" name="profile-button-group" onclick="window.location.href='login.html'; return false;"
+                <input checked hidden id="authorization-input-header" name="profile-button-group"
+                       onclick="window.location.href='login.html'; return false;"
                        type="radio">
                 <label class="blue rect button profile-button no-outline" for="authorization-input-header"
                        id="Authorization-header">Log
@@ -214,7 +215,8 @@
                         <li class="rect body-item input-container" id="from-container">
                             <div class="input-wrapper">
                                 <input class="item-input no-outline" id="from-quantity-input"
-                                       oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Please Enter the amount to change')"
+                                       oninput="setCustomValidity('')"
+                                       oninvalid="this.setCustomValidity('Please Enter the amount to change')"
                                        placeholder="How much do you give:"
                                        required>
                                 <label for="from-quantity-input" id="from-quantity"></label>
@@ -228,7 +230,7 @@
                                    value="Proceed the payment">
                             <div class="rules-info">
                                 <span>By clicking the button, you agree to the </span>
-                                <span><a href="rules.html">Rules</a></span>
+                                <span><a href="pages/rules.html">Rules</a></span>
                             </div>
                         </li>
 
@@ -317,7 +319,8 @@
                         <li class="rect body-item input-container" id="address-container">
                             <div class="input-wrapper" id="address-wrapper">
                                 <input class="item-input no-outline" id="address-input"
-                                       oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Please Enter a correct Address!')"
+                                       oninput="setCustomValidity('')"
+                                       oninvalid="this.setCustomValidity('Please Enter a correct Address!')"
                                        placeholder="Your crypto address:"
                                        required>
                                 <label for="address-input" id="address"></label>
@@ -649,19 +652,19 @@
         <div class="header-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
-                    <a href="error.html">
+                    <a href="pages/error.html">
                         <span class="navbar-text">Support</span>
                         <span class="navbar-item support"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="rules.html">
+                    <a href="pages/rules.html">
                         <span class="navbar-text">Rules</span>
                         <span class="navbar-item rules"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="partners.html">
+                    <a href="pages/partners.html">
                         <span class="navbar-text">Partners</span>
                         <span class="navbar-item partners"></span>
                     </a>
@@ -674,7 +677,8 @@
                 </li>
             </ul>
             <div class="profile-wrapper">
-                <input checked hidden id="authorization-input-footer" name="profile-button-group" onclick="window.location.href='login.html'; return false;"
+                <input checked hidden id="authorization-input-footer" name="profile-button-group"
+                       onclick="window.location.href='login.html'; return false;"
                        type="radio">
                 <label class="blue rect button profile-button no-outline" for="authorization-input-footer"
                        id="Authorization-footer">Log
@@ -702,12 +706,12 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
         src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js "
 ></script>
-<script src="../node_modules/multicoin-address-validator/dist/wallet-address-validator.min.js"></script>
-<script src="../js/exchange-banner-fetch-script.js"></script>
-<script src="../js/exchange-banner-nav-script.js"></script>
-<script src="../js/exchange-banner-validity-script.js "></script>
-<script src="../js/main-animation-scripts.js"></script>
-<script src="../js/comments-section-script.js"></script>
+<script src="node_modules/multicoin-address-validator/dist/wallet-address-validator.min.js"></script>
+<script src="js/exchange-banner-fetch-script.js"></script>
+<script src="js/exchange-banner-nav-script.js"></script>
+<script src="js/exchange-banner-validity-script.js "></script>
+<script src="js/main-animation-scripts.js"></script>
+<script src="js/comments-section-script.js"></script>
 
 </body>
 </html>
