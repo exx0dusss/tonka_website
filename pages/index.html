@@ -26,7 +26,7 @@
 <body>
 <header class="header-container">
     <div class="header-wrapper">
-        <a class="header-logo" href="main.html"></a>
+        <a class="header-logo" href="index.html"></a>
         <div class="header-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
@@ -55,8 +55,8 @@
                 </li>
             </ul>
             <div class="profile-wrapper">
-                <input checked hidden id="authorization-input-header" name="profile-button-group" type="radio"
-                       onclick="window.location.href='login.html'; return false;">
+                <input checked hidden id="authorization-input-header" name="profile-button-group" onclick="window.location.href='login.html'; return false;"
+                       type="radio">
                 <label class="blue rect button profile-button no-outline" for="authorization-input-header"
                        id="Authorization-header">Log
                     in</label>
@@ -99,7 +99,7 @@
         </div>
 
     </section>
-    <section id="exchange-banner-container" class="exchange-banner-container">
+    <section class="exchange-banner-container" id="exchange-banner-container">
         <div class="exchange-banner-wrapper">
             <div class="banner-header prevent-select">
                 <div class="info-wrapper">
@@ -132,8 +132,8 @@
                     <span id="header-to-basis"></span>
                 </span>
                 </div>
-                <form class="exchange-body" method="GET" id="exchange-form"
-                      autocomplete="off">
+                <form autocomplete="off" class="exchange-body" id="exchange-form"
+                      method="GET">
                     <ul class="body body-left">
                         <li class="rect body-item currency-container prevent-select " id="from-currency-container">
                             <div class="rect currency-wrapper" id="from-currency-wrapper">
@@ -214,9 +214,9 @@
                         <li class="rect body-item input-container" id="from-container">
                             <div class="input-wrapper">
                                 <input class="item-input no-outline" id="from-quantity-input"
-                                       placeholder="How much do you give:" required
-                                       oninvalid="this.setCustomValidity('Please Enter the amount to change')"
-                                       oninput="setCustomValidity('')">
+                                       oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Please Enter the amount to change')"
+                                       placeholder="How much do you give:"
+                                       required>
                                 <label for="from-quantity-input" id="from-quantity"></label>
                             </div>
                             <div class="from-basis basis" id="left-basis">Name of crypto</div>
@@ -317,9 +317,9 @@
                         <li class="rect body-item input-container" id="address-container">
                             <div class="input-wrapper" id="address-wrapper">
                                 <input class="item-input no-outline" id="address-input"
-                                       placeholder="Your crypto address:" required
-                                       oninvalid="this.setCustomValidity('Please Enter a correct Address!')"
-                                       oninput="setCustomValidity('')">
+                                       oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Please Enter a correct Address!')"
+                                       placeholder="Your crypto address:"
+                                       required>
                                 <label for="address-input" id="address"></label>
                             </div>
                         </li>
@@ -645,7 +645,7 @@
 
 <footer class="header-container">
     <div class="header-wrapper">
-        <a class="header-logo" href="main.html"></a>
+        <a class="header-logo" href="index.html"></a>
         <div class="header-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
@@ -674,8 +674,8 @@
                 </li>
             </ul>
             <div class="profile-wrapper">
-                <input checked hidden id="authorization-input-footer" name="profile-button-group" type="radio"
-                       onclick="window.location.href='login.html'; return false;">
+                <input checked hidden id="authorization-input-footer" name="profile-button-group" onclick="window.location.href='login.html'; return false;"
+                       type="radio">
                 <label class="blue rect button profile-button no-outline" for="authorization-input-footer"
                        id="Authorization-footer">Log
                     in</label>

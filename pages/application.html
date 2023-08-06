@@ -23,7 +23,7 @@
 <body>
 <header class="header-container">
     <div class="header-wrapper">
-        <a class="header-logo" href="main.html"></a>
+        <a class="header-logo" href="index.html"></a>
         <div class="header-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
@@ -45,15 +45,15 @@
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="main.html#comments-section">
+                    <a href="index.html#comments-section">
                         <span class="navbar-text">Reviews</span>
                         <span class="navbar-item reviews"></span>
                     </a>
                 </li>
             </ul>
             <div class="profile-wrapper">
-                <input checked hidden id="authorization-input-header" name="profile-button-group" type="radio"
-                       onclick="window.location.href='login.html'; return false;">
+                <input checked hidden id="authorization-input-header" name="profile-button-group" onclick="window.location.href='login.html'; return false;"
+                       type="radio">
                 <label class="blue rect button profile-button no-outline" for="authorization-input-header"
                        id="Authorization-header">Log
                     in</label>
@@ -113,7 +113,7 @@
                         <input checked hidden id="fixed-input" name="course-button-group" type="radio">
                         <label class="blue rect select-button" for="fixed-input" id="Fixed">Fixed</label>
 
-                        <input hidden id="timer-input" name="course-button-group" type="radio" disabled>
+                        <input disabled hidden id="timer-input" name="course-button-group" type="radio">
                         <label class="blue rect select-button" for="timer-input" id="Timer">Timer</label>
 
 
@@ -226,19 +226,19 @@
                                             <g class="base-timer__circle">
                                                 <circle class="base-timer__path-elapsed" cx="50" cy="50"
                                                         r="45"></circle>
-                                                <path id="base-timer-path-remaining" stroke-dasharray="283"
-                                                      class="base-timer__path-remaining arc"
-                                                      d="
+                                                <path class="base-timer__path-remaining arc" d="
                                                M 50, 50
                                                m -45, 0
                                                a 45,45 0 1,0 90,0
                                                a 45,45 0 1,0 -90,0
-                                               ">
+                                               "
+                                                      id="base-timer-path-remaining"
+                                                      stroke-dasharray="283">
 
                                                 </path>
                                             </g>
                                         </svg>
-                                        <span id="base-timer-label" class="base-timer__label"></span>
+                                        <span class="base-timer__label" id="base-timer-label"></span>
                                     </div>
 
                                 </div>
@@ -276,7 +276,7 @@
 </main>
 <footer class="header-container">
     <div class="header-wrapper">
-        <a class="header-logo" href="main.html"></a>
+        <a class="header-logo" href="index.html"></a>
         <div class="header-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
@@ -298,15 +298,15 @@
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="main.html#comments-section">
+                    <a href="index.html#comments-section">
                         <span class="navbar-text">Reviews</span>
                         <span class="navbar-item reviews"></span>
                     </a>
                 </li>
             </ul>
             <div class="profile-wrapper">
-                <input checked hidden id="authorization-input-footer" name="profile-button-group" type="radio"
-                       onclick="window.location.href='login.html'; return false;">
+                <input checked hidden id="authorization-input-footer" name="profile-button-group" onclick="window.location.href='login.html'; return false;"
+                       type="radio">
                 <label class="blue rect button profile-button no-outline" for="authorization-input-footer"
                        id="Authorization-footer">Log
                     in</label>
