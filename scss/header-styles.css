@@ -104,11 +104,11 @@
     position: absolute;
     width: 100% !important;
     height: 100% !important;
-    flex-direction: column;
+    flex-direction: column-reverse;
     top: 75px;
     transform: translateX(100%);
     background: white;
-    justify-content: start !important;
+    justify-content: center !important;
     align-items: center !important;
     transition: transform 0.1s ease-in-out;
   }
@@ -116,14 +116,16 @@
     transform: translateX(0) !important;
     left: 0;
   }
+  .header-nav-container .navbar-wrapper, .header-nav-container .profile-wrapper {
+    position: relative;
+    top: -70px;
+  }
   .header-nav-container .navbar-wrapper {
     flex-direction: column;
     width: 100vw !important;
     height: auto !important;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 180px;
   }
   .header-nav-container .navbar-wrapper .navbar-item .navbar-text:after {
     content: "<";
@@ -137,8 +139,6 @@
     flex-direction: column;
     height: auto !important;
     width: 100% !important;
-    position: relative;
-    top: 40px;
   }
   .header-nav-container .profile-wrapper .profile-button:after {
     content: "<";
