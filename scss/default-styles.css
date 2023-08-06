@@ -122,6 +122,10 @@ body {
   max-width: 100%;
 }
 
+.no-scroll {
+  overflow: hidden !important;
+}
+
 ul, li {
   padding: 0;
 }
