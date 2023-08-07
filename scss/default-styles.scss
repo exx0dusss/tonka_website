@@ -37,10 +37,10 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden !important;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -85,6 +85,7 @@ a,
 a:visited {
   color: black;
 }
+
 
 :root {
   --main-padding: 0 400px;

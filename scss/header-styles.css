@@ -99,19 +99,24 @@
     display: block !important;
     position: fixed;
   }
-  #hamburger-button.open {
-    margin-right: 10px;
-  }
   .header-container {
-    padding-left: 0;
+    padding-left: 15px;
+  }
+  .header-container .header-wrapper .header-logo {
+    position: fixed !important;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header-container .header-nav-container {
-    position: absolute;
+    position: fixed;
     width: 100% !important;
     height: 100% !important;
     flex-direction: column-reverse;
     top: 75px;
-    left: 100%;
+    transform: translateX(-100%) !important;
+    right: 0;
     background: white;
     justify-content: center !important;
     align-items: center !important;
@@ -120,7 +125,7 @@
     padding: 0;
   }
   .header-container .header-nav-container.open {
-    left: 0;
+    transform: translateX(0) !important;
     position: fixed !important;
     visibility: visible;
   }
@@ -138,10 +143,10 @@
   .header-container .header-nav-container .navbar-wrapper .navbar-item {
     text-align: center;
   }
-  .header-container .header-nav-container .navbar-wrapper .navbar-item .navbar-text:after {
+  .header-container .header-nav-container .navbar-wrapper .navbar-item .navbar-text:before {
     content: "•";
     position: absolute;
-    right: 10px;
+    left: 10px;
   }
   .header-container .header-nav-container .navbar-wrapper .navbar-item .navbar-icon {
     display: none;
@@ -151,10 +156,10 @@
     height: auto !important;
     width: 100% !important;
   }
-  .header-container .header-nav-container .profile-wrapper .profile-button:after {
-    content: "<";
+  .header-container .header-nav-container .profile-wrapper .profile-button:before {
+    content: ">";
     position: absolute;
-    right: 10px;
+    left: 10px;
   }
   .header-container .header-nav-container .profile-button, .header-container .header-nav-container .navbar-item, .header-container .header-nav-container a {
     width: 100% !important;
@@ -179,6 +184,11 @@
   .header-container .header-nav-container .profile-button {
     color: #0028ff !important;
     font-weight: 600 !important;
+  }
+}
+@media screen and (min-device-width: 851px) and (max-device-width: 1024px) {
+  .navbar-wrapper {
+    width: 300px !important;
   }
 }
 #hamburger-button {

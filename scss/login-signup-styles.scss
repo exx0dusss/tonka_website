@@ -146,3 +146,69 @@
   }
 }
 
+@media screen and (min-device-width: 350px) and (orientation: portrait) {
+  body {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  #main-container {
+    height: calc(100vh - 76px) !important;
+
+  }
+  .profile-container {
+    overflow-y: hidden !important;
+    height: 100% !important;
+    background: #F4F5FA !important;
+
+    .profile-wrapper {
+      width: 100% !important;
+      overflow: hidden;
+      border-radius: 0;
+      border: none;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 100% !important;
+
+
+      .header-wrapper {
+        width: 100% !important;
+        
+        .button-wrapper {
+          width: 100% !important;
+
+          .profile-button {
+            text-underline-offset: 10px !important;
+            text-decoration: none !important;
+            padding: 10px;
+            border-radius: 15px;
+            background: #516AE4;
+            color: white;
+
+            &#Registration {
+              margin-left: 18px !important;
+            }
+
+          }
+
+          input[type="radio"]:not(:checked) + .profile-button {
+            color: #516AE4;
+            background: white;
+
+
+          }
+        }
+
+        .line {
+          display: none;
+        }
+      }
+
+      .body-wrapper {
+        width: 100% !important;
+      }
+    }
+  }
+
+
+}

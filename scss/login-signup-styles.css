@@ -124,4 +124,55 @@
   margin-top: 10px;
 }
 
+@media screen and (min-device-width: 350px) and (orientation: portrait) {
+  body {
+    display: flex !important;
+    flex-direction: column;
+  }
+  #main-container {
+    height: calc(100vh - 76px) !important;
+  }
+  .profile-container {
+    overflow-y: hidden !important;
+    height: 100% !important;
+    background: #F4F5FA !important;
+  }
+  .profile-container .profile-wrapper {
+    width: 100% !important;
+    overflow: hidden;
+    border-radius: 0;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100% !important;
+  }
+  .profile-container .profile-wrapper .header-wrapper {
+    width: 100% !important;
+  }
+  .profile-container .profile-wrapper .header-wrapper .button-wrapper {
+    width: 100% !important;
+  }
+  .profile-container .profile-wrapper .header-wrapper .button-wrapper .profile-button {
+    text-underline-offset: 10px !important;
+    text-decoration: none !important;
+    padding: 10px;
+    border-radius: 15px;
+    background: #516AE4;
+    color: white;
+  }
+  .profile-container .profile-wrapper .header-wrapper .button-wrapper .profile-button#Registration {
+    margin-left: 18px !important;
+  }
+  .profile-container .profile-wrapper .header-wrapper .button-wrapper input[type=radio]:not(:checked) + .profile-button {
+    color: #516AE4;
+    background: white;
+  }
+  .profile-container .profile-wrapper .header-wrapper .line {
+    display: none;
+  }
+  .profile-container .profile-wrapper .body-wrapper {
+    width: 100% !important;
+  }
+}
+
 /*# sourceMappingURL=login-signup-styles.css.map */
