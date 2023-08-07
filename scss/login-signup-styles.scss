@@ -146,14 +146,14 @@
   }
 }
 
-@media screen and (min-device-width: 350px) and (orientation: portrait) {
+@media only screen and (max-width: 860px) {
   body {
     display: flex !important;
     flex-direction: column;
   }
 
   #main-container {
-    height: calc(100vh - 76px) !important;
+    min-height: calc(100vh - 76px) !important;
 
   }
   .profile-container {
@@ -173,7 +173,7 @@
 
       .header-wrapper {
         width: 100% !important;
-        
+
         .button-wrapper {
           width: 100% !important;
 
