@@ -124,103 +124,122 @@
 
   #hamburger-button {
     display: block !important;
-  }
-  .header-nav-container {
-    position: absolute;
-    width: 100% !important;
-    height: 100% !important;
-    flex-direction: column-reverse;
-    top: 75px;
-    transform: translateX(100%);
-    background: white;
-    justify-content: center !important;
-    align-items: center !important;
-    transition: transform 0.1s ease-in-out;
+    position: fixed;
 
     &.open {
-      transform: translateX(0) !important;
-      left: 0;
-
+      margin-right: 10px;
     }
+  }
 
-    .navbar-wrapper, .profile-wrapper {
-      position: relative;
-      top: -70px;
-    }
+  .header-container {
+    padding-left: 0;
 
-    .navbar-wrapper {
-      flex-direction: column;
-      width: 100vw !important;
-      height: auto !important;
-      justify-content: center;
-      align-items: center;
+    .header-nav-container {
+      position: absolute;
+      width: 100% !important;
+      height: 100% !important;
+      flex-direction: column-reverse;
+      top: 75px;
+      //transform: translateX(100%);
+      left: 100%;
+      background: white;
+      justify-content: center !important;
+      align-items: center !important;
+      transition: 0.1s ease-in-out;
+      visibility: hidden;
+      padding: 0;
+
+      &.open {
+        //transform: translateX(0) !important;
+        //left: 0;
+        left: 0;
+        position: fixed !important;
+        visibility: visible;
 
 
-      .navbar-item {
-        .navbar-text {
+      }
+
+      .navbar-wrapper, .profile-wrapper {
+        position: relative;
+        top: -70px;
+      }
+
+      .navbar-wrapper {
+        flex-direction: column;
+        width: 100vw !important;
+        height: auto !important;
+        justify-content: center;
+        align-items: center;
+
+
+        .navbar-item {
+          text-align: center;
+
+          .navbar-text {
+            &:after {
+              content: "•";
+              position: absolute;
+              right: 10px;
+            }
+          }
+
+          .navbar-icon {
+            display: none;
+          }
+        }
+
+      }
+
+      .profile-wrapper {
+        flex-direction: column;
+        height: auto !important;
+        width: 100% !important;
+
+        .profile-button {
+
           &:after {
             content: "<";
             position: absolute;
             right: 10px;
           }
         }
-
-        .navbar-icon {
-          display: none;
-        }
-
       }
 
 
-    }
+      .profile-button, .navbar-item, a {
+        width: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        height: 70px !important;
+        border: none !important;
+        background: none;
+        color: #516AE4 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20) !important;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
 
-    .profile-wrapper {
-      flex-direction: column;
-      height: auto !important;
-      width: 100% !important;
+        &:hover {
+          color: white !important;
+          background: #516AE4 !important;
+        }
+
+        &:active {
+          border: none !important;
+        }
+
+      }
 
       .profile-button {
+        color: #0028ff !important;
+        font-weight: 600 !important;
 
-        &:after {
-          content: "<";
-          position: absolute;
-          right: 10px;
-        }
       }
     }
 
-
-    .profile-button, .navbar-item, a {
-      width: 100% !important;
-      margin: 0 !important;
-      border-radius: 0 !important;
-      height: 70px !important;
-      border: none !important;
-      background: none;
-      color: #516AE4 !important;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.20) !important;
-      justify-content: center;
-      align-items: center;
-      font-weight: 400;
-
-      &:hover {
-        color: white !important;
-        background: #516AE4 !important;
-      }
-
-      &:active {
-        border: none !important;
-      }
-
-    }
-
-    .profile-button {
-      color: #0028ff !important;
-      font-weight: 600 !important;
-
-    }
   }
 }
+
 
 #hamburger-button {
   width: 30px;
@@ -254,9 +273,6 @@
   z-index: 101;
 }
 
-
-/* Icon 3 */
-
 #hamburger-button span:nth-child(1) {
   top: 0;
 }
@@ -271,7 +287,7 @@
 
 #hamburger-button.open span:nth-child(1) {
   top: 18px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 
@@ -291,6 +307,6 @@
 
 #hamburger-button.open span:nth-child(4) {
   top: 18px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }

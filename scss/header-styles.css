@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header-container {
   display: flex;
   height: 77px;
@@ -96,53 +97,66 @@
 @media screen and (min-device-width: 350px) and (orientation: portrait) {
   #hamburger-button {
     display: block !important;
+    position: fixed;
   }
-  .header-nav-container {
+  #hamburger-button.open {
+    margin-right: 10px;
+  }
+  .header-container {
+    padding-left: 0;
+  }
+  .header-container .header-nav-container {
     position: absolute;
     width: 100% !important;
     height: 100% !important;
     flex-direction: column-reverse;
     top: 75px;
-    transform: translateX(100%);
+    left: 100%;
     background: white;
     justify-content: center !important;
     align-items: center !important;
-    transition: transform 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+    visibility: hidden;
+    padding: 0;
   }
-  .header-nav-container.open {
-    transform: translateX(0) !important;
+  .header-container .header-nav-container.open {
     left: 0;
+    position: fixed !important;
+    visibility: visible;
   }
-  .header-nav-container .navbar-wrapper, .header-nav-container .profile-wrapper {
+  .header-container .header-nav-container .navbar-wrapper, .header-container .header-nav-container .profile-wrapper {
     position: relative;
     top: -70px;
   }
-  .header-nav-container .navbar-wrapper {
+  .header-container .header-nav-container .navbar-wrapper {
     flex-direction: column;
     width: 100vw !important;
     height: auto !important;
     justify-content: center;
     align-items: center;
   }
-  .header-nav-container .navbar-wrapper .navbar-item .navbar-text:after {
-    content: "<";
+  .header-container .header-nav-container .navbar-wrapper .navbar-item {
+    text-align: center;
+  }
+  .header-container .header-nav-container .navbar-wrapper .navbar-item .navbar-text:after {
+    content: "•";
     position: absolute;
     right: 10px;
   }
-  .header-nav-container .navbar-wrapper .navbar-item .navbar-icon {
+  .header-container .header-nav-container .navbar-wrapper .navbar-item .navbar-icon {
     display: none;
   }
-  .header-nav-container .profile-wrapper {
+  .header-container .header-nav-container .profile-wrapper {
     flex-direction: column;
     height: auto !important;
     width: 100% !important;
   }
-  .header-nav-container .profile-wrapper .profile-button:after {
+  .header-container .header-nav-container .profile-wrapper .profile-button:after {
     content: "<";
     position: absolute;
     right: 10px;
   }
-  .header-nav-container .profile-button, .header-nav-container .navbar-item, .header-nav-container a {
+  .header-container .header-nav-container .profile-button, .header-container .header-nav-container .navbar-item, .header-container .header-nav-container a {
     width: 100% !important;
     margin: 0 !important;
     border-radius: 0 !important;
@@ -155,14 +169,14 @@
     align-items: center;
     font-weight: 400;
   }
-  .header-nav-container .profile-button:hover, .header-nav-container .navbar-item:hover, .header-nav-container a:hover {
+  .header-container .header-nav-container .profile-button:hover, .header-container .header-nav-container .navbar-item:hover, .header-container .header-nav-container a:hover {
     color: white !important;
     background: #516AE4 !important;
   }
-  .header-nav-container .profile-button:active, .header-nav-container .navbar-item:active, .header-nav-container a:active {
+  .header-container .header-nav-container .profile-button:active, .header-container .header-nav-container .navbar-item:active, .header-container .header-nav-container a:active {
     border: none !important;
   }
-  .header-nav-container .profile-button {
+  .header-container .header-nav-container .profile-button {
     color: #0028ff !important;
     font-weight: 600 !important;
   }
@@ -198,7 +212,6 @@
   z-index: 101;
 }
 
-/* Icon 3 */
 #hamburger-button span:nth-child(1) {
   top: 0;
 }
@@ -213,7 +226,7 @@
 
 #hamburger-button.open span:nth-child(1) {
   top: 18px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 
@@ -233,7 +246,7 @@
 
 #hamburger-button.open span:nth-child(4) {
   top: 18px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 
