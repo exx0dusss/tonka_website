@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .header-container {
+  position: static;
   display: flex;
   height: 77px;
   width: 100%;
@@ -8,6 +9,11 @@
   background: white;
   padding: 0 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header-container.open {
+  position: fixed;
+  top: 0;
+  z-index: 101;
 }
 .header-container .header-wrapper {
   width: 100%;
@@ -94,100 +100,33 @@
 .header-container .header-wrapper .header-nav-container .profile-wrapper .profile-button:active {
   color: #516AE4;
 }
+.header-container #hamburger-menu-wrapper {
+  display: none;
+}
 
+@media only screen and (max-height: 550px) {
+  #hamburger-menu {
+    height: 100% !important;
+  }
+}
 @media only screen and (max-width: 860px) {
   #hamburger-button {
     display: block !important;
-    position: fixed;
+    left: 15px;
   }
-  .header-container {
-    padding-left: 15px;
+  .header-nav-container {
+    display: none !important;
   }
-  .header-container .header-wrapper .header-logo {
+  #hamburger-menu-wrapper {
+    display: flex !important;
+  }
+  .header-logo {
     position: absolute !important;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    z-index: 102;
-  }
-  .header-container .header-wrapper .navbar-icon {
-    display: none !important;
-  }
-  .header-container .header-nav-container {
-    position: fixed;
-    width: 100% !important;
-    height: 100vh !important;
-    flex-direction: column-reverse;
-    top: 0;
-    transform: translateX(-100%) !important;
-    right: 0;
-    background: white;
-    justify-content: center !important;
-    align-items: center !important;
-    transition: transform 0.1s ease-in-out;
-    visibility: hidden;
-    overflow: hidden !important;
-  }
-  .header-container .header-nav-container.open {
-    transform: translateX(0) !important;
-    position: fixed !important;
-    visibility: visible;
-  }
-  .header-container .header-nav-container .navbar-wrapper, .header-container .header-nav-container .profile-wrapper {
-    position: relative;
-  }
-  .header-container .header-nav-container .navbar-wrapper {
-    flex-direction: column;
-    width: 100vw !important;
-    height: auto !important;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-container .header-nav-container .navbar-wrapper .navbar-item {
-    text-align: center;
-  }
-  .header-container .header-nav-container .navbar-wrapper .navbar-item .navbar-text:before {
-    content: "•";
-    position: absolute;
-    left: 10px;
-  }
-  .header-container .header-nav-container .navbar-wrapper .navbar-item .navbar-icon {
-    display: none;
-  }
-  .header-container .header-nav-container .profile-wrapper {
-    flex-direction: column;
-    height: auto !important;
-    width: 100% !important;
-  }
-  .header-container .header-nav-container .profile-wrapper .profile-button:before {
-    content: ">";
-    position: absolute;
-    left: 10px;
-  }
-  .header-container .header-nav-container .profile-button, .header-container .header-nav-container .navbar-item, .header-container .header-nav-container a {
-    width: 100% !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    height: 70px !important;
-    border: none !important;
-    background: none;
-    color: #516AE4 !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-  }
-  .header-container .header-nav-container .profile-button:hover, .header-container .header-nav-container .navbar-item:hover, .header-container .header-nav-container a:hover {
-    color: white !important;
-    background: #516AE4 !important;
-  }
-  .header-container .header-nav-container .profile-button:active, .header-container .header-nav-container .navbar-item:active, .header-container .header-nav-container a:active {
-    border: none !important;
-  }
-  .header-container .header-nav-container .profile-button {
-    color: #0028ff !important;
-    font-weight: 600 !important;
+    z-index: 101;
   }
 }
 @media only screen and (min-width: 861px) and (max-width: 1024px) {
@@ -201,11 +140,90 @@
     display: none !important;
   }
 }
+#hamburger-menu-wrapper {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 99;
+  transform: translateX(-100%);
+  transition: transform 0.15s ease;
+  padding: 75px 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+}
+#hamburger-menu-wrapper.open {
+  transform: translateX(0);
+}
+#hamburger-menu-wrapper #hamburger-menu {
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  margin: 75px 0;
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item {
+  display: flex;
+  width: 100% !important;
+  height: 70px !important;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item a {
+  display: flex;
+  width: 100% !important;
+  height: 70px !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #516AE4 !important;
+  transition: 0.02ms ease-in-out;
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item a:hover {
+  color: white !important;
+  background: #516AE4 !important;
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item a:active {
+  border: none !important;
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item a:before {
+  content: ">";
+  left: 10px;
+  position: relative;
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item a.profile-text {
+  font-weight: bold !important;
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item a.profile-text:before {
+  content: "•";
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item a .menu-text {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: -10px;
+}
+#hamburger-menu-wrapper #hamburger-menu .menu-item a .menu-text.profile-text {
+  font-weight: bold;
+}
+
 #hamburger-button {
   width: 30px;
-  height: 45px;
-  top: 11px;
-  position: relative;
+  height: 27px;
+  position: absolute;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -213,6 +231,7 @@
   transition: transform 0.1s ease-in-out;
   cursor: pointer;
   display: none;
+  z-index: 100;
 }
 
 #hamburger-button span {
