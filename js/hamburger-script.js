@@ -3,7 +3,7 @@ $(document).ready(function () {
         $(this).toggleClass('open');
         $('#hamburger-menu-wrapper').toggleClass('open');
         document.body.classList.toggle('no-scroll');
-        $('.header-container').toggleClass('open');
+        $('#header-container').toggleClass('open');
 
     });
 });

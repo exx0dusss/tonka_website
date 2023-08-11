@@ -84,6 +84,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-header {
   width: 100%;
@@ -103,19 +104,21 @@
   align-items: center;
 }
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body {
-  height: 100%;
-  width: 447px;
+  height: 280px;
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .body-item {
   display: flex;
   height: 71px;
-  width: 100%;
+  width: 450px !important;
   background-color: rgb(255, 255, 255);
 }
 .exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .body-item.currency-container {

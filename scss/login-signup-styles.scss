@@ -147,10 +147,7 @@
 }
 
 @media only screen and (max-width: 860px) {
-  body {
-    display: flex !important;
-    flex-direction: column;
-  }
+  
 
   #main-container {
     min-height: 100% !important;

@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<header class="header-container">
+<header class="header-container" id="header-container">
     <div class="header-wrapper">
         <a class="header-logo" href="./index.html"></a>
         <div class="header-nav-container" id="header-nav-container">
@@ -78,6 +78,42 @@
             <span></span>
             <span></span>
         </div>
+    </div>
+    <div id="hamburger-menu-wrapper" class="prevent-select">
+        <ul id="hamburger-menu">
+            <li class="menu-item">
+                <a href="./pages/login.html" class="profile-text">
+                    <span class="menu-text ">Login</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./pages/signup.html" class="profile-text">
+                    <span class="menu-text ">Sign Up</span>
+                </a>
+            </li>
+            <li class="menu-item ">
+                <a href="./index.html#comments-section">
+                    <span class="menu-text">Reviews</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./pages/partners.html">
+                    <span class="menu-text">Partners</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./pages/rules.html">
+
+                    <span class="menu-text">Rules</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./pages/error.html">
+
+                    <span class="menu-text">Support</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </header>
 
@@ -143,7 +179,7 @@
                 </div>
                 <form autocomplete="off" class="exchange-body" id="exchange-form"
                       method="GET">
-                    <ul class="body body-left">
+                    <ul class="body">
                         <li class="rect body-item currency-container prevent-select " id="from-currency-container">
                             <div class="rect currency-wrapper" id="from-currency-wrapper">
                                 <span id="from-basis">BTC</span>
@@ -241,9 +277,6 @@
                                 <span><a href="pages/rules.html">Rules</a></span>
                             </div>
                         </li>
-
-                    </ul>
-                    <ul class="body body-right">
                         <li class="rect body-item currency-container  prevent-select" id="to-currency-container">
                             <div class="rect currency-wrapper" id="to-currency-wrapper">
                                 <span id="to-basis">ETH</span>
@@ -655,31 +688,31 @@
 </main>
 <footer class="header-container">
     <div class="header-wrapper">
-        <a class="header-logo" href="index.html"></a>
-        <div class="header-nav-container">
+        <a class="header-logo" href="./index.html"></a>
+        <div class="header-nav-container" id="footer-nav-container">
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
                     <a href="./pages/error.html">
                         <span class="navbar-text">Support</span>
-                        <span class="navbar-item support"></span>
+                        <span class="navbar-icon support"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
                     <a href="./pages/rules.html">
                         <span class="navbar-text">Rules</span>
-                        <span class="navbar-item rules"></span>
+                        <span class="navbar-icon rules"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
                     <a href="./pages/partners.html">
                         <span class="navbar-text">Partners</span>
-                        <span class="navbar-item partners"></span>
+                        <span class="navbar-icon partners"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="#comments-section">
+                    <a href="./index.html#comments-section">
                         <span class="navbar-text">Reviews</span>
-                        <span class="navbar-item reviews"></span>
+                        <span class="navbar-icon reviews"></span>
                     </a>
                 </li>
             </ul>
@@ -698,8 +731,10 @@
                        id="Registration-footer">Sign
                     up</label>
 
+
             </div>
         </div>
+
     </div>
 </footer>
 

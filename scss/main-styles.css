@@ -229,6 +229,129 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 860px) {
+  #main-container #banner-container {
+    height: fit-content !important;
+    display: none;
+  }
+  #main-container #banner-container .icon-container {
+    display: none;
+    padding: 50px 0 0 0 !important;
+  }
+  #main-container #banner-container .icon-container .icon-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  #main-container #banner-container .icon-container .icon-wrapper .icon {
+    width: 200px;
+    height: 200px;
+    z-index: 99;
+    opacity: 0.6;
+  }
+  #main-container #banner-container .icon-container .icon-wrapper .shadow {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #main-container #banner-container #text-wrapper {
+    height: fit-content;
+    padding: 10px !important;
+  }
+  #main-container #banner-container #text-wrapper #main-text, #main-container #banner-container #text-wrapper #sub-text {
+    z-index: 100;
+    height: fit-content !important;
+    width: 100% !important;
+  }
+  #main-container #banner-container #text-wrapper #main-text {
+    font-size: 30px !important;
+    line-height: normal !important;
+  }
+  #main-container #banner-container #text-wrapper #sub-text {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px !important;
+    line-height: normal !important;
+  }
+  #main-container #exchange-banner-container {
+    margin: 0 !important;
+    z-index: 101;
+    height: 850px !important;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper {
+    border: none;
+    border-radius: 0;
+    width: 100% !important;
+    padding: 15px 10px 45px 10px !important;
+    justify-content: start !important;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-header {
+    flex-direction: column !important;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-header .info-wrapper {
+    width: fit-content;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-header .info-wrapper .info {
+    justify-content: center !important;
+    align-items: center !important;
+    min-width: 100% !important;
+    gap: 20px;
+    max-width: 100% !important;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-header .info-wrapper .info.info-left {
+    display: none;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body {
+    height: 100% !important;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 30px;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-header .text-wrapper {
+    text-align: center;
+    font-size: 28px !important;
+    font-style: normal !important;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body {
+    flex-direction: column;
+    height: 100% !important;
+    justify-content: space-between;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body {
+    width: 100% !important;
+    height: 100% !important;
+    gap: 0 !important;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body .body-item {
+    width: 100% !important;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #to-currency-container {
+    order: 2;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #from-container {
+    order: 3;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #to-container {
+    order: 4;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #address-container {
+    order: 5;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #payment-wrapper {
+    order: 6;
+    flex-direction: column;
+    height: 100px;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #payment-wrapper .button, #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #payment-wrapper .rules-info {
+    width: 100% !important;
+    text-align: center;
+  }
+  #main-container #exchange-banner-container .exchange-banner-wrapper .banner-body .exchange-body .body #payment-wrapper .rules-info {
+    font-size: 15px;
+  }
+}
 @keyframes smooth-appear {
   to {
     top: 0;
