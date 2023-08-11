@@ -55,11 +55,11 @@
           justify-content: center;
           font-size: 16px;
 
-          .navbar-item {
-            //height: 100%;
+          .navbar-icon {
             margin-left: 7px;
             width: 22px;
             height: 22px;
+            display: block;
 
 
             &.support {
@@ -125,8 +125,6 @@
   #hamburger-button {
     display: block !important;
     position: fixed;
-
-
   }
 
   .header-container {
@@ -139,35 +137,39 @@
         right: 0;
         margin-left: auto;
         margin-right: auto;
+        z-index: 102;
+      }
+
+      .navbar-icon {
+        display: none !important;
       }
     }
 
     .header-nav-container {
       position: fixed;
       width: 100% !important;
-      height: 100% !important;
+      height: 100vh !important;
       flex-direction: column-reverse;
-      top: 75px;
+      top: 0;
       transform: translateX(-100%) !important;
       right: 0;
       background: white;
       justify-content: center !important;
       align-items: center !important;
-      transition: 0.1s ease-in-out;
+      transition: transform 0.1s ease-in-out;
       visibility: hidden;
-      padding: 0;
+      overflow: hidden !important;
 
       &.open {
         transform: translateX(0) !important;
         position: fixed !important;
         visibility: visible;
 
-
       }
+
 
       .navbar-wrapper, .profile-wrapper {
         position: relative;
-        top: -70px;
       }
 
       .navbar-wrapper {
@@ -246,14 +248,18 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 861px) and (max-width: 1024px) {
   .header-container {
     .header-wrapper {
       .header-nav-container {
         width: 530px;
 
         .navbar-wrapper {
-          width: 300px !important;
+          width: 290px !important;
+
+          .navbar-icon {
+            display: none !important;
+          }
         }
       }
     }

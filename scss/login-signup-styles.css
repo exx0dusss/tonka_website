@@ -130,11 +130,11 @@
     flex-direction: column;
   }
   #main-container {
-    min-height: calc(100vh - 76px) !important;
+    min-height: 100% !important;
   }
   .profile-container {
     overflow-y: hidden !important;
-    height: 100% !important;
+    min-height: 100% !important;
     background: #F4F5FA !important;
   }
   .profile-container .profile-wrapper {
