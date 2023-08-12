@@ -290,7 +290,26 @@
   }
 }
 
-@media only screen and (max-width: 860px) {
+@keyframes smooth-appear {
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+main, footer {
+  position: relative;
+  top: 100vh;
+  opacity: 0;
+  animation: smooth-appear 1s ease forwards;
+}
+
+
+@media screen and (max-device-width: 1024px) {
+  body {
+    padding: 0;
+    overflow-x: hidden;
+  }
   #main-container {
     #banner-container {
       height: fit-content !important;
@@ -365,7 +384,8 @@
           flex-direction: column !important;
 
           .info-wrapper {
-            width: fit-content;
+            width: 100% !important;
+
 
             .info {
               justify-content: center !important;
@@ -452,20 +472,90 @@
       }
     }
 
+
+    #advantages-section-container {
+      height: 800px;
+      padding: 0 !important;
+      margin-bottom: 50px;
+      width: 100%;
+
+      #advantages-section-wrapper {
+        height: 100% !important;
+
+        .icon-container {
+          display: none;
+
+        }
+
+        #advantages-container {
+          width: 100% !important;
+
+          padding: 10px !important;
+          justify-content: start;
+          align-items: center;
+          height: 600px;
+
+          #advantages-header {
+            font-size: 35px;
+          }
+
+          #advantages-wrapper {
+            width: 100%;
+            flex-direction: row;
+            height: 100%;
+            margin-top: 50px;
+            flex-grow: 1;
+
+            .list {
+              flex-direction: column;
+              height: 100%;
+              width: 150px;
+
+              .item-wrapper {
+                height: 300px !important;
+                width: 100%;
+
+                .text-wrapper {
+                  width: 100%;
+                  margin-top: 15px;
+                  font-size: 15px !important;
+
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #comments-section {
+      padding: 0;
+      height: 800px;
+      margin-bottom: 80px;
+      background: none;
+
+      &.expanded {
+        height: 4480px;
+      }
+
+      #comments-container {
+        width: 100% !important;
+        padding: 10px;
+        align-items: center;
+
+        .comments-wrapper {
+          justify-content: center !important;
+
+          .comments-item {
+            width: 100%;
+          }
+        }
+      }
+    }
+
   }
 
 }
 
-@keyframes smooth-appear {
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
 
-main, footer {
-  position: relative;
-  top: 100vh;
-  opacity: 0;
-  animation: smooth-appear 1s ease forwards;
-}
