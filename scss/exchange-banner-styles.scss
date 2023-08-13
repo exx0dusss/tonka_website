@@ -146,8 +146,7 @@
               align-items: normal;
               justify-content: flex-start;
               width: 100%;
-              transition: ease-in-out;
-              transition-duration: 0.02s;
+              transition: border-radius 0.06s ease;
               cursor: pointer;
               font-weight: 600;
               font-size: 20px;
@@ -187,7 +186,7 @@
                 max-height: 0;
                 position: absolute;
                 margin: 71px 0 0 0;
-                width: 447px;
+                width: 450px;
                 background-color: white;
                 cursor: pointer;
                 border-radius: 0 0 15px 15px;

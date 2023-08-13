@@ -1,292 +1,294 @@
-#main-container {
-  width: 100%;
-  display: block;
-
-  #banner-container {
+@media screen and (min-device-width: 1024px) {
+  #main-container {
     width: 100%;
-    height: calc(100vh - 106px) !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 
-    .icon-container {
-      position: absolute;
-      width: 150%;
-      height: 309px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 200px 0 0 0;
-      transition: width 1s ease-in-out;
-
-      .icon-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        //width: 500px;
-        height: 500px;
-
-        #chest {
-          content: url("../files/crate-left.svg");
-        }
-
-        #chains {
-          content: url("../files/chain-right.svg");
-        }
-
-        .shadow {
-          content: url("../files/bg-ellipse.svg");
-          position: absolute;
-          width: auto;
-          max-height: 500px;
-
-          &#left-chest-shadow {
-            top: 65px;
-          }
-        }
-      }
-
-
-      #right-chains-wrapper {
-        .shadow {
-          transform: rotate(180deg);
-        }
-      }
-    }
-
-    #text-wrapper {
-      display: flex;
-      height: 309px;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-      .text {
-        font-style: normal;
-        flex-direction: column;
-        justify-content: center;
-        display: flex;
-        flex-shrink: 0;
-        text-align: center;
-
-      }
-
-      #main-text {
-        width: 750px;
-        height: 236px;
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 64px;
-
-      }
-
-      #sub-text {
-        width: 502px;
-        height: 106px;
-        font-size: 23px;
-        font-weight: 200;
-        line-height: 32px;
-
-      }
-    }
-
-  }
-
-  .exchange-banner-container {
-    margin: 100px 0;
-  }
-
-  #advantages-section-container {
-    width: 100%;
-    height: 680px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    #advantages-section-wrapper {
-      display: flex;
+    #banner-container {
       width: 100%;
-      height: 100%;
+      height: calc(100vh - 106px) !important;
+      display: flex;
       justify-content: center;
       align-items: center;
 
       .icon-container {
         position: absolute;
-        width: 100%;
-        height: 600px;
+        width: 150%;
+        height: 309px;
         display: flex;
-        flex-direction: column;
-        z-index: 99;
+        justify-content: space-between;
+        align-items: center;
+        padding: 200px 0 0 0;
+        transition: width 1s ease-in-out;
 
         .icon-wrapper {
           display: flex;
-          //justify-content: center;
-          //align-items: center;
+          justify-content: center;
+          align-items: center;
           //width: 500px;
           height: 500px;
-          position: absolute;
 
-          &#left-donut-wrapper {
-            left: 120px;
-            width: 210px;
-            height: 210px;
-            opacity: 0.5;
-
-            #donut {
-              content: url("../files/donut-left.svg");
-
-            }
+          #chest {
+            content: url("../files/crate-left.svg");
           }
 
-          &#left-sphere-wrapper {
-            left: 0;
-            bottom: 0;
-            width: 305px;
-            height: 305px;
-            opacity: 0.5;
-
-            #sphere {
-              content: url("../files/sphere-left.svg");
-
-            }
+          #chains {
+            content: url("../files/chain-right.svg");
           }
 
-          &#right-box-wrapper {
-            width: 210px;
-            height: 210px;
-            right: 130px;
+          .shadow {
+            content: url("../files/bg-ellipse.svg");
+            position: absolute;
+            width: auto;
+            max-height: 500px;
 
-            #box {
-              content: url("../files/box-right.svg");
-
+            &#left-chest-shadow {
+              top: 65px;
             }
           }
+        }
 
-          &#right-ellipse-wrapper {
-            right: 0;
-            bottom: 0;
-            width: 305px;
-            height: 305px;
-            opacity: 0.8;
 
-            #ellipse {
-              content: url("../files/ellipse-right.svg");
-
-            }
+        #right-chains-wrapper {
+          .shadow {
+            transform: rotate(180deg);
           }
-
-
         }
       }
 
-      #advantages-container {
+      #text-wrapper {
         display: flex;
+        height: 309px;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 720px;
-        height: 500px;
-        z-index: 100;
+        text-align: center;
 
-        #advantages-header {
-          text-align: center;
-          font-size: 48px;
+        .text {
           font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          width: 370px;
-          height: 61px;
+          flex-direction: column;
+          justify-content: center;
+          display: flex;
           flex-shrink: 0;
+          text-align: center;
+
         }
 
-        #advantages-wrapper {
-          display: flex;
-          flex-direction: column;
-          width: 840px;
-          height: 370px;
-          margin-top: 60px;
-          justify-content: space-between;
-          align-items: center;
+        #main-text {
+          width: 750px;
+          height: 236px;
+          font-size: 64px;
+          font-weight: 400;
+          line-height: 64px;
 
-          .list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            height: 167px;
+        }
 
-            .item-wrapper {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              height: 100%;
-              width: 214px;
+        #sub-text {
+          width: 502px;
+          height: 106px;
+          font-size: 23px;
+          font-weight: 200;
+          line-height: 32px;
 
-              .icon-wrapper {
-                width: 68px;
-                height: 65px;
-
-                .icon {
-                  width: 35px;
-                  height: 39px;
-                }
-
-                #profile {
-                  content: url("../files/advantages/profile.svg");
-                }
-
-                #switch {
-                  content: url("../files/advantages/switch.svg");
-                }
-
-                #notification {
-                  content: url("../files/advantages/notification.svg");
-                }
-
-                #chat {
-                  content: url("../files/advantages/chat.svg");
-                }
-
-                #calendar {
-                  content: url("../files/advantages/calendar.svg");
-                }
-
-                #success {
-                  content: url("../files/advantages/success.svg");
-                }
-
-              }
-
-              .text-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                font-style: normal;
-                line-height: normal;
-                font-size: 20px;
-                margin-top: 24px;
-
-                .main-text {
-                  text-align: center;
-                  font-weight: 600;
-                }
-
-                .sub-text {
-                  font-weight: 200;
-                }
-              }
-            }
-          }
         }
       }
+
     }
 
-  }
+    .exchange-banner-container {
+      margin: 100px 0;
+    }
 
-  .comments-section-container {
-    width: 100%;
+    #advantages-section-container {
+      width: 100%;
+      height: 680px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #advantages-section-wrapper {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .icon-container {
+          position: absolute;
+          width: 100%;
+          height: 600px;
+          display: flex;
+          flex-direction: column;
+          z-index: 99;
+
+          .icon-wrapper {
+            display: flex;
+            //justify-content: center;
+            //align-items: center;
+            //width: 500px;
+            height: 500px;
+            position: absolute;
+
+            &#left-donut-wrapper {
+              left: 120px;
+              width: 210px;
+              height: 210px;
+              opacity: 0.5;
+
+              #donut {
+                content: url("../files/donut-left.svg");
+
+              }
+            }
+
+            &#left-sphere-wrapper {
+              left: 0;
+              bottom: 0;
+              width: 305px;
+              height: 305px;
+              opacity: 0.5;
+
+              #sphere {
+                content: url("../files/sphere-left.svg");
+
+              }
+            }
+
+            &#right-box-wrapper {
+              width: 210px;
+              height: 210px;
+              right: 130px;
+
+              #box {
+                content: url("../files/box-right.svg");
+
+              }
+            }
+
+            &#right-ellipse-wrapper {
+              right: 0;
+              bottom: 0;
+              width: 305px;
+              height: 305px;
+              opacity: 0.8;
+
+              #ellipse {
+                content: url("../files/ellipse-right.svg");
+
+              }
+            }
+
+
+          }
+        }
+
+        #advantages-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 720px;
+          height: 500px;
+          z-index: 100;
+
+          #advantages-header {
+            text-align: center;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 370px;
+            height: 61px;
+            flex-shrink: 0;
+          }
+
+          #advantages-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 840px;
+            height: 370px;
+            margin-top: 60px;
+            justify-content: space-between;
+            align-items: center;
+
+            .list {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+              height: 167px;
+
+              .item-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                width: 214px;
+
+                .icon-wrapper {
+                  width: 68px;
+                  height: 65px;
+
+                  .icon {
+                    width: 35px;
+                    height: 39px;
+                  }
+
+                  #profile {
+                    content: url("../files/advantages/profile.svg");
+                  }
+
+                  #switch {
+                    content: url("../files/advantages/switch.svg");
+                  }
+
+                  #notification {
+                    content: url("../files/advantages/notification.svg");
+                  }
+
+                  #chat {
+                    content: url("../files/advantages/chat.svg");
+                  }
+
+                  #calendar {
+                    content: url("../files/advantages/calendar.svg");
+                  }
+
+                  #success {
+                    content: url("../files/advantages/success.svg");
+                  }
+
+                }
+
+                .text-wrapper {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  flex-direction: column;
+                  font-style: normal;
+                  line-height: normal;
+                  font-size: 20px;
+                  margin-top: 24px;
+
+                  .main-text {
+                    text-align: center;
+                    font-weight: 600;
+                  }
+
+                  .sub-text {
+                    font-weight: 200;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .comments-section-container {
+      width: 100%;
+    }
   }
 }
 
@@ -305,68 +307,17 @@ main, footer {
 }
 
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (min-device-width: 0) and (max-device-width: 1024px) {
   body {
     padding: 0;
     overflow-x: hidden;
   }
   #main-container {
     #banner-container {
-      height: fit-content !important;
-      display: none;
-
-      .icon-container {
-        display: none;
-        padding: 50px 0 0 0 !important;
-
-        .icon-wrapper {
-          width: 100px;
-          height: 100px;
-
-          .icon {
-            width: 200px;
-            height: 200px;
-            z-index: 99;
-            opacity: 0.6;
-          }
-
-          .shadow {
-            width: 100% !important;
-            height: 100% !important;
-          }
-        }
-
-      }
-
-      #text-wrapper {
-        height: fit-content;
-        padding: 10px !important;
-
-        #main-text, #sub-text {
-          z-index: 100;
-          height: fit-content !important;
-          width: 100% !important;
-
-        }
-
-        #main-text {
-
-          font-size: 30px !important;
-          line-height: normal !important;
-
-        }
-
-        #sub-text {
-          display: none;
-          margin-top: 20px;
-          font-size: 18px !important;
-          line-height: normal !important;
-
-        }
-      }
-
+      display: none !important;
 
     }
+
 
     #exchange-banner-container {
       margin: 0 !important;
@@ -377,7 +328,7 @@ main, footer {
         border: none;
         border-radius: 0;
         width: 100% !important;
-        padding: 15px 10px 45px 10px !important;
+        padding: 15px 30px 45px 30px !important;
         justify-content: start !important;
 
         .banner-header {
@@ -433,7 +384,34 @@ main, footer {
 
               .body-item {
                 width: 100% !important;
+
+                &.currency-container {
+                  position: relative;
+
+                  .currency-list-wrapper {
+                    width: 100%;
+                    z-index: 101;
+
+                    &.expand {
+                      max-height: 290px !important;
+
+                      .currency-list {
+                        max-height: 280px !important;
+
+                      }
+                    }
+
+                    .currency-list {
+                      width: 100% !important;
+
+                      .currency-item {
+                        width: 100% !important;
+                      }
+                    }
+                  }
+                }
               }
+
 
               #to-currency-container {
                 order: 2;
@@ -472,90 +450,223 @@ main, footer {
       }
     }
 
+  }
 
-    #advantages-section-container {
-      height: 800px;
-      padding: 0 !important;
-      margin-bottom: 50px;
-      width: 100%;
+}
 
-      #advantages-section-wrapper {
-        height: 100% !important;
+@media screen and (max-device-width: 767px) {
+  #comments-section {
+    padding: 0 !important;
+    height: 840px !important;
+    margin-bottom: 0 !important;
+    background: none !important;
 
-        .icon-container {
-          display: none;
+    &.expanded {
+      height: 4493px !important;
+    }
 
+    #comments-container {
+      width: 100% !important;
+      padding: 30px !important;
+      align-items: center !important;
+
+      .comments-wrapper {
+        justify-content: center !important;
+
+        .comments-item {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  #advantages-section-container {
+    height: 700px !important;
+    padding: 0 !important;
+    width: 100% !important;
+
+    #advantages-section-wrapper {
+      height: 100% !important;
+
+      .icon-container {
+        display: none !important;
+
+      }
+
+      #advantages-container {
+        width: 100% !important;
+
+        padding: 30px !important;
+        justify-content: start !important;
+        align-items: center !important;
+        height: 600px !important;
+
+        #advantages-header {
+          font-size: 35px !important;
         }
 
-        #advantages-container {
-          width: 100% !important;
+        #advantages-wrapper {
+          width: 340px !important;
+          flex-direction: row !important;
+          height: 100% !important;
+          margin-top: 50px !important;
+          flex-grow: 1 !important;
 
-          padding: 10px !important;
-          justify-content: start;
-          align-items: center;
-          height: 600px;
+          .list {
+            flex-direction: column !important;
+            height: 500px !important;
+            width: 150px !important;
 
-          #advantages-header {
-            font-size: 35px;
-          }
+            .item-wrapper {
+              height: 300px !important;
+              width: 100% !important;
 
-          #advantages-wrapper {
-            width: 100%;
-            flex-direction: row;
-            height: 100%;
-            margin-top: 50px;
-            flex-grow: 1;
-
-            .list {
-              flex-direction: column;
-              height: 100%;
-              width: 150px;
-
-              .item-wrapper {
-                height: 300px !important;
-                width: 100%;
-
-                .text-wrapper {
-                  width: 100%;
-                  margin-top: 15px;
-                  font-size: 15px !important;
+              .text-wrapper {
+                width: 100% !important;
+                margin-top: 15px !important;
+                font-size: 15px !important;
 
 
-                }
               }
             }
           }
         }
       }
     }
+  }
+}
 
-    #comments-section {
-      padding: 0;
-      height: 800px;
-      margin-bottom: 80px;
-      background: none;
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  #advantages-section-container {
+    height: 700px !important;
+    padding: 0 30px !important;
+    width: 100% !important;
 
-      &.expanded {
-        height: 4480px;
+    #advantages-section-wrapper {
+      height: 100% !important;
+
+      .icon-container {
+        display: none !important;
+
       }
 
-      #comments-container {
-        width: 100% !important;
-        padding: 10px;
-        align-items: center;
+      #advantages-container {
 
-        .comments-wrapper {
-          justify-content: center !important;
 
-          .comments-item {
-            width: 100%;
+        #advantages-header {
+          font-size: 35px !important;
+        }
+
+        #advantages-wrapper {
+          width: 100% !important;
+
+          .list {
+
+
+            .item-wrapper {
+              width: 150px !important;
+
+              .text-wrapper {
+                font-size: 15px !important;
+
+              }
+            }
           }
         }
       }
     }
-
   }
-
 }
 
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #comments-section {
+    padding: 0 !important;
+    height: 600px !important;
+    margin-bottom: 0 !important;
+    background: none !important;
 
+    &.expanded {
+      height: 2303px !important;
+    }
+
+    #comments-container {
+      width: 100% !important;
+      padding: 30px !important;
+      align-items: center !important;
+
+      .comments-wrapper {
+        justify-content: center !important;
+        column-gap: 40px !important;
+
+        .comments-item {
+          width: 45% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1400px) {
+  #banner-container {
+    position: relative !important;
+
+    .icon-container {
+      height: fit-content !important;
+      padding: 0 !important;
+      width: 100% !important;
+
+      .icon-wrapper, .icon {
+        width: 420px !important;
+        height: 400px !important;
+        overflow: hidden;
+
+
+        #chest {
+          content: url("../files/crate-left.svg");
+          margin-right: 100px !important;
+        }
+
+        #chains {
+          content: url("../files/chain-right.svg");
+          margin-left: 100px !important;
+        }
+
+        .shadow {
+
+
+          &#left-chest-shadow {
+          }
+        }
+      }
+
+
+      #right-chains-wrapper {
+        .shadow {
+        }
+      }
+    }
+
+    #text-wrapper {
+      z-index: 101;
+      width: 630px !important;
+
+      .text {
+        width: 100% !important;
+
+      }
+
+      #main-text {
+        font-size: 55px !important;
+
+      }
+
+      #sub-text {
+        font-size: 20px !important;
+        width: 75% !important;
+      }
+    }
+
+  }
+}

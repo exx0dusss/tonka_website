@@ -158,10 +158,10 @@ svg {
 }
 
 .expand {
-  max-height: 250px !important;
+  max-height: 200px !important;
 }
 .expand .currency-list {
-  max-height: 240px !important;
+  max-height: 190px !important;
 }
 
 .hidden {

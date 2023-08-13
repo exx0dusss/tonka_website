@@ -131,6 +131,10 @@
   }
 }
 
+.copyright {
+  display: none;
+}
+
 @media only screen and (max-height: 550px) {
   #hamburger-menu {
     height: 100% !important;
@@ -150,13 +154,25 @@
     display: flex !important;
   }
 
-  .header-logo {
-    position: absolute !important;
+  .header-logo, .copyright {
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     z-index: 101;
+  }
+
+  footer {
+    border: none !important;
+
+    .header-logo {
+      display: none;
+    }
+
+    .copyright {
+      display: flex !important;
+    }
+
   }
 
 }
