@@ -54,3 +54,73 @@ body {
     }
   }
 }
+
+// Phone
+@media screen and (max-width: 717px) {
+  .error-wrapper {
+    justify-content: center !important;
+  }
+  .icon-wrapper {
+    display: none !important;
+  }
+  .text-wrapper {
+    width: 100% !important;
+    .main-text span{
+      font-size: 140px !important;
+    }
+
+    .sub-text span {
+      font-size: 60px !important;
+      line-height: normal !important;
+      text-align: center;
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: 718px) and (max-width: 912px) {
+  .error-container {
+    width: 100% !important;
+    .icon-wrapper, .icon {
+      width: 400px !important;
+      height: 400px !important;
+
+    }
+    .text-wrapper {
+      width: 50% !important;
+      .main-text span{
+        font-size: 120px !important;
+      }
+
+      .sub-text span {
+        font-size: 40px !important;
+        line-height: normal !important;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+// Laptop
+@media screen and (min-width: 913px) and (max-width: 1024px) {
+.error-container {
+  width: 100% !important;
+  .icon-wrapper {
+    width: 50% !important;
+
+  }
+  .text-wrapper {
+    width: 50% !important;
+    .main-text span{
+      font-size: 120px !important;
+    }
+
+    .sub-text span {
+      font-size: 40px !important;
+      line-height: normal !important;
+      text-align: center;
+    }
+  }
+}
+}
