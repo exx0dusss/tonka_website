@@ -52,15 +52,20 @@ body {
 @media screen and (max-width: 717px) {
   .error-wrapper {
     justify-content: center !important;
+    position: relative;
   }
   .icon-wrapper {
-    display: none !important;
+    position: absolute;
+    opacity: 0.1;
+    z-index: 96;
   }
   .text-wrapper {
     width: 100% !important;
+    z-index: 97;
   }
   .text-wrapper .main-text span {
     font-size: 140px !important;
+    height: 100% !important;
   }
   .text-wrapper .sub-text span {
     font-size: 60px !important;

@@ -59,14 +59,21 @@ body {
 @media screen and (max-width: 717px) {
   .error-wrapper {
     justify-content: center !important;
+    position: relative;
   }
   .icon-wrapper {
-    display: none !important;
+    position: absolute;
+    opacity: 0.1;
+    z-index: 96;
+
   }
   .text-wrapper {
     width: 100% !important;
-    .main-text span{
+    z-index: 97;
+
+    .main-text span {
       font-size: 140px !important;
+      height: 100% !important;
     }
 
     .sub-text span {
@@ -81,14 +88,17 @@ body {
 @media screen and (min-width: 718px) and (max-width: 912px) {
   .error-container {
     width: 100% !important;
+
     .icon-wrapper, .icon {
       width: 400px !important;
       height: 400px !important;
 
     }
+
     .text-wrapper {
       width: 50% !important;
-      .main-text span{
+
+      .main-text span {
         font-size: 120px !important;
       }
 
@@ -104,23 +114,26 @@ body {
 
 // Laptop
 @media screen and (min-width: 913px) and (max-width: 1024px) {
-.error-container {
-  width: 100% !important;
-  .icon-wrapper {
-    width: 50% !important;
+  .error-container {
+    width: 100% !important;
 
-  }
-  .text-wrapper {
-    width: 50% !important;
-    .main-text span{
-      font-size: 120px !important;
+    .icon-wrapper {
+      width: 50% !important;
+
     }
 
-    .sub-text span {
-      font-size: 40px !important;
-      line-height: normal !important;
-      text-align: center;
+    .text-wrapper {
+      width: 50% !important;
+
+      .main-text span {
+        font-size: 120px !important;
+      }
+
+      .sub-text span {
+        font-size: 40px !important;
+        line-height: normal !important;
+        text-align: center;
+      }
     }
   }
-}
 }
