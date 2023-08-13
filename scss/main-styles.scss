@@ -1,294 +1,292 @@
-@media screen and (min-device-width: 1024px) {
-  #main-container {
-    width: 100%;
-    display: block;
+#main-container {
+  width: 100%;
+  display: block;
 
-    #banner-container {
-      width: 100%;
-      height: calc(100vh - 106px) !important;
+  #banner-container {
+    width: 100%;
+    height: calc(100vh - 106px) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon-container {
+      position: absolute;
+      width: 150%;
+      height: 309px;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 200px 0 0 0;
+      transition: width 1s ease-in-out;
+
+      .icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //width: 500px;
+        height: 500px;
+
+        #chest {
+          content: url("../files/crate-left.svg");
+        }
+
+        #chains {
+          content: url("../files/chain-right.svg");
+        }
+
+        .shadow {
+          content: url("../files/bg-ellipse.svg");
+          position: absolute;
+          width: auto;
+          max-height: 500px;
+
+          &#left-chest-shadow {
+            top: 65px;
+          }
+        }
+      }
+
+
+      #right-chains-wrapper {
+        .shadow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    #text-wrapper {
+      display: flex;
+      height: 309px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .text {
+        font-style: normal;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        flex-shrink: 0;
+        text-align: center;
+
+      }
+
+      #main-text {
+        width: 750px;
+        height: 236px;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 64px;
+
+      }
+
+      #sub-text {
+        width: 502px;
+        height: 106px;
+        font-size: 23px;
+        font-weight: 200;
+        line-height: 32px;
+
+      }
+    }
+
+  }
+
+  .exchange-banner-container {
+    margin: 100px 0;
+  }
+
+  #advantages-section-container {
+    width: 100%;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #advantages-section-wrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
       justify-content: center;
       align-items: center;
 
       .icon-container {
         position: absolute;
-        width: 150%;
-        height: 309px;
+        width: 100%;
+        height: 600px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 200px 0 0 0;
-        transition: width 1s ease-in-out;
+        flex-direction: column;
+        z-index: 99;
 
         .icon-wrapper {
           display: flex;
-          justify-content: center;
-          align-items: center;
+          //justify-content: center;
+          //align-items: center;
           //width: 500px;
           height: 500px;
+          position: absolute;
 
-          #chest {
-            content: url("../files/crate-left.svg");
-          }
+          &#left-donut-wrapper {
+            left: 120px;
+            width: 210px;
+            height: 210px;
+            opacity: 0.5;
 
-          #chains {
-            content: url("../files/chain-right.svg");
-          }
+            #donut {
+              content: url("../files/donut-left.svg");
 
-          .shadow {
-            content: url("../files/bg-ellipse.svg");
-            position: absolute;
-            width: auto;
-            max-height: 500px;
-
-            &#left-chest-shadow {
-              top: 65px;
             }
           }
-        }
 
+          &#left-sphere-wrapper {
+            left: 0;
+            bottom: 0;
+            width: 305px;
+            height: 305px;
+            opacity: 0.5;
 
-        #right-chains-wrapper {
-          .shadow {
-            transform: rotate(180deg);
+            #sphere {
+              content: url("../files/sphere-left.svg");
+
+            }
           }
+
+          &#right-box-wrapper {
+            width: 210px;
+            height: 210px;
+            right: 130px;
+
+            #box {
+              content: url("../files/box-right.svg");
+
+            }
+          }
+
+          &#right-ellipse-wrapper {
+            right: 0;
+            bottom: 0;
+            width: 305px;
+            height: 305px;
+            opacity: 0.8;
+
+            #ellipse {
+              content: url("../files/ellipse-right.svg");
+
+            }
+          }
+
+
         }
       }
 
-      #text-wrapper {
+      #advantages-container {
         display: flex;
-        height: 309px;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        .text {
-          font-style: normal;
-          flex-direction: column;
-          justify-content: center;
-          display: flex;
-          flex-shrink: 0;
-          text-align: center;
-
-        }
-
-        #main-text {
-          width: 750px;
-          height: 236px;
-          font-size: 64px;
-          font-weight: 400;
-          line-height: 64px;
-
-        }
-
-        #sub-text {
-          width: 502px;
-          height: 106px;
-          font-size: 23px;
-          font-weight: 200;
-          line-height: 32px;
-
-        }
-      }
-
-    }
-
-    .exchange-banner-container {
-      margin: 100px 0;
-    }
-
-    #advantages-section-container {
-      width: 100%;
-      height: 680px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      #advantages-section-wrapper {
-        display: flex;
-        width: 100%;
-        height: 100%;
         justify-content: center;
         align-items: center;
+        width: 720px;
+        height: 500px;
+        z-index: 100;
 
-        .icon-container {
-          position: absolute;
-          width: 100%;
-          height: 600px;
-          display: flex;
-          flex-direction: column;
-          z-index: 99;
-
-          .icon-wrapper {
-            display: flex;
-            //justify-content: center;
-            //align-items: center;
-            //width: 500px;
-            height: 500px;
-            position: absolute;
-
-            &#left-donut-wrapper {
-              left: 120px;
-              width: 210px;
-              height: 210px;
-              opacity: 0.5;
-
-              #donut {
-                content: url("../files/donut-left.svg");
-
-              }
-            }
-
-            &#left-sphere-wrapper {
-              left: 0;
-              bottom: 0;
-              width: 305px;
-              height: 305px;
-              opacity: 0.5;
-
-              #sphere {
-                content: url("../files/sphere-left.svg");
-
-              }
-            }
-
-            &#right-box-wrapper {
-              width: 210px;
-              height: 210px;
-              right: 130px;
-
-              #box {
-                content: url("../files/box-right.svg");
-
-              }
-            }
-
-            &#right-ellipse-wrapper {
-              right: 0;
-              bottom: 0;
-              width: 305px;
-              height: 305px;
-              opacity: 0.8;
-
-              #ellipse {
-                content: url("../files/ellipse-right.svg");
-
-              }
-            }
-
-
-          }
+        #advantages-header {
+          text-align: center;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 370px;
+          height: 61px;
+          flex-shrink: 0;
         }
 
-        #advantages-container {
+        #advantages-wrapper {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          width: 840px;
+          height: 370px;
+          margin-top: 60px;
+          justify-content: space-between;
           align-items: center;
-          width: 720px;
-          height: 500px;
-          z-index: 100;
 
-          #advantages-header {
-            text-align: center;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 370px;
-            height: 61px;
-            flex-shrink: 0;
-          }
-
-          #advantages-wrapper {
+          .list {
             display: flex;
-            flex-direction: column;
-            width: 840px;
-            height: 370px;
-            margin-top: 60px;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
+            height: 167px;
 
-            .list {
+            .item-wrapper {
               display: flex;
-              justify-content: space-between;
+              flex-direction: column;
               align-items: center;
-              width: 100%;
-              height: 167px;
+              height: 100%;
+              width: 214px;
 
-              .item-wrapper {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                height: 100%;
-                width: 214px;
+              .icon-wrapper {
+                width: 68px;
+                height: 65px;
 
-                .icon-wrapper {
-                  width: 68px;
-                  height: 65px;
-
-                  .icon {
-                    width: 35px;
-                    height: 39px;
-                  }
-
-                  #profile {
-                    content: url("../files/advantages/profile.svg");
-                  }
-
-                  #switch {
-                    content: url("../files/advantages/switch.svg");
-                  }
-
-                  #notification {
-                    content: url("../files/advantages/notification.svg");
-                  }
-
-                  #chat {
-                    content: url("../files/advantages/chat.svg");
-                  }
-
-                  #calendar {
-                    content: url("../files/advantages/calendar.svg");
-                  }
-
-                  #success {
-                    content: url("../files/advantages/success.svg");
-                  }
-
+                .icon {
+                  width: 35px;
+                  height: 39px;
                 }
 
-                .text-wrapper {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
+                #profile {
+                  content: url("../files/advantages/profile.svg");
+                }
+
+                #switch {
+                  content: url("../files/advantages/switch.svg");
+                }
+
+                #notification {
+                  content: url("../files/advantages/notification.svg");
+                }
+
+                #chat {
+                  content: url("../files/advantages/chat.svg");
+                }
+
+                #calendar {
+                  content: url("../files/advantages/calendar.svg");
+                }
+
+                #success {
+                  content: url("../files/advantages/success.svg");
+                }
+
+              }
+
+              .text-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                font-style: normal;
+                line-height: normal;
+                font-size: 20px;
+                margin-top: 24px;
+
+                .main-text {
                   text-align: center;
-                  flex-direction: column;
-                  font-style: normal;
-                  line-height: normal;
-                  font-size: 20px;
-                  margin-top: 24px;
+                  font-weight: 600;
+                }
 
-                  .main-text {
-                    text-align: center;
-                    font-weight: 600;
-                  }
-
-                  .sub-text {
-                    font-weight: 200;
-                  }
+                .sub-text {
+                  font-weight: 200;
                 }
               }
             }
           }
         }
       }
-
     }
 
-    .comments-section-container {
-      width: 100%;
-    }
+  }
+
+  .comments-section-container {
+    width: 100%;
   }
 }
 
@@ -307,7 +305,7 @@ main, footer {
 }
 
 
-@media screen and (min-device-width: 0) and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   body {
     padding: 0;
     overflow-x: hidden;
@@ -454,7 +452,7 @@ main, footer {
 
 }
 
-@media screen and (max-device-width: 767px) {
+@media screen and (max-width: 767px) {
   #comments-section {
     padding: 0 !important;
     height: 840px !important;
@@ -481,7 +479,7 @@ main, footer {
   }
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   #advantages-section-container {
     height: 700px !important;
     padding: 0 !important;
@@ -538,7 +536,7 @@ main, footer {
   }
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   #advantages-section-container {
     height: 700px !important;
     padding: 0 30px !important;
@@ -580,7 +578,7 @@ main, footer {
   }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   #comments-section {
     padding: 0 !important;
     height: 600px !important;
@@ -608,7 +606,7 @@ main, footer {
   }
 }
 
-@media screen and (min-device-width: 1025px) and (max-device-width: 1400px) {
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
   #banner-container {
     position: relative !important;
 

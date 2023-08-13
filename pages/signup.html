@@ -22,26 +22,25 @@
 </head>
 
 <body>
-<header class="header-container">
+<header class="header-container" id="header-container">
     <div class="header-wrapper">
         <a class="header-logo" href="../index.html"></a>
         <div class="header-nav-container" id="header-nav-container">
-            
             <ul class="navbar-wrapper">
                 <li class="navbar-item ">
-                    <a href="error.html">
+                    <a href="../pages/error.html">
                         <span class="navbar-text">Support</span>
                         <span class="navbar-icon support"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="rules.html">
+                    <a href="../pages/rules.html">
                         <span class="navbar-text">Rules</span>
                         <span class="navbar-icon rules"></span>
                     </a>
                 </li>
                 <li class="navbar-item ">
-                    <a href="partners.html">
+                    <a href="../pages/partners.html">
                         <span class="navbar-text">Partners</span>
                         <span class="navbar-icon partners"></span>
                     </a>
@@ -55,14 +54,14 @@
             </ul>
             <div class="profile-wrapper">
                 <input checked hidden id="authorization-input-header" name="profile-button-group"
-                       onclick="window.location.href='login.html'; return false;"
+                       onclick="window.location.href='./pages/login.html'; return false;"
                        type="radio">
                 <label class="blue rect button profile-button no-outline" for="authorization-input-header"
                        id="Authorization-header">Log
                     in</label>
 
                 <input hidden id="registration-input-header" name="profile-button-group"
-                       onclick="window.location.href='signup.html'; return false;"
+                       onclick="window.location.href='./pages/signup.html'; return false;"
                        type="radio">
                 <label class="blue rect button profile-button no-outline" for="registration-input-header"
                        id="Registration-header">Sign
@@ -77,6 +76,42 @@
             <span></span>
             <span></span>
         </div>
+    </div>
+    <div id="hamburger-menu-wrapper" class="prevent-select">
+        <ul id="hamburger-menu">
+            <li class="menu-item">
+                <a href="../pages/login.html" class="profile-text">
+                    <span class="menu-text ">Login</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="../pages/signup.html" class="profile-text">
+                    <span class="menu-text ">Sign Up</span>
+                </a>
+            </li>
+            <li class="menu-item ">
+                <a href="../index.html#comments-section">
+                    <span class="menu-text">Reviews</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="../pages/partners.html">
+                    <span class="menu-text">Partners</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="../pages/rules.html">
+
+                    <span class="menu-text">Rules</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="../pages/error.html">
+
+                    <span class="menu-text">Support</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </header>
 
@@ -125,12 +160,12 @@
     </section>
 </main>
 <script
-        crossorigin="anonymous "
+        crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js "
 ></script>
 <script
-        crossorigin="anonymous "
+        crossorigin="anonymous"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
         src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js "
 ></script>
