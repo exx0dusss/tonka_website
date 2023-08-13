@@ -668,3 +668,20 @@ main, footer {
 
   }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1420px) {
+  #comments-section {
+padding: 75px 0;
+    #comments-container {
+      width: 850px !important;
+      padding: 0 !important;
+      .comments-wrapper {
+        justify-content: center !important;
+        .comments-item {
+          width: 47% !important;
+        }
+      }
+
+    }
+  }
+}

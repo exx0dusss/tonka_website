@@ -501,5 +501,20 @@ main, footer {
     width: 75% !important;
   }
 }
+@media screen and (min-width: 1025px) and (max-width: 1420px) {
+  #comments-section {
+    padding: 75px 0;
+  }
+  #comments-section #comments-container {
+    width: 850px !important;
+    padding: 0 !important;
+  }
+  #comments-section #comments-container .comments-wrapper {
+    justify-content: center !important;
+  }
+  #comments-section #comments-container .comments-wrapper .comments-item {
+    width: 47% !important;
+  }
+}
 
 /*# sourceMappingURL=main-styles.css.map */

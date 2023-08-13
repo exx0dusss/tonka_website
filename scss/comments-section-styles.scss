@@ -29,11 +29,11 @@
       flex-wrap: wrap;
       overflow: hidden;
       height: 100%;
-
+      gap: 40px;
 
       .comments-item {
         border-radius: 20px;
-        width: 357px;
+        width: 356px;
         height: 207px;
         background-color: white;
         padding: 27px;
@@ -42,7 +42,6 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 300;
-        margin-bottom: 36px !important;
 
         .item-header {
           width: 100%;
