@@ -1,10 +1,6 @@
-body {
-  overflow: hidden;
-}
-
 .error-container {
   width: 100%;
-  height: calc(100vh - 105px);
+  height: calc(100vh - 75px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,11 +49,17 @@ body {
   .error-wrapper {
     justify-content: center !important;
     position: relative;
+    width: 100% !important;
   }
   .icon-wrapper {
     position: absolute;
     opacity: 0.1;
     z-index: 96;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .icon-wrapper .icon {
+    width: 100% !important;
   }
   .text-wrapper {
     width: 100% !important;
