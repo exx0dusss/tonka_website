@@ -219,8 +219,8 @@ footer {
     width: 100% !important;
   }
   #partners-container #partners-wrapper {
-    padding: 30px !important;
-    height: 100vh !important;
+    padding: 50px 30px !important;
+    justify-content: start !important;
     row-gap: 10px !important;
   }
   #partners-container #partners-wrapper .text-wrapper#header-text .text {
@@ -236,7 +236,8 @@ footer {
   #partners-container #referrals-wrapper {
     border-radius: 0 !important;
     border: none !important;
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid #B7B7B7 !important;
+    padding: 30px !important;
   }
 }
 
