@@ -242,6 +242,11 @@ main, footer {
   animation: smooth-appear 1s ease forwards;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1420px) {
+  #comments-section.expanded {
+    height: 2440px !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   body {
     padding: 0;
@@ -358,7 +363,7 @@ main, footer {
     background: none !important;
   }
   #comments-section.expanded {
-    height: 4493px !important;
+    height: 4580px !important;
   }
   #comments-section #comments-container {
     width: 100% !important;
@@ -449,7 +454,7 @@ main, footer {
     background: none !important;
   }
   #comments-section.expanded {
-    height: 2303px !important;
+    height: 2345px !important;
   }
   #comments-section #comments-container {
     width: 100% !important;

@@ -1,6 +1,6 @@
 #comments-section {
   width: 100%;
-  height: 690px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   padding: 75px 136px;
 
   &.expanded {
-    height: 1670px;
+    height: 1700px;
 
     .comments-item {
       margin-bottom: 0 !important;
@@ -21,6 +21,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    row-gap: 40px;
 
     .comments-wrapper {
       width: 100%;
