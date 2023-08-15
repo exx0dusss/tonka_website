@@ -18,22 +18,24 @@
   height: 1300px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  padding: 100px;
 }
 .main-container .application-container .application-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   width: 1250px;
   height: 1100px;
-  padding: 42px;
+  column-gap: 40px;
 }
 .main-container .application-container .application-wrapper .data-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
-  height: 100%;
+  height: 1030px;
+  row-gap: 40px;
 }
 .main-container .application-container .application-wrapper .data-wrapper .data-header-text {
   font-size: 58px;
@@ -272,6 +274,8 @@
   align-items: start;
   flex-direction: column;
   padding-top: 20px;
+  position: relative;
+  row-gap: 0 !important;
 }
 .main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .data-wrapper .main-text {
   color: rgba(0, 0, 0, 0.5);
@@ -279,6 +283,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  left: 50px;
 }
 .main-container .application-container .application-wrapper .submission-container .form-wrapper .payment-wrapper .crypto-wrapper .data-wrapper .text {
   color: #000;
@@ -566,6 +571,276 @@
   font-style: normal;
   font-weight: 500;
   line-height: 21px; /* 84% */
+}
+
+@media screen and (min-width: 1259px) and (max-width: 1318px) {
+  .data-wrapper {
+    row-gap: 30px !important;
+  }
+  .data-header-text {
+    font-size: 52px !important;
+  }
+  .data-pair-wrapper .pair-header-text {
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 1258px) {
+  .application-container {
+    padding: 50px !important;
+  }
+  .data-header-text {
+    font-size: 48px !important;
+  }
+  .data-pair-wrapper .pair-header-text {
+    font-size: 38px !important;
+  }
+  .header-text-wrapper {
+    font-size: 36px !important;
+  }
+  .attention-container {
+    padding: 0 50px !important;
+  }
+  .attention-container .text-wrapper {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 762px) and (max-width: 1124px) {
+  .data-item-wrapper {
+    width: 560px !important;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1124px) {
+  .application-wrapper {
+    padding: 30px !important;
+  }
+}
+@media screen and (max-width: 1124px) {
+  .application-container {
+    height: fit-content !important;
+    align-items: start !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .application-wrapper {
+    flex-direction: column !important;
+    height: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    row-gap: 40px !important;
+  }
+  .application-wrapper .data-header-text,
+  .application-wrapper .data-pair-wrapper,
+  .application-wrapper .pair-header-text,
+  .application-wrapper .data-course-wrapper,
+  .application-wrapper .button-wrapper,
+  .application-wrapper .step-container {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .application-wrapper .data-wrapper {
+    row-gap: 10px !important;
+  }
+  .application-wrapper .data-course-wrapper, .application-wrapper .data-pair-wrapper {
+    row-gap: 30px !important;
+    height: fit-content !important;
+  }
+  .application-wrapper .data-course-wrapper {
+    margin-top: 30px !important;
+  }
+  .application-wrapper .step-container {
+    row-gap: 30px !important;
+    height: fit-content !important;
+  }
+  .application-wrapper .step-container .step-wrapper .number {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 30px !important;
+  }
+  .application-wrapper .step-container .step-wrapper .text-wrapper {
+    height: 100% !important;
+    justify-content: center !important;
+  }
+  .application-wrapper .step-container .step-wrapper .text-wrapper .sub-text {
+    text-align: start;
+    font-size: 12px !important;
+  }
+  .text-wrapper .button-wrapper {
+    justify-content: space-between !important;
+  }
+}
+@media screen and (max-width: 761px) {
+  .data-item-wrapper {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .submission-container {
+    height: 1050px !important;
+  }
+  .submission-container .rect {
+    text-align: start !important;
+  }
+  .qr-wrapper {
+    margin-top: 80px !important;
+  }
+  .qr-wrapper .icon-wrapper {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .qr-wrapper .icon-wrapper .icon {
+    width: 80% !important;
+    height: 80% !important;
+  }
+  .qr-wrapper .text-wrapper {
+    width: 40% !important;
+  }
+  .step-container {
+    width: 200px !important;
+  }
+  .help-wrapper {
+    justify-content: center !important;
+    height: 300px !important;
+  }
+  .help-wrapper .text-wrapper {
+    row-gap: 40px !important;
+  }
+  .help-wrapper .text-wrapper .main-text {
+    top: 10px !important;
+    position: relative;
+  }
+  .step-wrapper {
+    column-gap: 30px !important;
+    width: 100% !important;
+  }
+  .text-wrapper {
+    width: 100% !important;
+    height: fit-content !important;
+  }
+  .application-container {
+    padding: 0 !important;
+  }
+  .application-wrapper {
+    padding: 0 !important;
+  }
+  .application-wrapper .data-wrapper {
+    height: 100% !important;
+    padding: 30px !important;
+  }
+  .application-wrapper .pair-data-wrapper {
+    padding: 0 !important;
+  }
+  .application-wrapper .button-wrapper {
+    justify-content: start !important;
+  }
+  .application-wrapper #application-data,
+  .application-wrapper .data-header-text,
+  .application-wrapper .data-pair-wrapper,
+  .application-wrapper .pair-header-text,
+  .application-wrapper .data-course-wrapper,
+  .application-wrapper .button-wrapper {
+    width: 100% !important;
+    justify-content: start !important;
+    align-items: start !important;
+    text-align: start !important;
+  }
+  .application-wrapper .data-header-text {
+    font-size: 1.8em !important;
+    line-height: normal !important;
+  }
+  .application-wrapper .pair-header-text {
+    font-size: 28px !important;
+  }
+  .application-wrapper .select-button {
+    margin-left: 0 !important;
+  }
+  .application-wrapper .button-wrapper {
+    column-gap: 13px !important;
+  }
+  .application-wrapper #fixed-course-text {
+    text-align: justify;
+    row-gap: 10px !important;
+  }
+  .application-wrapper #fixed-course-text .main-text {
+    font-size: 1.2em !important;
+  }
+  .application-wrapper #fixed-course-text .sub-text {
+    font-size: 15px !important;
+  }
+  .application-wrapper .submission-container, .application-wrapper .form-wrapper, .application-wrapper .date-wrapper {
+    width: 100% !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  .application-wrapper .submission-container .header-text-wrapper {
+    font-size: 32px !important;
+  }
+  .application-wrapper .submission-container .line {
+    margin-top: 10px !important;
+  }
+  .application-wrapper .submission-container .crypto-wrapper {
+    position: relative !important;
+  }
+  .application-wrapper .submission-container .crypto-wrapper .data-wrapper .main-text {
+    font-size: 18px !important;
+  }
+  .application-wrapper .submission-container .crypto-wrapper .data-wrapper .sub-text {
+    font-size: 20px !important;
+  }
+  .application-wrapper .submission-container .data-wrapper {
+    justify-content: center !important;
+    width: 100% !important;
+    align-items: center !important;
+  }
+  .application-wrapper .submission-container .data-wrapper .icon-wrapper {
+    position: absolute !important;
+    left: 38px !important;
+  }
+  .application-wrapper .submission-container .data-wrapper .icon-wrapper .icon {
+    position: static !important;
+  }
+  .application-wrapper .submission-container .address-wrapper {
+    position: absolute !important;
+    margin-top: 80px !important;
+    width: 80% !important;
+    column-gap: 5px !important;
+  }
+  .application-wrapper .submission-container .address-wrapper .text-wrapper {
+    text-align: start;
+    justify-content: start;
+  }
+  .application-wrapper .submission-container .help-wrapper .button-wrapper {
+    position: relative !important;
+  }
+  .application-wrapper .submission-container .help-wrapper .base-timer {
+    position: absolute;
+    right: 0;
+    bottom: -25px !important;
+  }
+  .attention-container .text-wrapper {
+    row-gap: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .attention-container .text-wrapper .main-text {
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+  .attention-container .text-wrapper .sub-text {
+    font-size: 16px !important;
+    text-align: justify !important;
+  }
+}
+@media screen and (max-width: 512px) {
+  .data-item-wrapper .sub-text, .data-item-wrapper #address-input {
+    width: 100% !important;
+    overflow: auto;
+  }
+  .address-wrapper .sub-text {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=application-styles.css.map */

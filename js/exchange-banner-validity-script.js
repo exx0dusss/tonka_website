@@ -49,7 +49,7 @@ document.querySelector('#exchange-form').addEventListener('submit', e => {
         const code = wallets[fromCurrency];
         // Create a URL with the data as query parameters
         // Redirect to the second HTML file
-        window.location.href = "application.html" + "?fromBasis=" + encodeURIComponent(fromBasisValue) +
+        window.location.href = "./pages/application.html" + "?fromBasis=" + encodeURIComponent(fromBasisValue) +
             "&fromQuantity=" + encodeURIComponent(fromQuantityValue) +
             "&toBasis=" + encodeURIComponent(toBasisValue) +
             "&toQuantity=" + encodeURIComponent(toQuantityValue) +
