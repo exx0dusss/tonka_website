@@ -17,7 +17,7 @@
     <link href="../scss/object-urls.css" rel="stylesheet"/>
     <link href="../scss/scroll-styles.css" rel="stylesheet"/>
     <link href="../scss/header-styles.css" rel="stylesheet"/>
-    <link href="../scss/styles.css" rel="stylesheet"/>
+    <link href="../scss/partners-styles.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -65,8 +65,6 @@
                 <label class="blue rect button profile-button no-outline" for="registration-input-header"
                        id="Registration-header">Sign
                     up</label>
-
-
             </div>
         </div>
         <div id="hamburger-button">
@@ -114,59 +112,124 @@
     </div>
 </header>
 
-<main id="partners-page">
-    <section class="page-wrapper">
-        <div class="section-wrapper">
-            <div class="partners-wrapper">
-                <div class="partners-header-text">Partners</div>
-                <div class="partners-referral-link-wrapper">
-                    <div class="referall-header-text">Referral link</div>
-                    <div class="referall-main-text">
-                        Invite your friends and acquaintances to use our exchange
-                        service and get bonuses in in the form of discounts on
-                        transaction fees for any currency pairs!
-                    </div>
+<main id="main-container">
+    <section id="partners-container">
+        <div id="partners-wrapper">
+            <div class="text-wrapper" id="header-text">
+                <span class="text">Partners</span></div>
+            <div class="text-wrapper" id="body-text">
+                <div class="main-text">
+                    <span>Referral link</span>
                 </div>
-                <ul class="partners-discount-wrapper">
-                    <li class="list-wrapper">
-                        <div class="enum">1</div>
-                        <div class="discount-wrapper">
-                            <div class="upper-text">Discount 3%</div>
-                            <div class="lower-text">Invite 1 user</div>
-                        </div>
-                    </li>
-                    <li class="list-wrapper">
-                        <div class="enum">2</div>
-                        <div class="discount-wrapper">
-                            <div class="upper-text">Discount 5%</div>
-                            <div class="lower-text">Invite 1 user</div>
-                        </div>
-                    </li>
-                    <li class="list-wrapper">
-                        <div class="enum">3</div>
-                        <div class="discount-wrapper">
-                            <div class="upper-text">Discount 8%</div>
-                            <div class="lower-text">Invite 1 user</div>
-                        </div>
-                    </li>
-                </ul>
+                <div class="sub-text">
+                    <span>
+                    Invite your friends and acquaintances to use our exchange
+                    service and get bonuses in in the form of discounts on
+                    transaction fees for any currency pairs!
+                        </span>
+                </div>
             </div>
-            <div class="referalls-wrapper">
-                <div class="referrals-header-wrapper">
-                    <button class="referral-button">Your referrals</button>
-                    <button class="referral-button" id="Recent">Recent</button>
-                </div>
-                <div class="referrals-log-wrapper">
-                    <div class="button-wrapper">
-                        <button class="log-btn" href="" id="log-in">Log in</button>
-                        <button class="log-btn" href="" id="sign-up">Sign up</button>
+            <ul id="discount-list">
+                <li class="list-item">
+                    <div class="blue rect enum"><span>1</span></div>
+                    <div class="text-wrapper">
+                        <div class="main-text"><span>Discount 3%</span></div>
+                        <div class="sub-text"><span>Invite 1 user</span></div>
                     </div>
+                </li>
+                <li class="list-item">
+                    <div class="white rect enum">2</div>
+                    <div class="text-wrapper">
+                        <div class="main-text"><span>Discount 5%</span></div>
+                        <div class="sub-text"><span>Invite 1 user</span></div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="white rect enum">3</div>
+                    <div class="text-wrapper">
+                        <div class="main-text"><span>Discount 8%</span></div>
+                        <div class="sub-text"><span>Invite 1 user</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="referrals-wrapper">
+            <div class="header-wrapper">
+                <button class="referral-button no-outline"><span>Your referrals</span></button>
+                <button class="referral-button no-outline" id="Recent"><span>Recent</span></button>
+            </div>
+            <div class="profile-container">
+                <div class="profile-wrapper">
+                    <input checked hidden id="authorization-input" name="profile-button-group"
+                           onclick="window.location.href='../pages/login.html'; return false;"
+                           type="radio">
+                    <label class="blue rect button profile-button no-outline" for="authorization-input"
+                           id="Authorization">Log
+                        in</label>
+
+                    <input hidden id="registration-input" name="profile-button-group"
+                           onclick="window.location.href='../pages/signup.html'; return false;"
+                           type="radio">
+                    <label class="blue rect button profile-button no-outline" for="registration-input"
+                           id="Registration">Sign
+                        up</label>
                 </div>
             </div>
         </div>
     </section>
 </main>
+<footer class="header-container">
+    <div class="header-wrapper">
+        <a class="header-logo" href="../index.html"></a>
+        <span class="copyright">Tonka Coin © 2023</span>
+        <div class="header-nav-container" id="footer-nav-container">
+            <ul class="navbar-wrapper">
+                <li class="navbar-item ">
+                    <a href="../pages/error.html">
+                        <span class="navbar-text">Support</span>
+                        <span class="navbar-icon support"></span>
+                    </a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="../pages/rules.html">
+                        <span class="navbar-text">Rules</span>
+                        <span class="navbar-icon rules"></span>
+                    </a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="../pages/partners.html">
+                        <span class="navbar-text">Partners</span>
+                        <span class="navbar-icon partners"></span>
+                    </a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="../index.html#comments-section">
+                        <span class="navbar-text">Reviews</span>
+                        <span class="navbar-icon reviews"></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="profile-wrapper">
+                <input checked hidden id="authorization-input-footer" name="profile-button-group"
+                       onclick="window.location.href='../pages/login.html'; return false;"
+                       type="radio">
+                <label class="blue rect button profile-button no-outline" for="authorization-input-footer"
+                       id="Authorization-footer">Log
+                    in</label>
 
+                <input hidden id="registration-input-footer" name="profile-button-group"
+                       onclick="window.location.href='../pages/signup.html'; return false;"
+                       type="radio">
+                <label class="blue rect button profile-button no-outline" for="registration-input-footer"
+                       id="Registration-footer">Sign
+                    up</label>
+
+
+            </div>
+        </div>
+
+    </div>
+</footer>
 <script
         crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
