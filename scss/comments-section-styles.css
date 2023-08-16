@@ -52,6 +52,7 @@
   content: url("../files/profile-icon.svg");
   height: 56px !important;
   width: 56px !important;
+  border-radius: 100%;
 }
 #comments-section #comments-container .comments-wrapper .comments-item .item-header .item-data {
   width: 100%;
